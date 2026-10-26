@@ -1,0 +1,58 @@
+{
+  "version": "0.1",
+  "created_date_kst": "2026-10-26",
+  "status": "DESIGN_FROZEN_BEFORE_MODEL_RUN; calendar boundaries require audited target data",
+  "objective": "Estimate the incremental out-of-time predictive value of news conditional on historical numerical information. This is not a causal effect estimate or a guarantee of present-day performance.",
+  "target_proposal": {
+    "population": "Seoul district by food-service industry, subject to data availability audit",
+    "outcome": "Next-quarter change in the documented estimated-sales measure",
+    "horizon": "one quarter",
+    "not_estimated": "Individual business closure probability",
+    "freeze_before_run": ["exact industry and geography definitions", "sales units and aggregation rule", "release-vintage convention", "calendar cutoffs and embargo", "event taxonomy", "sample-size and power assessment"]
+  },
+  "models": {
+    "B0": "Seasonal naive benchmark",
+    "B1": "Numerical history, calendar and known covariates only",
+    "B2": "Same base family and numeric inputs plus past news features",
+    "B3": "Numeric base plus news-volume features only, isolating semantic contribution",
+    "B4": "Numeric base plus deliberately stale news sampled only from information available before each origin; fixed random seeds"
+  },
+  "feature_policy": [
+    "Use only records genuinely available by each forecast timestamp, not just events dated earlier.",
+    "Retain publication time, event time, historical snapshot hash, source URL and statistic release/vintage.",
+    "Deduplicate syndicated stories into events; do not select event types using final holdout outcomes.",
+    "Use fold-local vocabulary, imputation, scaling and feature selection. Start with transparent text features fitted from past data.",
+    "Treat current pretrained model knowledge and retrospective LLM summaries as contamination risks; document training cutoff or obtain prospective evidence.",
+    "Never use generated preds fields as observed labels or silently as ex-ante forecasts.",
+    "Provide both arms the same numeric covariates and tuning budget; record model capacity and costs."
+  ],
+  "temporal_design": [
+    "Development period: expanding-origin validation. A training label may enter only after its own release timestamp.",
+    "Separate earlier development origins and later confirmation origins; reserve the latest untouched block for one final evaluation.",
+    "Purge training targets extending past an origin and embargo overlapping horizons when necessary.",
+    "Freeze model, features, thresholds and splits before opening final holdout results. No result-driven stopping or selecting only winning periods.",
+    "Report each period, industry and market regime, including adverse results; shared district dates are not independent time samples."
+  ],
+  "measurement": {
+    "primary": "Paired out-of-time MAE difference B1 minus B2; report relative improvement as well",
+    "secondary": ["RMSE", "direction accuracy", "false alarms and missed events", "prediction interval coverage and width"],
+    "probability_claim_gate": "If event probabilities are emitted, compare Brier score with historical-frequency and numeric-only baselines and inspect reliability; do not interpret MAE gains as calibrated probabilities.",
+    "uncertainty": "Paired moving-block bootstrap by forecast origin, preserving same-date cross-sectional dependence. Freeze block length using development data and document sensitivity.",
+    "multiple_comparisons": "Declare one primary comparison and endpoint. Adjust confirmatory multiple tests; label post-hoc subgroup results exploratory.",
+    "sample_size": "Assess effective forecast-origin count and power before claiming significance. A large row count across districts does not replace a sufficient history."
+  },
+  "candidate_pass_gates": [
+    "Historical availability and provenance audit passes for all included features and labels.",
+    "The primary comparison improves MAE by at least a proposed 5% practical threshold on the untouched holdout, with a 95% paired block-bootstrap interval for improvement above zero. The 5% threshold is a design choice, not a universal standard.",
+    "The earlier and later confirmation periods do not show a material reversal; latest-regime and pooled results are reported together.",
+    "B2 beats seasonal naive and news-volume/stale-news controls; interpret any failure explicitly rather than relabeling it as semantic news value.",
+    "Probability or warning claims separately pass calibration and user-relevant false-alarm checks.",
+    "Before operational warning use, freeze and timestamp prospective forecasts and evaluate once sufficient new outcomes arrive."
+  ],
+  "claim_levels": {
+    "literature": "Feasibility evidence from other tasks only",
+    "retrospective_target_pass": "Evidence of historical incremental predictive value on this target under this protocol",
+    "prospective_target_pass": "Conditional evidence of present-domain usefulness, subject to continued drift monitoring",
+    "never_claim": "Past success logically proves all current or future news-based predictions are valid"
+  }
+}

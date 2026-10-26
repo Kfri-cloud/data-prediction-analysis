@@ -1,0 +1,15 @@
+{
+  "status": "EXPLORATORY_ONLY_NOT_POINT_IN_TIME_VALIDATION",
+  "purpose": "Exercise expanding-origin numerical versus event-text prediction on the official TimesX KRW export. Cannot satisfy the primary Seoul protocol because historical publication/snapshot provenance is absent.",
+  "dataset": "TimesX USDtoKRW, all 66 supplied origins; chosen for Korean currency relevance before measuring model outcomes",
+  "target": "100 * (mean of next 12 provided business-day values / last historical value - 1), percentage points",
+  "training": "Expanding origins, at least 16 earlier samples; only training windows whose final target date is strictly before current origin. Training label release dates remain unverified.",
+  "evaluation_blocks": {"development": ["2024-01-01", "2025-01-01"], "confirmation": ["2025-01-01", "2026-01-01"], "latest_holdout": ["2026-01-01", "2026-04-01"]},
+  "model": "Ridge regression with mean squared loss + 1.0 * squared coefficients, unpenalized intercept, train-only feature standardization; identical penalty for all arms, no tuning",
+  "features": "B1: numeric lag returns at 1/5/12/24/48/95 steps, 12/48-step volatility, calendar sin/cos month, weekday, 9 covariates min/max/mean/median/trend from exported historical summaries, holiday count. B2 adds 32 signed SHA256 hashed English word features with per-document L2 normalization and event count. Strip prediction-window prefix. No pretrained model. B3 adds event count only. B4 adds preceding-origin event text and count only, as a stale-text control.",
+  "baseline": "B0 flat forecast implies zero mean future change",
+  "primary": "B1 minus B2 paired MAE; all origins and blocks reported",
+  "uncertainty": "Moving-block bootstrap, length 3 origins, 5000 draws, seed 20261026; percentile 95% CI. Latest block under 12 origins is automatically too small for confirmatory claims. No current-success probabilities.",
+  "gates": "No approval regardless of performance: source publication timestamps, original historical snapshots, numerical vintages and exact collection mechanism not verified. Five percent relative improvement is descriptive only. Original protocol.json remains unchanged.",
+  "limitations": ["Small single-series sample", "Retrospectively generated event summaries", "Potential selection and model-knowledge contamination", "Dates have no timezone", "No probabilistic calibration or business-warning test", "Not a reproduction of the published TimesX model"]
+}

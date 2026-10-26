@@ -1,0 +1,49 @@
+{
+  "retrieved_at_utc": "2026-10-26T10:33:30.580126+00:00",
+  "repository_commit": "00281e2d86058286d5548b15a7670e8eda57ef62",
+  "files": [
+    {
+      "file": "Economy.csv",
+      "url": "https://raw.githubusercontent.com/AdityaLab/Time-MMD/00281e2d86058286d5548b15a7670e8eda57ef62/numerical/Economy/Economy.csv",
+      "bytes": 31813,
+      "sha256": "b6a5d18fef4d0ef20425e7704a4831a93cce69e3ead766f47880e90e1ae693a5"
+    },
+    {
+      "file": "Economy_report.csv",
+      "url": "https://raw.githubusercontent.com/AdityaLab/Time-MMD/00281e2d86058286d5548b15a7670e8eda57ef62/textual/Economy/Economy_report.csv",
+      "bytes": 470997,
+      "sha256": "df620d0d72b0307920c641ad8d070acf0b6333ffbdd95deeba9f05c47cd05bee"
+    },
+    {
+      "file": "Economy_search.csv",
+      "url": "https://raw.githubusercontent.com/AdityaLab/Time-MMD/00281e2d86058286d5548b15a7670e8eda57ef62/textual/Economy/Economy_search.csv",
+      "bytes": 1142141,
+      "sha256": "f7bd7a4220e02c2124d04ecf9be6c9d4049a6233474c1ab61c21f7c8996c0465"
+    },
+    {
+      "file": "upstream_readme.txt",
+      "url": "https://raw.githubusercontent.com/AdityaLab/Time-MMD/00281e2d86058286d5548b15a7670e8eda57ef62/readme.MD",
+      "bytes": 3917,
+      "sha256": "a5697f2247b0887bdd2b7892c5cb8d61295c5dee91e42aa9063f5d2f17c50f45"
+    },
+    {
+      "file": "timesx_paper.html",
+      "url": "https://arxiv.org/html/2607.06973v1",
+      "bytes": 2059231,
+      "sha256": "9e975de4627f358cb02107a53b106c0c6e8ba7b6a1d475be7381ccf5ee6ecff2"
+    },
+    {
+      "file": "timemmd_paper.html",
+      "url": "https://arxiv.org/html/2406.08627v3",
+      "bytes": 801794,
+      "sha256": "296d00402ab1b272ad76d51133dcba0bfd89fde2c37da30bdf6c45cede83b183"
+    },
+    {
+      "file": "nsw_paper.html",
+      "url": "https://arxiv.org/html/2506.11050v1",
+      "bytes": 353369,
+      "sha256": "977b40cd77435d5a845b259b16df8f41194d03e8cbe64d3e3aa8e014bffa368e"
+    }
+  ],
+  "purpose": "Local provenance audit, not a forecasting reproduction"
+}

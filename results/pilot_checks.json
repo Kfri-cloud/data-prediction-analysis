@@ -1,0 +1,11 @@
+{
+  "tests": 17,
+  "passed": true,
+  "prediction_rows": 47,
+  "strict_training_window_checks": true,
+  "mae_independently_recomputed": true,
+  "local_report_links_valid": true,
+  "visual_rendering_checked": false,
+  "predictive_validity": "UNVERIFIED",
+  "source_availability": "NOT_VERIFIED"
+}

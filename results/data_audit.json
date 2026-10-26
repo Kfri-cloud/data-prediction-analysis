@@ -1,0 +1,94 @@
+{
+  "repository_commit": "00281e2d86058286d5548b15a7670e8eda57ef62",
+  "input_hashes_verified": true,
+  "files": [
+    {
+      "file": "Economy.csv",
+      "rows": 447,
+      "columns": [
+        "Month",
+        "Exports",
+        "Imports",
+        "OT",
+        "start_date",
+        "date",
+        "end_date"
+      ],
+      "reference_period_start_min": "1987-01-01",
+      "reference_period_start_max": "2024-03-01",
+      "canonical_missing_fields": [
+        "available_at",
+        "source_url",
+        "snapshot_sha256",
+        "released_at",
+        "vintage_id"
+      ],
+      "canonical_complete_rows": 0,
+      "date_order_is_ascending": false,
+      "duplicate_numeric_dates": 0,
+      "has_generated_predictions_column": false,
+      "verdict": "NOT_READY_FOR_POINT_IN_TIME_CLAIM",
+      "interpretation": "Missing fields in this export do not prove that the original study leaked information. They prevent this local audit from verifying historical availability from these files alone."
+    },
+    {
+      "file": "Economy_report.csv",
+      "rows": 435,
+      "columns": [
+        "",
+        "start_date",
+        "end_date",
+        "fact",
+        "preds"
+      ],
+      "reference_period_start_min": "1995-01-01",
+      "reference_period_start_max": "2024-03-01",
+      "canonical_missing_fields": [
+        "available_at",
+        "source_url",
+        "snapshot_sha256",
+        "published_at"
+      ],
+      "canonical_complete_rows": 0,
+      "date_order_is_ascending": null,
+      "duplicate_numeric_dates": null,
+      "has_generated_predictions_column": true,
+      "verdict": "NOT_READY_FOR_POINT_IN_TIME_CLAIM",
+      "interpretation": "Missing fields in this export do not prove that the original study leaked information. They prevent this local audit from verifying historical availability from these files alone."
+    },
+    {
+      "file": "Economy_search.csv",
+      "rows": 2314,
+      "columns": [
+        "",
+        "start_date",
+        "end_date",
+        "fact",
+        "preds"
+      ],
+      "reference_period_start_min": "1979-12-31",
+      "reference_period_start_max": "2024-04-29",
+      "canonical_missing_fields": [
+        "available_at",
+        "source_url",
+        "snapshot_sha256",
+        "published_at"
+      ],
+      "canonical_complete_rows": 0,
+      "date_order_is_ascending": null,
+      "duplicate_numeric_dates": null,
+      "has_generated_predictions_column": true,
+      "verdict": "NOT_READY_FOR_POINT_IN_TIME_CLAIM",
+      "interpretation": "Missing fields in this export do not prove that the original study leaked information. They prevent this local audit from verifying historical availability from these files alone."
+    }
+  ],
+  "forecast_models_trained": 0,
+  "forecast_accuracy_measured": false,
+  "global_verdict": "CURRENT_TARGET_VALIDITY_UNVERIFIED",
+  "next_required_evidence": [
+    "Verify news publication timestamps and original historical versions; reference periods are not availability timestamps.",
+    "Obtain numeric release timestamps and as-of vintages, or explicitly limit the claim to a retrospective revised-data benchmark.",
+    "Validate target-domain data and forecast origins before fixing time splits.",
+    "Compare numeric-only versus numeric-plus-news using the frozen protocol; do not use preds as ground truth.",
+    "Record live forecasts before outcomes are released to test present-day transfer."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source": "https://arxiv.org/html/2607.06973v1",
+  "source_sections": [
+    "Table 5",
+    "Appendix Y.3"
+  ],
+  "source_sha256": "9e975de4627f358cb02107a53b106c0c6e8ba7b6a1d475be7381ccf5ee6ecff2",
+  "evidence_type": "RECALCULATION_OF_ROUNDED_PUBLISHED_TABLES_NOT_MODEL_REPRODUCTION",
+  "model": "Gemini-2.0-Flash as reported by the authors",
+  "main_mase": {
+    "Meta": 0.787,
+    "Meta+Date": 0.67,
+    "Meta+Date+Cov": 0.674,
+    "Meta+Date+Event": 0.674,
+    "Meta+Date+Event+Cov": 0.65
+  },
+  "main_relative_improvement_events_without_covariates_pct": -0.5970149253731348,
+  "main_relative_improvement_events_with_covariates_pct": 3.5608308605341277,
+  "per_variable_comparisons": [
+    {
+      "baseline": "Meta+Date",
+      "with_events": "Meta+Date+Event",
+      "improved": 94,
+      "tied_at_published_precision": 5,
+      "worsened": 89,
+      "variables_with_paired_scores": 188,
+      "variables_excluded_for_missing_score": 1
+    },
+    {
+      "baseline": "Meta+Date+Cov",
+      "with_events": "AllContext",
+      "improved": 99,
+      "tied_at_published_precision": 2,
+      "worsened": 88,
+      "variables_with_paired_scores": 189,
+      "variables_excluded_for_missing_score": 0
+    }
+  ],
+  "limitations": [
+    "189 variable columns are extractable in the pinned Appendix Y.3 tables; the paper describes 190 benchmark variables. No result is invented for the difference.",
+    "Scores are rounded and aggregate; raw paired forecast errors were not evaluated, and no significance or confidence interval is inferred.",
+    "These variable win counts are not independent trials and are not a probability that current forecasts will succeed.",
+    "The ablation evaluates constructed event context; it does not establish the causal effect of news or validate Korean SME forecasts."
+  ]
+}
