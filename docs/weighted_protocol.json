@@ -1,0 +1,11 @@
+{
+  "hypothesis": "For each commodity including gold and silver, concentrate index-side weight on Nasdaq100 and news-side weight on reported outcomes before a fixed outer 50:50 blend. No claim of directly measuring public sentiment.",
+  "index_experts": "B1+Nasdaq100 versus B1+other three indices",
+  "news_experts": "B1+reported-outcome candidate clauses versus B1+remaining clauses; same keyword/direction features, clause counts",
+  "weight_grid": [0, 0.25, 0.5, 0.75, 1],
+  "primary": "Focused weights selected separately from [0.5,0.75,1]; fixed outer 0.5*index+0.5*news",
+  "control": "Unconstrained weights selected separately from full grid",
+  "selection": "Minimum 8 earlier out-of-fold predictions whose target ends before current origin; inner fit minimum 8 completed training samples; MAE selection; ties prefer 0.5; fallback 0.5",
+  "evaluation": "Same origins as frozen ten-indicator experiment; fixed ridge lambda1 and training-only scaling; no outer outcomes used for weight choice",
+  "limitations": "Post-hoc design on previously inspected data; no untouched holdout. Clauses are heuristic, not verified outcomes; news publication timing unverified. Descriptive block intervals not corrected for multiple comparisons. No current forecast."
+}

@@ -27,3 +27,7 @@ run_indicators.py -text
 indicator_protocol.json -text
 fetch_indicators.py -text
 results/indicator_sources.json -text
+run_weighted.py -text
+weighted_protocol.json -text
+results/indicator_predictions.csv -text
+results/indicator_lock.json -text

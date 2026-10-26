@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "run_weighted.py": "203411da06364b59b143df0d07895169793409c4f5195db55a0bb0117f948da3",
+    "weighted_protocol.json": "d9c5cc9708d19bc3e1fccac13e2590746e0b4c6ebbaaa11635b54da7af5006da",
+    "results/indicator_predictions.csv": "e5c7b1788450291159650925aedd95f1cd17fd30c605b74fb39f167622489fc5",
+    "results/indicator_lock.json": "6f9961cd01d30b9f4152b6fff129d50bc808ff9bba815156c039915b68004ab9"
+  },
+  "frozen_at": "2026-10-26T12:57:55.813984+00:00"
+}
