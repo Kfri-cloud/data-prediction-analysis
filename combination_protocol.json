@@ -1,0 +1,11 @@
+{
+  "status": "POST_SELECTION_EXPLORATORY_NO_UNTOUCHED_TEST",
+  "selection_reason": "On the common 47 TimesX origins, keyword+direction (Sdir) and four-index model (M) had modestly lower aggregate MAE than B1; neither was validated. Long-decade and monthly results showed instability and are not pooled with this dataset.",
+  "primary": "Cavg = 0.5*Sdir + 0.5*M; compare paired MAE with B1 and both components",
+  "secondary_candidates": {"Cjoint":"B1 + all four index features + keyword rates/event count + eight direction features in one ridge model", "Cslim":"B1 + all four index features + eight direction features, excluding keyword rates/count"},
+  "fixed_choices": "Same 47 origins, 66 original samples, target, train cutoff, ridge lambda=1 and train-only scaling. Index bar lag 48h remains unchanged. No weight optimization, topic selection, index subset search or threshold tuning.",
+  "excluded_features": "Actor/surprise, generic word hashing and stale text are not in new candidates. Their prior negative results remain published; this selection is explicitly based on already-seen outcomes.",
+  "report": "All candidates, overall and 2024/2025/2026 blocks, numeric baseline and components, naive baseline, descriptive paired time-block intervals, counts, and component prediction correlation. 2026 has four origins and is not a new holdout.",
+  "stop_rule": "No additional combinations after viewing these results. An aggregate winner is only a candidate for a new future-data test, not validated for use.",
+  "limitations": ["Repeated model selection on the same outcomes", "Historical news publication and numerical vintages unresolved", "Not a reproduction of the 10-year or 13-month experiment", "No calibrated warning probabilities or investment recommendation", "No market-flow data or full-context language model"]
+}

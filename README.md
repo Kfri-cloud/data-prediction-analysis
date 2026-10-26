@@ -6,6 +6,9 @@
 
 ## 현재 결과
 
+[후보 조합 보고서](https://kfri-cloud.github.io/data-prediction-analysis/combination_report.html): 같은 47개 시점에서 키워드·방향 모델과 네 지수 모델의 고정 50:50 평균이 숫자 기준선보다 MAE 2.94% 감소했습니다. 2025년에는 악화했고 구간 추정도 0을 포함하므로 검증 완료가 아닙니다. 과거 결과로 고른 조합의 추가 탐색이며 다음 독립 검증의 후보입니다.
+
+
 [2025-10~2026-10 월별 비교](https://kfri-cloud.github.io/data-prediction-analysis/monthly_report.html): 기존 12관측치 예측을 시작 월별로 묶은 13개월·22회 집계입니다. 전체 오차는 지수 추가 시 4.67% 증가했습니다. 달마다 1~2회뿐이며 2026년 10월은 진행 중입니다. 한 달 예측으로 학습 목표를 바꾼 모델이나 뉴스 효과 검증이 아닙니다.
 
 
@@ -43,7 +46,7 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py test_decade.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py test_decade.py test_combinations.py
 python run_pilot.py
 python run_keywords.py
 python run_events.py
@@ -65,6 +68,8 @@ python build_report.py
 10개년 실험은 `python fetch_decade.py`, `python run_decade.py`, `python build_decade_report.py` 순서입니다. 원본 응답이 바뀌면 고정 해시 검사를 통과하지 못하므로 기존 실험을 덮어쓰지 마세요.
 
 월별 집계는 `python run_monthly.py`, `python build_monthly_report.py`로 재현합니다. 원래 고정된 10개년 입력 스냅샷이 필요합니다.
+
+후보 조합은 `python run_combinations.py`, `python build_combination_report.py`로 재현합니다. 기존 사건·지수 실험의 고정 스냅샷이 필요합니다.
 
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
 

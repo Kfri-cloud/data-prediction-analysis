@@ -3,7 +3,7 @@
 <title>데이터예측분석 | 뉴스 기반 예측 검증</title><style>
 :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172b45;font:16px/1.85 system-ui,"Malgun Gothic",sans-serif}
 main{max-width:1080px;margin:auto;padding:48px 28px 80px}h1{font-size:34px;line-height:1.4}h2{font-size:24px;margin-top:44px}p{max-width:950px}a{color:#1d54b9}table{border-collapse:collapse;width:100%;font-size:14px;background:white}th,td{padding:13px;text-align:left;border-bottom:1px solid #dbe3ef;vertical-align:top}th{background:#e9eff8}.table{overflow:auto}.notice{padding:22px 26px;border-left:5px solid #b7791f;background:#fff8e6;border-radius:8px}.blue{border-color:#3267ce;background:#eaf1ff}.meta{color:#61718a;font-size:14px}code{font-size:13px;overflow-wrap:anywhere}li{margin:7px 0}.flow{padding:18px;background:white;border:1px solid #dbe3ef;border-radius:8px}@media(max-width:600px){main{padding:24px 16px}h1{font-size:27px}}
-</style></head><body><nav style="padding:16px"><a href="index.html">전체 기록</a> · <a href="pilot_report.html">기본 실험</a> · <a href="keyword_report.html">키워드</a> · <a href="event_report.html">사건 특징</a> · <a href="market_report.html">네 지수 비교</a> · <a href="decade_report.html">10개년</a> · <a href="monthly_report.html">월별 비교</a></nav><main>
+</style></head><body><nav style="padding:16px"><a href="index.html">전체 기록</a> · <a href="pilot_report.html">기본 실험</a> · <a href="keyword_report.html">키워드</a> · <a href="event_report.html">사건 특징</a> · <a href="market_report.html">네 지수 비교</a> · <a href="decade_report.html">10개년</a> · <a href="monthly_report.html">월별 비교</a> · <a href="combination_report.html">후보 조합</a></nav><main>
 <p class="meta">2026-10-26 · 문헌 조사 + 공개 데이터 감사 + 사전 검증 설계</p>
 <h1>데이터예측분석</h1><p>뉴스가 미래 예측에 도움이 되는지, 시간순 비교실험으로 검증합니다.</p>
 <div class="notice"><strong>판정: 조건부 가능성은 확인. 서울 소상공인 현재 예측의 타당성은 아직 미확인.</strong><br>
@@ -14,7 +14,7 @@ main{max-width:1080px;margin:auto;padding:48px 28px 80px}h1{font-size:34px;line-
 <li><a href="pilot_report.html">숫자 대 단어 해시 시간순 실험</a></li>
 <li><a href="keyword_report.html">키워드 중심 비교</a></li>
 <li><a href="event_report.html">최신: 방향·주체·예상 대비 차이 비교</a></li>
-<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li><li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li><li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li></ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav><h2 id="literature">1. 무엇을 입증해야 하는가</h2>
+<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li><li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li><li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li><li><a href="combination_report.html">최신: 후보 조합·50:50 혼합 비교</a></li></ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav><h2 id="literature">1. 무엇을 입증해야 하는가</h2>
 <p>검증할 가설은 “같은 시점에 이용 가능한 숫자 정보가 같을 때, 뉴스를 추가한 예측이 이후 실제 결과를 더 잘 예측한다”이다. 뉴스가 변화를 일으켰다는 인과관계와 현재에도 반드시 통한다는 주장은 별개다.</p>
 <div class="flow">더 오래된 기간으로 학습 → 이후 과거 구간 예측 → 여러 시작점에서 반복 → 마지막 보류 구간 확인 → 현재 예측을 미리 저장 → 새 결과와 비교</div>
 <p>앞 단계가 반복 통과하면 현재 적용을 지지하는 경험적 근거가 생긴다. 그 근거는 데이터 수집 방식·뉴스의 의미·경제 환경·대상 업종이 충분히 유사하다는 조건을 가진다. 과거 성능만으로 “현재 타당할 확률 90%”를 산출할 수는 없다.</p>
@@ -149,4 +149,21 @@ python build_report.py</pre><p>작업 폴더: <code>news-evidence-lab</code><br>
 <p>모델·특징·학습 규칙은 10개년 실험과 동일하다. 저장된 기존 예측 21개를 다시 계산해 모두 일치하는지 확인했다. 이전 연도 합계에서 2026년을 침범한다는 이유로 제외했던 2025년 12월 19일 시작 구간 1개를 이번에는 포함했다. 이 구간의 목표는 2026년 1월 7일에 끝난다. 해당 복원은 월별 집계 범위를 맞춘 것이며 모델을 결과에 맞춰 조정한 것이 아니다.</p>
 <p>전체 22회에서 변화 없음 기준선 MAE는 1.1573pp, 환율 기준선은 1.1493pp, 지수 추가 모델은 1.2030pp다. 지수 추가는 13개월 중 5개월에서 오차를 줄였지만, 이 비율을 미래 성공확률로 해석하지 않는다. 같은 데이터의 재집계이며 새로운 독립 검증이 아니다.</p>
 <p>이번 월별 표는 숫자·지수 비교다. 해당 기간 전체를 덮는 뉴스 원문·공개시각 자료가 없어 뉴스 효과 또는 투자자별 수급 효과를 검증한 표로 볼 수 없다. 월별 표본이 적어 월별 유의성 검사나 성공확률은 제시하지 않는다.</p>
-<p><a href="monthly_protocol.json">월별 집계 기준</a> · <a href="results/monthly_results.json">월별 전체 결과</a> · <a href="results/monthly_predictions.csv">22개 개별 예측</a> · <a href="decade_report.html">10개년 원래 실험</a></p></section></main></body></html>
+<p><a href="monthly_protocol.json">월별 집계 기준</a> · <a href="results/monthly_results.json">월별 전체 결과</a> · <a href="results/monthly_predictions.csv">22개 개별 예측</a> · <a href="decade_report.html">10개년 원래 실험</a></p></section><section id="combinations"><h2>기존 결과를 바탕으로 구성한 후보 조합</h2>
+<div class="notice"><strong>이번 후보 중 전체 MAE가 가장 낮은 것은 ‘키워드·방향 모델 + 네 지수 모델’의 50:50 예측 혼합이다.</strong><br>숫자 기준선보다 오차 2.94% 감소. 다만 2025년에는 악화됐고 불확실성 구간이 0을 포함하므로 검증된 모델로 승격하지 않는다.</div>
+<h3>어떤 결과를 묶었는가</h3>
+<p>공통 47개 TimesX 예측에서 키워드·방향 모델은 숫자 기준선 대비 오차 0.53% 감소, 네 지수 모델은 0.29% 감소였다. 이를 약한 후보 신호로 삼아 조합을 고정했다. 10개년·월별 실험의 점수는 데이터 출처와 기준 입력이 달라 섞지 않았다. 그 실험에서 드러난 불안정성은 조합의 적용을 서두르지 않을 근거로 유지했다.</p>
+<p>세 조합은 이번 결과를 보기 전에 고정했다. ① 두 모델의 예측값을 50:50 평균, ② 숫자·지수·키워드·방향을 하나의 회귀 모델에 입력, ③ 숫자·지수·방향만 넣는 간소 모델이다. 국가·주체·예상 차이와 일반 단어 해시는 제외했다. 이 선택 자체가 이전 결과를 보고 이루어졌다는 사실을 기록했다.</p>
+<div class="table"><table><tr><th>모델</th><th>MAE (pp)</th><th>숫자 기준선 대비 개선율</th></tr><tr><td>변화 없음</td><td>0.7993</td><td>-0.52%</td></tr><tr><td>숫자 기준선</td><td>0.7952</td><td>+0.00%</td></tr><tr><td>숫자 + 네 지수</td><td>0.7928</td><td>+0.29%</td></tr><tr><td>숫자 + 키워드·방향</td><td>0.7909</td><td>+0.53%</td></tr><tr><td>두 모델 예측 50:50 혼합 (주비교)</td><td>0.7717</td><td>+2.94%</td></tr><tr><td>지수·키워드·방향을 한 모델에 통합</td><td>0.7944</td><td>+0.09%</td></tr><tr><td>지수·방향만 추가한 간소 조합</td><td>0.7795</td><td>+1.97%</td></tr></table></div>
+<p class="meta">이번 표의 개선율은 양수이면 오차 감소, 음수이면 악화다. MAE는 작을수록 좋다. 모든 후보를 같은 47개 시점에서 비교했고 가중치 최적화나 결과를 본 뒤 추가 조합 탐색은 하지 않았다.</p>
+<div class="table"><table><tr><th>기간</th><th>횟수</th><th>50:50 혼합 개선율</th><th>한 모델 통합 개선율</th><th>간소 조합 개선율</th></tr><tr><td>2024</td><td>22</td><td>+7.95%</td><td>+6.40%</td><td>+6.48%</td></tr><tr><td>2025</td><td>21</td><td>-2.39%</td><td>-8.43%</td><td>-5.59%</td></tr><tr><td>2026년 1~3월</td><td>4</td><td>+6.40%</td><td>+12.87%</td><td>+18.11%</td></tr></table></div>
+<p>혼합 모델은 전체에서 두 개별 모델보다 오차가 작았지만, 2026년 4개 구간에서는 지수 모델 단독보다 나빴다. 숫자 기준선과의 MAE 차이는 +0.02341pp, 설명용 95% 시간 블록 부트스트랩 구간은 −0.05722~+0.09756pp다. 0을 포함하므로 안정적인 개선을 입증하지 못했다. 개별 구성 모델과의 차이 구간도 모두 0을 포함한다.</p>
+<p>혼합 모델의 방향 적중은 29/47회(61.7%)로 숫자 기준선 28/47회보다 1회 많았지만, 키워드·방향 모델의 31/47회보다 적었다. 변화량 오차의 개선을 방향 예측이나 보정된 성공확률의 개선으로 바꾸어 해석하지 않는다.</p>
+<h3>현재 연구 우선순위</h3>
+<ol><li><strong>다음 독립 검증의 첫 후보: 고정 50:50 혼합.</strong> 이번 공통 자료에서 가장 낮은 오차를 냈고 별도 가중치 탐색이 없다.</li>
+<li><strong>보조 후보: 지수·방향 간소 조합.</strong> 전체 오차는 1.97% 감소했으나 2025년에는 5.59% 악화됐다. 최근 4개만 보고 우승 모델로 선택하지 않는다.</li>
+<li><strong>우선순위 낮음: 모든 입력을 한 모델에 통합.</strong> 전체 개선 0.09%로 작았고 2025년에 8.43% 악화됐다.</li></ol>
+<p>이 순위는 같은 자료를 반복 탐색한 연구 우선순위이며 실제 운영 추천이 아니다. 원래 제안한 5% 실용 개선 기준에도 혼합 모델은 못 미쳤다. 현재부터 입력과 예측을 고정 저장한 새 기간 검증 또는 아직 쓰지 않은 자료가 필요하다. 이번에는 실시간 예측·자동 경고를 발행하지 않았다.</p>
+<h3>검증 범위</h3>
+<p>날짜·정답·기본 예측·학습 수가 맞는지 확인해 47개를 연결했고, 두 구성 모델을 다시 학습해 기존 예측과 일치함을 확인했다. 학습 구간, 규칙 기반 방향 추출, 지수 48시간 지연 규칙, 회귀 설정은 변경하지 않았다. 기존 데이터의 원문·공개시각·수치 버전 미확인 문제는 그대로다. 2026년 구간도 이미 본 자료라 새로운 보류 구간이 아니다.</p>
+<p><a href="combination_protocol.json">사전 고정한 조합 설계</a> · <a href="results/combination_results.json">모든 후보·기간의 지표</a> · <a href="results/combination_predictions.csv">시점별 예측</a> · <a href="results/combination_lock.json">고정 해시</a></p></section></main></body></html>

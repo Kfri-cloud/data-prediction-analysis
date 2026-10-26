@@ -15,3 +15,7 @@ run_monthly.py -text
 monthly_protocol.json -text
 results/decade_predictions.csv -text
 results/decade_lock.json -text
+run_combinations.py -text
+combination_protocol.json -text
+results/event_predictions.csv -text
+results/market_predictions.csv -text

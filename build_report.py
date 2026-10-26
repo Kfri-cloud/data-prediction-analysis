@@ -181,6 +181,10 @@ def main():
         from build_monthly_report import section as monthly_section
         report = report.replace('</main>', monthly_section() + '</main>')
         report = report.replace('</ol><p>모든 실험', '<li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li></ol><p>모든 실험', 1)
+    if (ROOT / "results/combination_results.json").exists():
+        from build_combination_report import section as combination_section
+        report = report.replace('</main>', combination_section() + '</main>')
+        report = report.replace('</ol><p>모든 실험', '<li><a href="combination_report.html">최신: 후보 조합·50:50 혼합 비교</a></li></ol><p>모든 실험', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))
