@@ -1,0 +1,2693 @@
+{
+  "status": "POST_HOC_SCREEN_NOT_CONFIRMATORY",
+  "criteria": {
+    "min_improvement_pct": 10,
+    "min_nonoverlap_n": 8,
+    "descriptive_interval_lower_gt": 0
+  },
+  "winners": [
+    {
+      "name": "한국 저출생",
+      "unit": "여성 1명당 출생아 수",
+      "source": "social_transfer_report.html",
+      "model": "Trend",
+      "mae": 0.04040740740740745,
+      "baseline_mae": 0.06055555555555557,
+      "improvement_pct": 33.27217125382258,
+      "n": 9,
+      "nonoverlap_n": 9,
+      "interval": [
+        0.007258333333333323,
+        0.04144444444444441
+      ],
+      "passes": true
+    },
+    {
+      "name": "한국 고령화와 부양 부담",
+      "unit": "생산가능인구 100명당 고령인구",
+      "source": "social_transfer_report.html",
+      "model": "Trend",
+      "mae": 0.2129206484375704,
+      "baseline_mae": 1.15891109259805,
+      "improvement_pct": 81.62752520038062,
+      "n": 10,
+      "nonoverlap_n": 10,
+      "interval": [
+        0.6949475110754852,
+        1.1872989189019558
+      ],
+      "passes": true
+    },
+    {
+      "name": "미국 고령화와 부양 부담",
+      "unit": "생산가능인구 100명당 고령인구",
+      "source": "social_transfer_report.html",
+      "model": "Trend",
+      "mae": 0.06972932476969937,
+      "baseline_mae": 0.6981500790621201,
+      "improvement_pct": 90.01227288216135,
+      "n": 10,
+      "nonoverlap_n": 10,
+      "interval": [
+        0.5514282925244011,
+        0.7054574155723866
+      ],
+      "passes": true
+    }
+  ],
+  "all": [
+    {
+      "name": "한국 소상공인 폐업",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "한국 청년실업",
+      "source": "social_transfer_report.html",
+      "unit": "%",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.8601333333333333,
+          "baseline_mae": 0.7585999999999998,
+          "improvement_pct": -13.384304420423598,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.7725873352575003,
+          "baseline_mae": 0.7585999999999998,
+          "improvement_pct": -1.8438353885447567,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 0.8199,
+          "baseline_mae": 0.7585999999999998,
+          "improvement_pct": -8.080674927498045,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 0.8644897467337455,
+          "baseline_mae": 0.7585999999999998,
+          "improvement_pct": -13.958574576027626,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "한국 생활물가 부담",
+      "source": "social_transfer_report.html",
+      "unit": "%",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 1.440986324382892,
+          "baseline_mae": 1.0472265322725531,
+          "improvement_pct": -37.60024980038017,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.9065575498504105,
+          "baseline_mae": 1.0472265322725531,
+          "improvement_pct": 13.432526591632598,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            -0.039039931520203755,
+            0.47795319343427617
+          ],
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 1.2110853218709294,
+          "baseline_mae": 1.0472265322725531,
+          "improvement_pct": -15.646928773165403,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.0180184190081087,
+          "baseline_mae": 1.0472265322725531,
+          "improvement_pct": 2.7890921748383146,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "한국 저출생",
+      "source": "social_transfer_report.html",
+      "unit": "여성 1명당 출생아 수",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.04040740740740745,
+          "baseline_mae": 0.06055555555555557,
+          "improvement_pct": 33.27217125382258,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            0.007258333333333323,
+            0.04144444444444441
+          ],
+          "passes": true
+        },
+        {
+          "model": "N1",
+          "mae": 0.04869169983815077,
+          "baseline_mae": 0.06055555555555557,
+          "improvement_pct": 19.59168834066848,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            0.006974427640221281,
+            0.021163222937808503
+          ],
+          "passes": true
+        },
+        {
+          "model": "Analog",
+          "mae": 0.060000000000000026,
+          "baseline_mae": 0.06055555555555557,
+          "improvement_pct": 0.9174311926605339,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 0.05255555555555559,
+          "baseline_mae": 0.06055555555555557,
+          "improvement_pct": 13.211009174311894,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.005259259259259297,
+            0.034407407407407414
+          ],
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "한국 고령화와 부양 부담",
+      "source": "social_transfer_report.html",
+      "unit": "생산가능인구 100명당 고령인구",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.2129206484375704,
+          "baseline_mae": 1.15891109259805,
+          "improvement_pct": 81.62752520038062,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.6949475110754852,
+            1.1872989189019558
+          ],
+          "passes": true
+        },
+        {
+          "model": "N1",
+          "mae": 0.22904608060781406,
+          "baseline_mae": 1.15891109259805,
+          "improvement_pct": 80.23609558397288,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.6975749252649731,
+            1.153279627560643
+          ],
+          "passes": true
+        },
+        {
+          "model": "Analog",
+          "mae": 0.30099042695003997,
+          "baseline_mae": 1.15891109259805,
+          "improvement_pct": 74.02816929853707,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.6192025509818297,
+            1.1058372569925972
+          ],
+          "passes": true
+        },
+        {
+          "model": "Selected",
+          "mae": 0.21663245544816867,
+          "baseline_mae": 1.15891109259805,
+          "improvement_pct": 81.30724118253787,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.6975749252649731,
+            1.1807576752764173
+          ],
+          "passes": true
+        }
+      ]
+    },
+    {
+      "name": "한국 자살 사망 예방",
+      "source": "social_transfer_report.html",
+      "unit": "명/10만 명",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 1.0427777777777785,
+          "baseline_mae": 1.1833333333333342,
+          "improvement_pct": 11.877934272300482,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 1.3042179650441454,
+          "baseline_mae": 1.1833333333333342,
+          "improvement_pct": -10.215602679786851,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 1.6416666666666682,
+          "baseline_mae": 1.1833333333333342,
+          "improvement_pct": -38.7323943661972,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.2200000000000006,
+          "baseline_mae": 1.1833333333333342,
+          "improvement_pct": -3.0985915492957483,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "한국 교통사고 사망",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "한국 초미세먼지 노출",
+      "source": "social_transfer_report.html",
+      "unit": "µg/m³",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 1.260756174184479,
+          "baseline_mae": 1.0591654995342874,
+          "improvement_pct": -19.03297215957569,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 1.0679685546895699,
+          "baseline_mae": 1.0591654995342874,
+          "improvement_pct": -0.8311312216224165,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 1.1415087050919497,
+          "baseline_mae": 1.0591654995342874,
+          "improvement_pct": -7.774347407828941,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.1750600681707417,
+          "baseline_mae": 1.0591654995342874,
+          "improvement_pct": -10.942064171030207,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "한국 청년 교육·고용 이탈",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "한국 주거비 과부담",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "미국 소상공인 폐업",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "미국 청년실업",
+      "source": "social_transfer_report.html",
+      "unit": "%",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 2.2635999999999994,
+          "baseline_mae": 1.81,
+          "improvement_pct": -25.060773480662956,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 1.8812088001058285,
+          "baseline_mae": 1.81,
+          "improvement_pct": -3.934187851150739,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 1.7129,
+          "baseline_mae": 1.81,
+          "improvement_pct": 5.3646408839779,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.7129,
+          "baseline_mae": 1.81,
+          "improvement_pct": 5.3646408839779,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 생활물가 부담",
+      "source": "social_transfer_report.html",
+      "unit": "%",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 2.1593179504925075,
+          "baseline_mae": 1.7061605668757378,
+          "improvement_pct": -26.56006664405426,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 1.4415573643366553,
+          "baseline_mae": 1.7061605668757378,
+          "improvement_pct": 15.508692890705756,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.19907097366159943,
+            0.6112286349925713
+          ],
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 1.5034342911837766,
+          "baseline_mae": 1.7061605668757378,
+          "improvement_pct": 11.882016243241777,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.07248680551044237,
+            0.3898656053240416
+          ],
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.5339502757438948,
+          "baseline_mae": 1.7061605668757378,
+          "improvement_pct": 10.093439883397881,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.28613699641514434,
+            0.42644281217809205
+          ],
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 저출생",
+      "source": "social_transfer_report.html",
+      "unit": "여성 1명당 출생아 수",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.024203703703703727,
+          "baseline_mae": 0.03133333333333331,
+          "improvement_pct": 22.754137115839114,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.007314814814814922,
+            0.020111111111111094
+          ],
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.026534180667111527,
+          "baseline_mae": 0.03133333333333331,
+          "improvement_pct": 15.31644467943124,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.0060308218049735084,
+            0.017965134362916357
+          ],
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 0.027722222222222228,
+          "baseline_mae": 0.03133333333333331,
+          "improvement_pct": 11.524822695035375,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": [
+            -0.008061111111111232,
+            0.01977777777777782
+          ],
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 0.03017185307351617,
+          "baseline_mae": 0.03133333333333331,
+          "improvement_pct": 3.706851893033425,
+          "n": 9,
+          "nonoverlap_n": 9,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 고령화와 부양 부담",
+      "source": "social_transfer_report.html",
+      "unit": "생산가능인구 100명당 고령인구",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.06972932476969937,
+          "baseline_mae": 0.6981500790621201,
+          "improvement_pct": 90.01227288216135,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.5514282925244011,
+            0.7054574155723866
+          ],
+          "passes": true
+        },
+        {
+          "model": "N1",
+          "mae": 0.07114379117902736,
+          "baseline_mae": 0.6981500790621201,
+          "improvement_pct": 89.80967082685139,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.5425214099270402,
+            0.7126589445147768
+          ],
+          "passes": true
+        },
+        {
+          "model": "Analog",
+          "mae": 0.09839586334364014,
+          "baseline_mae": 0.6981500790621201,
+          "improvement_pct": 85.90620179033381,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.5358468168115003,
+            0.6591341702164201
+          ],
+          "passes": true
+        },
+        {
+          "model": "Selected",
+          "mae": 0.07008732773991219,
+          "baseline_mae": 0.6981500790621201,
+          "improvement_pct": 89.960994083956,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": [
+            0.5510702895541882,
+            0.7053364282483671
+          ],
+          "passes": true
+        }
+      ]
+    },
+    {
+      "name": "미국 자살 사망 예방",
+      "source": "social_transfer_report.html",
+      "unit": "명/10만 명",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.35499999999999926,
+          "baseline_mae": 0.36166666666666636,
+          "improvement_pct": 1.8433179723503557,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.3284391785770107,
+          "baseline_mae": 0.36166666666666636,
+          "improvement_pct": 9.187323895757327,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 0.2999999999999992,
+          "baseline_mae": 0.36166666666666636,
+          "improvement_pct": 17.05069124423978,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 0.40833333333333294,
+          "baseline_mae": 0.36166666666666636,
+          "improvement_pct": -12.903225806451601,
+          "n": 6,
+          "nonoverlap_n": 6,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 교통사고 사망",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "미국 초미세먼지 노출",
+      "source": "social_transfer_report.html",
+      "unit": "µg/m³",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 0.5322467442999367,
+          "baseline_mae": 0.46942360901897373,
+          "improvement_pct": -13.383036999833497,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.5177568291399929,
+          "baseline_mae": 0.46942360901897373,
+          "improvement_pct": -10.296290853804413,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 0.5115685879517023,
+          "baseline_mae": 0.46942360901897373,
+          "improvement_pct": -8.978027121559862,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 0.514614694867821,
+          "baseline_mae": 0.46942360901897373,
+          "improvement_pct": -9.626930767987997,
+          "n": 8,
+          "nonoverlap_n": 8,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 청년 교육·고용 이탈",
+      "source": "social_transfer_report.html",
+      "unit": "%",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "Trend",
+          "mae": 1.098266666666666,
+          "baseline_mae": 0.8629999999999995,
+          "improvement_pct": -27.261490923136343,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "N1",
+          "mae": 0.9462146198377409,
+          "baseline_mae": 0.8629999999999995,
+          "improvement_pct": -9.642482020595766,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog",
+          "mae": 0.9147000000000001,
+          "baseline_mae": 0.8629999999999995,
+          "improvement_pct": -5.990730011587542,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Selected",
+          "mae": 1.0518687457303242,
+          "baseline_mae": 0.8629999999999995,
+          "improvement_pct": -21.885138555078186,
+          "n": 10,
+          "nonoverlap_n": 10,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "미국 주거비 과부담",
+      "status": "미실행: 자료 또는 평가 부족",
+      "candidates": []
+    },
+    {
+      "name": "에너지 브렌트유",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 3.367046454982501,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -9.202126443267966,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 3.4532437702809617,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -11.997730914469606,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 3.3584995501971266,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -8.924927958022867,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 3.3776589444443417,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -9.54631724419226,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 3.3517014474718767,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -8.704447699344353,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 3.4241771807418018,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -11.055025362714321,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 3.4111449170704033,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -10.632354952812474,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 3.1397916235737533,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -1.8316576463143885,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 3.4456098581624857,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -11.750143170265769,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 3.4456098581624857,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -11.750143170265769,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 3.2750784562994517,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -6.219363610857664,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 3.339648879461929,
+          "baseline_mae": 3.0833158333521364,
+          "improvement_pct": -8.313551383126105,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "에너지 석탄",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 3.4621739898963124,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -20.7587801223595,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 3.394766650288752,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -18.407648109335973,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 3.337233820224687,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -16.400933716645525,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 3.34319309742103,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -16.608790123267923,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 3.3428420587031273,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -16.59654608022636,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 3.423046406199871,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -19.39403089539782,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 3.3102878636354447,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -15.461073138741854,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 2.9498412665522173,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -2.8888882947532,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 3.665917996498868,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -27.865262282519065,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 3.665917996498868,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -27.865262282519065,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 3.3207154514577617,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -15.824781834121282,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 3.865676313860522,
+          "baseline_mae": 2.8670163663364647,
+          "improvement_pct": -34.832725730134804,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "에너지 에탄올",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 2.4634042635932456,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.053172871492592,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 2.4625722854985947,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.01431537621103,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 2.4632203983268552,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.044585453425752,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 2.4638765197316137,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.075229570805115,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 2.450569680925853,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -14.453734330207002,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 2.4667458829276345,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.209243035302954,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 2.468540943432264,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -15.293081246353491,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 2.1302255691231458,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": 0.5079213827049678,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 2.3633038126308312,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -10.377986317949016,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 2.3633038126308312,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -10.377986317949016,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 2.298689007983047,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -7.360155099959886,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 2.3727345053510884,
+          "baseline_mae": 2.141100677288334,
+          "improvement_pct": -10.818446349571676,
+          "n": 46,
+          "nonoverlap_n": 46,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "농산물 밀",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 2.8009219275746617,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -6.625280584547344,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 2.899776026946294,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -10.388450838835727,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 2.8723976344176965,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -9.346212297098377,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 2.8872316464880683,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -9.910912328051236,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 2.876384065259666,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -9.497967439885912,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 2.866155387592287,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -9.108582924896048,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 2.924730377678919,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -11.338411143861183,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 2.6307208434729996,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -0.14607880120878214,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 3.002898949755832,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -14.314126335541433,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 3.002898949755832,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -14.314126335541433,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 3.1431528088517062,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -19.6532994599107,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 3.2297335631004636,
+          "baseline_mae": 2.6268835235127015,
+          "improvement_pct": -22.949248955721636,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "농산물 옥수수",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 2.3195513939036014,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -6.431928096046202,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 2.410856808515901,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -10.621449978741682,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 2.3898128593998185,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -9.655854611867575,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 2.394405672544814,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -9.866594481521451,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 2.3945336065894214,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -9.872464697233196,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 2.4053511700767563,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -10.368825391065828,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 2.4036630161014334,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -10.291364946348436,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 2.1490840909365065,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": 1.3899135668744012,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 2.397468711876234,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -10.007141133229137,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 2.397468711876234,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -10.007141133229137,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 2.5619805181008606,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -17.555716593582925,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 2.5556688456820944,
+          "baseline_mae": 2.1793755270602575,
+          "improvement_pct": -17.266107375694716,
+          "n": 48,
+          "nonoverlap_n": 48,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "농산물 대두",
+      "source": "analogue_report.html",
+      "unit": "변화율 pp",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 1.8327417569036146,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -4.109388010842219,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 1.7813492830722488,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -1.190024724229377,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 1.787476040752747,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -1.5380568407044493,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 1.788107461773724,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -1.5739248814818696,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 1.7960594651528135,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -2.0256405703609426,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 1.7653592069621034,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -0.2817041538035081,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 1.789533047633028,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -1.6549056693151654,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 1.7605487113282756,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -0.008442656606666432,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 1.8768569198942122,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -6.615361699524436,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 1.8768569198942122,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -6.615361699524436,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 1.8088003485875048,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -2.749389877707009,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 2.1373262593370344,
+          "baseline_mae": 1.7604000867940441,
+          "improvement_pct": -21.411392522107285,
+          "n": 47,
+          "nonoverlap_n": 47,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "기술 AI 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 48.92981259055582,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 14.688471525219137,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 48.540587930743776,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 15.367103812787942,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 48.139685298822535,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 16.066097217585185,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 48.25764718702888,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 15.860424878946455,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 47.8609424789104,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 16.552098997666896,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 48.56828105890606,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 15.318819485366909,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 48.22995405886661,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 15.908709206367465,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 52.79367356060607,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 7.951640384511682,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 29.73504066666667,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 48.15549796275472,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 50.65730992424242,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 11.676495182571989,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 51.634582651515146,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 9.972572243033772,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 48.80876462878787,
+          "baseline_mae": 57.35427962121212,
+          "improvement_pct": 14.899524584498048,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "기술 로봇 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 12.095380586943559,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 65.24002391879473,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 10.91038103012793,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 68.645502229714,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 11.481562356130782,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 67.00402852103863,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 11.543084766837216,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 66.8272240369431,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 11.52488383943503,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 66.87953027043511,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 10.931721858704693,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 68.58417247778522,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 11.559229690886209,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 66.78082639201229,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 28.327164106060607,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 18.592760294129818,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 12.663667000000002,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 63.606869675889875,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 27.75898228787879,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 20.225613949937472,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 27.59989137878788,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 20.682812973563614,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 26.207159393939392,
+          "baseline_mae": 34.796861075757576,
+          "improvement_pct": 24.685277396478998,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "기술 사이버보안 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 20.566116538051595,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 54.860630628623255,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 19.496013400107753,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 57.20933757676022,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 19.946090268585547,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 56.22149011542047,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 19.946090268585547,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 56.22149011542047,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 20.044250026426393,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 56.006044989531745,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 19.722477014454746,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 56.712285801415455,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 19.719626654238553,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 56.71854189076524,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 38.595464106060604,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 15.289067475631747,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 13.874808242424239,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 69.54699283877805,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 37.42879743939394,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 17.849716079489585,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 37.80000956060606,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 17.034964250989372,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 35.587049265151514,
+          "baseline_mae": 45.5613731969697,
+          "improvement_pct": 21.89206170037381,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "여가·여행 항공여행 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 25.736814093357648,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 46.77444480104499,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 26.698247112093497,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 44.78613319327571,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 25.863295759831637,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 46.51287175256482,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 25.950409836903592,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 46.332713668468614,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 25.722769667889846,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 46.80348966806942,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 26.565577061049634,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 45.06050425954168,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 26.083079887947452,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 46.058342602202664,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 51.31636382575758,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": -6.125876556043641,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 24.483786795454538,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 49.36579403985976,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 48.23303049242424,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 0.2506752554902847,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 48.4527274621212,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": -0.2036736450858223,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 41.31015888636363,
+          "baseline_mae": 48.354242613636366,
+          "improvement_pct": 14.567664276239201,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "여가·여행 음악축제 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 5.971581497399171,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 10.260580635565674,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 5.365675651187727,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 19.36598074644297,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 5.747128731923026,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 13.633600137575897,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 5.797172685721623,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 12.881552232252547,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 5.569319573610204,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 16.305671285164024,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 5.991753593244408,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 9.957439471151563,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 5.171094743664941,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": 22.29009350754396,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 9.802084454545453,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": -47.30325088842336,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 9.583895818181816,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": -44.024367137490984,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 8.862690515151515,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": -33.18627589404433,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 9.275569303030302,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": -39.390914097218975,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 11.267993545454543,
+          "baseline_mae": 6.654357181818181,
+          "improvement_pct": -69.33256267400678,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "여가·여행 e스포츠 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 21.24537646856218,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -33.72356326663712,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 22.03705630169724,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -38.70658855733096,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 20.75399885498164,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -30.6307131354719,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 20.75399885498164,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -30.6307131354719,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 21.22831561093456,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -33.61617808201935,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 21.698253317183678,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -36.57408022538557,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 21.077577625632284,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -32.66739656505815,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 16.826927856060607,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -5.912773777990021,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 23.280508401515156,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -46.533178299578395,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 17.508746037878794,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -10.20430313298284,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 17.129958159090915,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -7.820120157986854,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 16.932988462121216,
+          "baseline_mae": 15.887533916666667,
+          "improvement_pct": -6.580345010988919,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "소비 블랙프라이데이 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 3.191590863393451,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -478.5559707047563,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 4.186214743259562,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -658.8565195320666,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 3.771412986866797,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -583.663287350455,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 3.785733389678886,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -586.2592198820522,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 3.738840760252373,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -577.7587535322053,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 3.56442329765908,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -546.1412095869798,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 4.407524835279369,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -698.9745298271392,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 0.5773705757575754,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -4.662912074707348,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 4.21407225,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -663.9063920074165,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 0.5860357499999996,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -6.233692450303874,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 0.5608080909090906,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -1.6605458852611221,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 0.5896255530303027,
+          "baseline_mae": 0.5516477272727268,
+          "improvement_pct": -6.884434373605286,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "소비 개학 준비 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 8.036440526141732,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -39.213859305616225,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 8.732201000628693,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -51.266396805341685,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 8.846067566681919,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -53.23888749379799,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 8.966233791058238,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -55.32050606599981,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 8.843369147996693,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -53.1921432569719,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 8.338992290569918,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -44.45491081701125,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 9.377567477629425,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -62.44596786512715,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 5.7954574924242435,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -0.39370058641794436,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 14.77180081060606,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -155.88933222972403,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 5.757578704545455,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": 0.2624670576119703,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 5.772730219696971,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": 0.0,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 6.386366583333333,
+          "baseline_mae": 5.772730219696971,
+          "improvement_pct": -10.629915833284409,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    },
+    {
+      "name": "소비 에어컨 검색",
+      "source": "analogue_report.html",
+      "unit": "검색지수 점",
+      "status": "실행",
+      "candidates": [
+        {
+          "model": "B1",
+          "mae": 9.76004572869715,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -246.67036668421872,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Original50",
+          "mae": 8.27192169202308,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -193.81318549821776,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Equal",
+          "mae": 8.806987563444094,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -212.81837123216772,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Psyche",
+          "mae": 8.817664090140598,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -213.19759439645148,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Reverse",
+          "mae": 8.817321202734373,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -213.18541526264906,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "IndexOnly",
+          "mae": 8.709074208549893,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -209.34055364934113,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "NewsOnly",
+          "mae": 8.42623311526165,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -199.29422515363547,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "History",
+          "mae": 2.922522678030305,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -3.806071876976169,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Raw5",
+          "mae": 12.10474074242424,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -329.95238223681736,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog5",
+          "mae": 3.1130109318181867,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -10.572088617606411,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "News5",
+          "mae": 3.1032465454545464,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -10.225264074440933,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        },
+        {
+          "model": "Analog3",
+          "mae": 2.8565013409090936,
+          "baseline_mae": 2.815367757575759,
+          "improvement_pct": -1.461037664534226,
+          "n": 11,
+          "nonoverlap_n": 4,
+          "interval": null,
+          "passes": false
+        }
+      ]
+    }
+  ]
+}
