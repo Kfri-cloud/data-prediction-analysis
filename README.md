@@ -6,6 +6,9 @@
 
 ## 현재 결과
 
+[10개년 보고서](https://kfri-cloud.github.io/data-prediction-analysis/decade_report.html): 2016~2025년 216회 예측에서 지수 추가 시 오차 2.71% 증가. 2021~2025년만 보면 0.43% 감소하나 확실한 개선은 미확인. 이 확장은 숫자·지수 비교이며 10년 전체 뉴스 실험은 자료 부족으로 미실행입니다. 기존 TimesX와 출처·목표 시점·기준 입력이 다릅니다.
+
+
 TimesX 원·달러 환율의 47개 시점 탐색 실험에서 기존 단어 해시 모델의 평균 절대오차는 기본 모델보다 **5.07% 증가**했습니다. 후속 키워드 8개 주제 모델은 **0.32% 증가**하여 해시 방식보다는 나았지만 숫자 기준선을 개선하지 못했습니다. 전체 맥락 언어모델은 시험하지 않았습니다. 키워드 비교는 이미 본 데이터를 다시 쓴 추가 탐색이며 새 보류 구간이 아닙니다.
 
 [키워드 비교 보고서](https://kfri-cloud.github.io/data-prediction-analysis/keyword_report.html)
@@ -37,7 +40,7 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py test_decade.py
 python run_pilot.py
 python run_keywords.py
 python run_events.py
@@ -55,6 +58,8 @@ python build_report.py
 - [TimesX 고정 버전](https://github.com/haoxin1998/TimesX-project/tree/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b)
 - [Time-MMD 공식 저장소](https://github.com/AdityaLab/Time-MMD)
 - [서울 추정매출 자료](https://data.seoul.go.kr/dataList/OA-22176/S/1/datasetView.do?tab=A)
+
+10개년 실험은 `python fetch_decade.py`, `python run_decade.py`, `python build_decade_report.py` 순서입니다. 원본 응답이 바뀌면 고정 해시 검사를 통과하지 못하므로 기존 실험을 덮어쓰지 마세요.
 
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
 

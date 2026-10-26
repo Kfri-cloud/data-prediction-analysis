@@ -173,6 +173,10 @@ def main():
         from build_market_report import section as market_section
         report = report.replace('</main>', market_section() + '</main>')
         report = report.replace('</ol><p>모든 실험', '<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li></ol><p>모든 실험', 1)
+    if (ROOT / "results/decade_results.json").exists():
+        from build_decade_report import section as decade_section
+        report = report.replace('</main>', decade_section() + '</main>')
+        report = report.replace('</ol><p>모든 실험', '<li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li></ol><p>모든 실험', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))

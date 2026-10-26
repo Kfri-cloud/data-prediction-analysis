@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-26T12:18:37.119922+00:00",
+  "sha256": {
+    "decade_protocol.json": "6b8f0d38e365476c8f2687bca639518b21d6feb5f94e45194a74922a37858ab7",
+    "run_decade.py": "1849ea5c546929d6a86deefa5d4f3e19f38939ff9feca7306abda83151db33bf",
+    "run_market.py": "57b5e52599b0a6898b0248a9dcef0396231545ae5f449f2012fc7dd96f98e4fc",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "data/decade/sp500.json": "f41cc564ba6694804c1437b7a1c92dedd2259b0fc31f98fd87799f7bc81c8256",
+    "data/decade/nasdaq100.json": "828beee0c403013c39800bedcffea338be87e16c76e4f80b2470b61afd9abf41",
+    "data/decade/kospi.json": "fede7dea0fae0a1694b05bdf869755b854ec1aff46ec3889b06ae7d9c7b3f956",
+    "data/decade/kosdaq.json": "7de8770c229f670b1d0c75e9155bc7ba55f951ad9993038d4c9a0a9615af43fc",
+    "data/decade/usdkrw.json": "ef79cf906f34732bec4473fa1292abc60f6f4c3c3a592f89967f8ee15e11466d"
+  }
+}

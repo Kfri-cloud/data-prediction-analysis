@@ -9,3 +9,5 @@ event_protocol.json -text
 results/keyword_predictions.csv -text
 run_market.py -text
 market_protocol.json -text
+run_decade.py -text
+decade_protocol.json -text

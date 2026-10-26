@@ -1,0 +1,12 @@
+{
+  "status": "EXPLORATORY_EXTENSION_NOT_NEWS_VALIDATION",
+  "evaluation": "Ten completed calendar years 2016-2025; 2026 separately. Prior 2011 data warm up features and 2012-2015 samples initialize training.",
+  "target": "USD/KRW mean of next 12 available daily observations divided by last eligible FX close minus one, times 100. Different source and origin schedule from TimesX; earlier scores are not directly comparable.",
+  "schedule": "Every 12th FX observation from the first date in 2012 onward, no target-window overlap. Origin at 00:00 Korea time on that observation date. Training label eligible only after its last bar timestamp plus 48 hours. Complete 2016-2025 assessment requires the target end date within 2025; boundary crossing windows separately disclosed, not assigned to the ten-year total.",
+  "features": "FX own 1/5/20-observation return and 20-return volatility plus month sine/cosine. M adds same four features for each of four stock indices. Use bars timestamp+48h <= cutoff, minimum 21 bars and maximum 14-day stale. No news, investor flow or additional exchange-rate covariates.",
+  "arms": "D0 zero change naive; D1 FX history and month; DM D1 plus four equity indices",
+  "model": "Expanding-history ridge lambda=1, train-only standardization, at least 40 training samples; no tuning",
+  "metrics": "Primary D1-DM paired MAE, 95% descriptive block-bootstrap interval (5000 draws, length 3, seed 20261026); per-year, 2016-2020 versus 2021-2025, and 2026 separately. Also compare against D0.",
+  "news_gap": "Existing TimesX news starts 2023. No fabricated news or zero-filled missing years. Full four-arm news experiment over 10 years remains unexecuted.",
+  "limits": ["Retrospective retrieved prices, not historically verified vintages", "48h is an assumption, not a release-time audit", "2021 split is user-selected, not proof of an AI effect", "Market missingness or stale windows are disclosed", "Prior hypotheses and recent outcomes already explored; not preregistered independent confirmation"]
+}
