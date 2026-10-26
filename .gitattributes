@@ -23,3 +23,7 @@ run_social.py -text
 social_protocol.json -text
 social_catalog.json -text
 results/social_sources.json -text
+run_indicators.py -text
+indicator_protocol.json -text
+fetch_indicators.py -text
+results/indicator_sources.json -text

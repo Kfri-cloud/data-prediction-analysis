@@ -1,0 +1,62 @@
+[
+  {
+    "id": "brent",
+    "name": "브렌트유",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/brent_usd_bbl_96_12_12_10events.json",
+    "sha256": "c4aa1710d2968c52d0ef85ec0e864e60d58b7ed07b473477f1ff52f851847594"
+  },
+  {
+    "id": "gasoline",
+    "name": "휘발유",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/gasoline_usd_gal_96_12_12_10events.json",
+    "sha256": "1586e6dde639024d616c85f22a7adf427e15bed5a936423b3f9c022820f7847c"
+  },
+  {
+    "id": "coal",
+    "name": "석탄",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/coal_usd_t_96_12_12_10events.json",
+    "sha256": "9beccffbe90f9f36b7cdbefd58699dc1cd6abcc866df87aec1f563712cb7733c"
+  },
+  {
+    "id": "gold",
+    "name": "금",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/StrategicAndHighValueMaterials/gold_usd_t_oz_96_12_12_10events.json",
+    "sha256": "61fe81060caadc83afc69f080c6529d4f3772715f67c83a26abb21f427feef67"
+  },
+  {
+    "id": "silver",
+    "name": "은",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/StrategicAndHighValueMaterials/silver_usd_t_oz_96_12_12_10events.json",
+    "sha256": "7ad7d3dde89f294664f8d3097fbf2ee1d98afcd5522f2ebfe7b306e2379802d6"
+  },
+  {
+    "id": "copper",
+    "name": "구리",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/RawMaterialsAndConstruction/copper_usd_lbs_96_12_12_10events.json",
+    "sha256": "e5c5148e0762244c5f7c7ef358478f2190cc56c41395e783e15b85f7ff96b2af"
+  },
+  {
+    "id": "aluminum",
+    "name": "알루미늄",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/RawMaterialsAndConstruction/aluminum_usd_t_96_12_12_10events.json",
+    "sha256": "b3b2011c214912a54bff386c65c7710f39de214cb0fa01766fa0de7b9d4a76d8"
+  },
+  {
+    "id": "corn",
+    "name": "옥수수",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/LivestockAndFoodProducts/corn_usd_bu_96_12_12_10events.json",
+    "sha256": "afa38396ec16e9ca21d292724352330019474cd92337fddd42cc405233777d5d"
+  },
+  {
+    "id": "soybeans",
+    "name": "대두",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/LivestockAndFoodProducts/soybeans_usd_bu_96_12_12_10events.json",
+    "sha256": "721bf55d50e39cd4d0950c69eaa887e8626a8bbfb0be6c6e1f5e1913b3b6c7df"
+  },
+  {
+    "id": "coffee",
+    "name": "커피",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/LivestockAndFoodProducts/coffee_usd_lbs_96_12_12_10events.json",
+    "sha256": "9140653ded339f343c04cb8501d855c2739e50d0dc9f9e3cd4557d203ada6c24"
+  }
+]

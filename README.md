@@ -79,3 +79,7 @@ python build_report.py
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
 
 지수 실험은 별도 `python fetch_market.py`, `python run_market.py`, `python build_market_report.py`를 사용합니다. 공급자 응답이 나중에 달라지면 고정 해시가 일치하지 않아 실행을 거절합니다. 원본 시세 스냅샷은 로컬에만 보존했으므로 새 다운로드로 동일 결과가 재현된다고 보장하지 않습니다. 고정 실험을 재튜닝하거나 해시 검사를 우회해서는 안 됩니다.
+
+## 상품 지표 10개로 확장
+
+[50:50 비교 보고서](https://kfri-cloud.github.io/data-prediction-analysis/indicator_report.html): 10개 상품을 별도 학습했습니다. 석탄과 대두만 B1 대비 평균 오차가 줄었고 실전 타당성은 모두 미입증입니다. `python fetch_indicators.py`, `python run_indicators.py`, `python build_indicator_report.py`로 실행합니다. 기존 지수 원본 스냅샷과 고정 의존 코드가 필요하며, 뉴스 공개시각은 검증되지 않았습니다.

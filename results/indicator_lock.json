@@ -1,0 +1,28 @@
+{
+  "frozen_at": "2026-10-26T12:50:16.295402+00:00",
+  "sha256": {
+    "run_indicators.py": "c07175d8730626cc161f7d47cda860d6b01cecafd5d1e855f776a8749bfa50e0",
+    "indicator_protocol.json": "41971abb4105e0cd726ba41444f2cf25e88726106a0c466a9fde38f0031078af",
+    "fetch_indicators.py": "5a85ed1f8712062e67bf5e3fb230f9fdc4a3ee1e29e4e738f98642163789df6b",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "run_events.py": "93b6e1ba1c9145ff661467aa5ad8b73ad8200f7e1ba1715e5578af6bb9e60038",
+    "run_keywords.py": "32a5a35ba5c5d551c8d64dc97c6e586ec23d99b21ebc4ed9e3f36cbbb0c30799",
+    "run_market.py": "57b5e52599b0a6898b0248a9dcef0396231545ae5f449f2012fc7dd96f98e4fc",
+    "keyword_dictionary.json": "a526e9e60183e6de2fbd3945140a59e29d401be6431730e951bdc1fbcb4e07eb",
+    "results/indicator_sources.json": "acf53624761324549cf89da212f082c0cfaa734c6c4e423538c699f56da825f8",
+    "data/indicators/brent.json": "c4aa1710d2968c52d0ef85ec0e864e60d58b7ed07b473477f1ff52f851847594",
+    "data/indicators/gasoline.json": "1586e6dde639024d616c85f22a7adf427e15bed5a936423b3f9c022820f7847c",
+    "data/indicators/coal.json": "9beccffbe90f9f36b7cdbefd58699dc1cd6abcc866df87aec1f563712cb7733c",
+    "data/indicators/gold.json": "61fe81060caadc83afc69f080c6529d4f3772715f67c83a26abb21f427feef67",
+    "data/indicators/silver.json": "7ad7d3dde89f294664f8d3097fbf2ee1d98afcd5522f2ebfe7b306e2379802d6",
+    "data/indicators/copper.json": "e5c5148e0762244c5f7c7ef358478f2190cc56c41395e783e15b85f7ff96b2af",
+    "data/indicators/aluminum.json": "b3b2011c214912a54bff386c65c7710f39de214cb0fa01766fa0de7b9d4a76d8",
+    "data/indicators/corn.json": "afa38396ec16e9ca21d292724352330019474cd92337fddd42cc405233777d5d",
+    "data/indicators/soybeans.json": "721bf55d50e39cd4d0950c69eaa887e8626a8bbfb0be6c6e1f5e1913b3b6c7df",
+    "data/indicators/coffee.json": "9140653ded339f343c04cb8501d855c2739e50d0dc9f9e3cd4557d203ada6c24",
+    "data/market/sp500.json": "c1a5e7daec188f62009e689bdaf90a96e589c4aeb5f5309dd153c57409bbb114",
+    "data/market/nasdaq100.json": "ef056c2ed0598b3764f6f99e08d6b783a37bb5cc7aa84f089995799ab6f922dd",
+    "data/market/kospi.json": "42fc51eda70c6b04cbd02f70296db9a2e379e8cf69f02553599e68790a7294ab",
+    "data/market/kosdaq.json": "dab0b38a69f894994b4e401857a96c7fb1e8f3cf7ca9db4ced82a64016c9091b"
+  }
+}

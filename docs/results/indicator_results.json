@@ -1,0 +1,925 @@
+{
+  "status": "EXPLORATORY_TRANSFER_NOT_LIVE",
+  "results": [
+    {
+      "id": "brent",
+      "name": "브렌트유",
+      "samples": 65,
+      "first": "2024-01-02",
+      "last": "2026-03-03",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 3.0833158333521364,
+          "B1": 3.437132276063744,
+          "M": 3.468653213822772,
+          "Sdir": 3.60402464590299,
+          "Cavg": 3.5036646714174444
+        },
+        "improvement_pct": -1.9356949343216634,
+        "versus_M_pct": -1.009367481740453,
+        "versus_Sdir_pct": 2.7846639339615398,
+        "direction_hits": 19,
+        "paired_delta_pp": -0.06653239535370102,
+        "descriptive_interval_pp": [
+          -0.20509386084774334,
+          0.06379700275765608
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 2.094392893471347,
+            "B1": 2.3519570853169216,
+            "M": 2.2316639940849767,
+            "Sdir": 2.3393809957413634,
+            "Cavg": 2.2142332037594894
+          },
+          "improvement_pct": 5.855714052659855,
+          "versus_M_pct": 0.7810669693864125,
+          "versus_Sdir_pct": 5.3496113805188035,
+          "direction_hits": 13,
+          "paired_delta_pp": 0.13772388155743168,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 3.234984063340137,
+            "B1": 3.547178869611402,
+            "M": 3.62865138600465,
+            "Sdir": 3.8960660381737076,
+            "Cavg": 3.7623587120891786
+          },
+          "improvement_pct": -6.066224748946758,
+          "versus_M_pct": -3.684766373540982,
+          "versus_Sdir_pct": 3.4318547163847524,
+          "direction_hits": 6,
+          "paired_delta_pp": -0.21517984247777708,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 7.68821673776247,
+            "B1": 8.80033956065914,
+            "M": 9.392103975380316,
+            "Sdir": 8.95333706430299,
+            "Cavg": 9.172720519841654
+          },
+          "improvement_pct": -4.231438532749343,
+          "versus_M_pct": 2.3358286504678305,
+          "versus_Sdir_pct": -2.450298184498667,
+          "direction_hits": 0,
+          "paired_delta_pp": -0.37238095918251246,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "brent",
+        "date": "2026-03-03",
+        "target_end": "2026-03-18",
+        "training_n": 64,
+        "latest_train_target": "2026-03-02T00:00:00",
+        "actual": 21.585841694537343,
+        "B0": 0.0,
+        "B1": -2.7378068715426647,
+        "M": -3.2641679746711447,
+        "Sdir": -2.6541008084703925,
+        "Cavg": -2.9591343915707684
+      }
+    },
+    {
+      "id": "gasoline",
+      "name": "휘발유",
+      "samples": 73,
+      "first": "2024-01-12",
+      "last": "2026-03-06",
+      "summary": {
+        "n": 52,
+        "mae_pp": {
+          "B0": 2.553781300378899,
+          "B1": 2.8980026634971017,
+          "M": 3.023555980642782,
+          "Sdir": 2.844030533911099,
+          "Cavg": 2.931628084718127
+        },
+        "improvement_pct": -1.160296422241669,
+        "versus_M_pct": 3.040390074243371,
+        "versus_Sdir_pct": -3.0800495902751246,
+        "direction_hits": 26,
+        "paired_delta_pp": -0.03362542122102536,
+        "descriptive_interval_pp": [
+          -0.15784536067474947,
+          0.07879530043558045
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 25,
+          "mae_pp": {
+            "B0": 1.9175168567385463,
+            "B1": 2.3906032963044797,
+            "M": 2.6747837791361566,
+            "Sdir": 2.3891357613096336,
+            "Cavg": 2.5319597702228953
+          },
+          "improvement_pct": -5.913004225206753,
+          "versus_M_pct": 5.339646891360594,
+          "versus_Sdir_pct": -5.978061658370182,
+          "direction_hits": 11,
+          "paired_delta_pp": -0.1413564739184155,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 23,
+          "mae_pp": {
+            "B0": 2.3564431835185218,
+            "B1": 2.6289915415692535,
+            "M": 2.5707722992485595,
+            "Sdir": 2.506302140086056,
+            "Cavg": 2.533642046925641
+          },
+          "improvement_pct": 3.6268467637099344,
+          "versus_M_pct": 1.4443228726936153,
+          "versus_Sdir_pct": -1.090846406836099,
+          "direction_hits": 13,
+          "paired_delta_pp": 0.09534949464361236,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 7.665128245078268,
+            "B1": 7.616062659536112,
+            "M": 7.8068884080759755,
+            "Sdir": 7.629061127164256,
+            "Cavg": 7.717974767620115
+          },
+          "improvement_pct": -1.3381206620772579,
+          "versus_M_pct": 1.1389126603101207,
+          "versus_Sdir_pct": -1.1654597987066806,
+          "direction_hits": 2,
+          "paired_delta_pp": -0.10191210808400375,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "gasoline",
+        "date": "2026-03-06",
+        "target_end": "2026-03-23",
+        "training_n": 72,
+        "latest_train_target": "2026-03-05T00:00:00",
+        "actual": 12.335522153900659,
+        "B0": 0.0,
+        "B1": 0.18411828887006923,
+        "M": 0.702635884944091,
+        "Sdir": 0.5260681926748848,
+        "Cavg": 0.6143520388094879
+      }
+    },
+    {
+      "id": "coal",
+      "name": "석탄",
+      "samples": 83,
+      "first": "2024-01-02",
+      "last": "2026-03-11",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 2.8670163663364647,
+          "B1": 3.447446792296418,
+          "M": 3.3197237220037423,
+          "Sdir": 3.549254709236166,
+          "Cavg": 3.3798345703908517
+        },
+        "improvement_pct": 1.9612259732811888,
+        "versus_M_pct": -1.8107184037238877,
+        "versus_Sdir_pct": 4.773400410075823,
+        "direction_hits": 21,
+        "paired_delta_pp": 0.06761222190556557,
+        "descriptive_interval_pp": [
+          -0.19039170567838387,
+          0.3205415376322752
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 3.312694056696988,
+            "B1": 4.01321224378284,
+            "M": 4.240176086511965,
+            "Sdir": 4.17521525578377,
+            "Cavg": 4.10865535058385
+          },
+          "improvement_pct": -2.378222256968021,
+          "versus_M_pct": 3.10177533302175,
+          "versus_Sdir_pct": 1.594167033848548,
+          "direction_hits": 9,
+          "paired_delta_pp": -0.09544310680100883,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 21,
+          "mae_pp": {
+            "B0": 2.1832416591388673,
+            "B1": 2.641826830241103,
+            "M": 2.3960254303255213,
+            "Sdir": 2.5814335141291207,
+            "Cavg": 2.4675610951516793
+          },
+          "improvement_pct": 6.596410222448967,
+          "versus_M_pct": -2.9855970608976046,
+          "versus_Sdir_pct": 4.411208669685907,
+          "direction_hits": 10,
+          "paired_delta_pp": 0.17426573508942372,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 5,
+          "mae_pp": {
+            "B0": 3.777888298980072,
+            "B1": 4.341682646388477,
+            "M": 3.1492661432160878,
+            "Sdir": 4.85987732387629,
+            "Cavg": 4.004571733546189
+          },
+          "improvement_pct": 7.764522197924939,
+          "versus_M_pct": -27.15888563983504,
+          "versus_Sdir_pct": 17.599324701634668,
+          "direction_hits": 2,
+          "paired_delta_pp": 0.3371109128422885,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "coal",
+        "date": "2026-03-11",
+        "target_end": "2026-03-26",
+        "training_n": 82,
+        "latest_train_target": "2026-03-10T00:00:00",
+        "actual": 6.251589117721834,
+        "B0": 0.0,
+        "B1": -1.1919246478724774,
+        "M": 2.7859406849206523,
+        "Sdir": 0.9350030729428045,
+        "Cavg": 1.8604718789317283
+      }
+    },
+    {
+      "id": "gold",
+      "name": "금",
+      "samples": 68,
+      "first": "2024-01-05",
+      "last": "2026-03-12",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 2.0233155414237616,
+          "B1": 1.9882494133149524,
+          "M": 2.0354196457756295,
+          "Sdir": 2.0060260763046838,
+          "Cavg": 1.9912154926567567
+        },
+        "improvement_pct": -0.14918044597125313,
+        "versus_M_pct": 2.1717464116363105,
+        "versus_Sdir_pct": 0.7383046423409256,
+        "direction_hits": 31,
+        "paired_delta_pp": -0.002966079341804611,
+        "descriptive_interval_pp": [
+          -0.11827335818362142,
+          0.06422986082161894
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 1.5114659440981193,
+            "B1": 1.6087467806966662,
+            "M": 1.6743928150188407,
+            "Sdir": 1.5787847980072451,
+            "Cavg": 1.5873751754706056
+          },
+          "improvement_pct": 1.3284629677273174,
+          "versus_M_pct": 5.196966850771878,
+          "versus_Sdir_pct": -0.5441132619343314,
+          "direction_hits": 14,
+          "paired_delta_pp": 0.02137160522606064,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 21,
+          "mae_pp": {
+            "B0": 1.8000136091430066,
+            "B1": 1.5690904374298613,
+            "M": 1.696473291158065,
+            "Sdir": 1.628223052902208,
+            "Cavg": 1.6359837053887287
+          },
+          "improvement_pct": -4.263187536114055,
+          "versus_M_pct": 3.5656079046222033,
+          "versus_Sdir_pct": -0.4766332519790861,
+          "direction_hits": 14,
+          "paired_delta_pp": -0.0668932679588677,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 5,
+          "mae_pp": {
+            "B0": 5.213321885235762,
+            "B1": 5.418528695552794,
+            "M": 5.047512390499273,
+            "Sdir": 5.47266039910381,
+            "Cavg": 5.260086394801541
+          },
+          "improvement_pct": 2.9240834487283096,
+          "versus_M_pct": -4.211460772288289,
+          "versus_Sdir_pct": 3.8842900673515146,
+          "direction_hits": 3,
+          "paired_delta_pp": 0.1584423007512532,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "gold",
+        "date": "2026-03-12",
+        "target_end": "2026-03-27",
+        "training_n": 67,
+        "latest_train_target": "2026-03-11T00:00:00",
+        "actual": -9.323728159088706,
+        "B0": 0.0,
+        "B1": 3.565004103753586,
+        "M": 2.359737178699029,
+        "Sdir": 3.3218489161352913,
+        "Cavg": 2.84079304741716
+      }
+    },
+    {
+      "id": "silver",
+      "name": "은",
+      "samples": 68,
+      "first": "2024-01-05",
+      "last": "2026-03-09",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 3.9228767922502747,
+          "B1": 3.7647924457156976,
+          "M": 3.937725793401089,
+          "Sdir": 4.072068958555957,
+          "Cavg": 3.9743523671862886
+        },
+        "improvement_pct": -5.566307425767092,
+        "versus_M_pct": -0.9301453607201138,
+        "versus_Sdir_pct": 2.3996791892326175,
+        "direction_hits": 28,
+        "paired_delta_pp": -0.20955992147059066,
+        "descriptive_interval_pp": [
+          -0.4409485083323315,
+          0.0789808715376678
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 3.6091479734325134,
+            "B1": 3.637690427612864,
+            "M": 3.676840968449803,
+            "Sdir": 4.128402713344713,
+            "Cavg": 3.835978185350564
+          },
+          "improvement_pct": -5.450924472092078,
+          "versus_M_pct": -4.328096272487292,
+          "versus_Sdir_pct": 7.083236503282775,
+          "direction_hits": 12,
+          "paired_delta_pp": -0.19828775773769997,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 3.658435734281482,
+            "B1": 2.971455045435045,
+            "M": 3.3672522155951117,
+            "Sdir": 3.11347864616434,
+            "Cavg": 3.2403654308797267
+          },
+          "improvement_pct": -9.049788111645874,
+          "versus_M_pct": 3.768259001441021,
+          "versus_Sdir_pct": -4.075402440023335,
+          "direction_hits": 13,
+          "paired_delta_pp": -0.26891038544468165,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 7.102811114576321,
+            "B1": 8.827209246824879,
+            "M": 8.510197008566035,
+            "Sdir": 9.0344800253717,
+            "Cavg": 8.772338516968865
+          },
+          "improvement_pct": 0.6216090309148381,
+          "versus_M_pct": -3.0803224430523635,
+          "versus_Sdir_pct": 2.9015671922087094,
+          "direction_hits": 3,
+          "paired_delta_pp": 0.054870729856010936,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "silver",
+        "date": "2026-03-09",
+        "target_end": "2026-03-24",
+        "training_n": 67,
+        "latest_train_target": "2026-03-06T00:00:00",
+        "actual": -6.968654026300502,
+        "B0": 0.0,
+        "B1": 8.735455745229501,
+        "M": 10.20087680263576,
+        "Sdir": 8.876524545789465,
+        "Cavg": 9.538700674212613
+      }
+    },
+    {
+      "id": "copper",
+      "name": "구리",
+      "samples": 67,
+      "first": "2024-01-03",
+      "last": "2026-03-03",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 2.611520353270503,
+          "B1": 3.048934201071502,
+          "M": 3.055885887281619,
+          "Sdir": 3.1001537069270633,
+          "Cavg": 3.0513881977282105
+        },
+        "improvement_pct": -0.08048703234875276,
+        "versus_M_pct": 0.14718120110857047,
+        "versus_Sdir_pct": 1.5730029478825514,
+        "direction_hits": 23,
+        "paired_delta_pp": -0.0024539966567089047,
+        "descriptive_interval_pp": [
+          -0.21067451765606854,
+          0.2463855841032795
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 2.0450763429023144,
+            "B1": 2.7276389947072,
+            "M": 2.4336562216657707,
+            "Sdir": 2.6376943069584162,
+            "Cavg": 2.489329159175041
+          },
+          "improvement_pct": 8.736853960314516,
+          "versus_M_pct": -2.2876253849511974,
+          "versus_Sdir_pct": 5.624804488980317,
+          "direction_hits": 10,
+          "paired_delta_pp": 0.23830983553215931,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 3.4186397494622254,
+            "B1": 3.732551549740037,
+            "M": 3.9185314549980075,
+            "Sdir": 3.933682248121241,
+            "Cavg": 3.9162024096656127
+          },
+          "improvement_pct": -4.920249793693188,
+          "versus_M_pct": 0.05943668844163863,
+          "versus_Sdir_pct": 0.44436325440309066,
+          "direction_hits": 10,
+          "paired_delta_pp": -0.18365085992557625,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 1.2878057312410707,
+            "B1": 1.0561624183982246,
+            "M": 1.733598425728645,
+            "Sdir": 1.0592734301866402,
+            "Cavg": 1.3862347441149385
+          },
+          "improvement_pct": -31.2520422964208,
+          "versus_M_pct": 20.037147961051403,
+          "versus_Sdir_pct": -30.866564251563354,
+          "direction_hits": 3,
+          "paired_delta_pp": -0.3300723257167141,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "copper",
+        "date": "2026-03-03",
+        "target_end": "2026-03-18",
+        "training_n": 66,
+        "latest_train_target": "2026-03-02T00:00:00",
+        "actual": -2.029434218339121,
+        "B0": 0.0,
+        "B1": 0.2527028377264986,
+        "M": 1.3078678744712295,
+        "Sdir": 0.4995830839662116,
+        "Cavg": 0.9037254792187206
+      }
+    },
+    {
+      "id": "aluminum",
+      "name": "알루미늄",
+      "samples": 53,
+      "first": "2024-06-26",
+      "last": "2026-03-10",
+      "summary": {
+        "n": 37,
+        "mae_pp": {
+          "B0": 1.9127193106157243,
+          "B1": 1.9462465555128075,
+          "M": 2.0112626990450764,
+          "Sdir": 1.983437993978755,
+          "Cavg": 1.971388836261855
+        },
+        "improvement_pct": -1.2918343093700546,
+        "versus_M_pct": 1.9825288264010976,
+        "versus_Sdir_pct": 0.6074884999419328,
+        "direction_hits": 19,
+        "paired_delta_pp": -0.025142280749047886,
+        "descriptive_interval_pp": [
+          -0.12418965766702147,
+          0.08470067759018304
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 11,
+          "mae_pp": {
+            "B0": 2.381562731636513,
+            "B1": 2.127628608287583,
+            "M": 2.0378499958348257,
+            "Sdir": 2.1433524007190097,
+            "Cavg": 2.0595767525984328
+          },
+          "improvement_pct": 3.198483768458149,
+          "versus_M_pct": -1.0661607482402857,
+          "versus_Sdir_pct": 3.9086268824703563,
+          "direction_hits": 6,
+          "paired_delta_pp": 0.06805185568915074,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 1.6860606148644601,
+            "B1": 1.8429584174635687,
+            "M": 1.9366807464632565,
+            "Sdir": 1.9297547044156722,
+            "Cavg": 1.9050674083126964
+          },
+          "improvement_pct": -3.3700701144742773,
+          "versus_M_pct": 1.632346384828376,
+          "versus_Sdir_pct": 1.2792971068543713,
+          "direction_hits": 11,
+          "paired_delta_pp": -0.06210899084912792,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 1.8700227294405125,
+            "B1": 2.0155306696529895,
+            "M": 2.348348372073276,
+            "Sdir": 1.8389314680400106,
+            "Cavg": 2.0936399200566433
+          },
+          "improvement_pct": -3.875368982457683,
+          "versus_M_pct": 10.846280519774808,
+          "versus_Sdir_pct": -13.850894198254649,
+          "direction_hits": 2,
+          "paired_delta_pp": -0.07810925040365396,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "aluminum",
+        "date": "2026-03-10",
+        "target_end": "2026-03-25",
+        "training_n": 52,
+        "latest_train_target": "2026-03-09T00:00:00",
+        "actual": -1.254807526579893,
+        "B0": 0.0,
+        "B1": 0.06843693953258645,
+        "M": 1.5086187064950758,
+        "Sdir": -0.25811224569738744,
+        "Cavg": 0.6252532303988442
+      }
+    },
+    {
+      "id": "corn",
+      "name": "옥수수",
+      "samples": 83,
+      "first": "2024-01-03",
+      "last": "2026-03-10",
+      "summary": {
+        "n": 48,
+        "mae_pp": {
+          "B0": 2.1793755270602575,
+          "B1": 2.2728864242652285,
+          "M": 2.463326430243796,
+          "Sdir": 2.302288231582318,
+          "Cavg": 2.3575492454341016
+        },
+        "improvement_pct": -3.72490328883206,
+        "versus_M_pct": 4.294079075797752,
+        "versus_Sdir_pct": -2.400264792814566,
+        "direction_hits": 22,
+        "paired_delta_pp": -0.08466282116887325,
+        "descriptive_interval_pp": [
+          -0.26328759833215354,
+          0.07106705004317472
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 2.4855555983737,
+            "B1": 2.4008874276868157,
+            "M": 2.6767367359385017,
+            "Sdir": 2.4368296163950314,
+            "Cavg": 2.536634955857409
+          },
+          "improvement_pct": -5.65405635454479,
+          "versus_M_pct": 5.234051529986228,
+          "versus_Sdir_pct": -4.095704467431194,
+          "direction_hits": 11,
+          "paired_delta_pp": -0.13574752817059332,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 21,
+          "mae_pp": {
+            "B0": 1.9527039342539874,
+            "B1": 2.262478719503137,
+            "M": 2.396886262447905,
+            "Sdir": 2.254113335273236,
+            "Cavg": 2.314837719048591
+          },
+          "improvement_pct": -2.314231691732904,
+          "versus_M_pct": 3.4231304457274847,
+          "versus_Sdir_pct": -2.693936583627643,
+          "direction_hits": 7,
+          "paired_delta_pp": -0.052358999545454615,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 5,
+          "mae_pp": {
+            "B0": 1.784203903067445,
+            "B1": 1.7533943692110294,
+            "M": 1.8033697899298353,
+            "Sdir": 1.9126407029045212,
+            "Cavg": 1.7489605303906923
+          },
+          "improvement_pct": 0.25287173828054677,
+          "versus_M_pct": 3.017088333350637,
+          "versus_Sdir_pct": 8.557810793489097,
+          "direction_hits": 4,
+          "paired_delta_pp": 0.0044338388203369,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "corn",
+        "date": "2026-03-10",
+        "target_end": "2026-03-25",
+        "training_n": 82,
+        "latest_train_target": "2026-03-09T00:00:00",
+        "actual": 4.814140505011499,
+        "B0": 0.0,
+        "B1": -0.8725235219465413,
+        "M": 0.11416553921317282,
+        "Sdir": 0.02269961050740993,
+        "Cavg": 0.06843257486029138
+      }
+    },
+    {
+      "id": "soybeans",
+      "name": "대두",
+      "samples": 82,
+      "first": "2024-01-08",
+      "last": "2026-02-27",
+      "summary": {
+        "n": 47,
+        "mae_pp": {
+          "B0": 1.7604000867940441,
+          "B1": 1.9463923121023459,
+          "M": 1.997884396256367,
+          "Sdir": 1.8895460486418354,
+          "Cavg": 1.921021161885937
+        },
+        "improvement_pct": 1.303496220091671,
+        "versus_M_pct": 3.8472313270205394,
+        "versus_Sdir_pct": -1.6657499967637879,
+        "direction_hits": 21,
+        "paired_delta_pp": 0.025371150216408664,
+        "descriptive_interval_pp": [
+          -0.07836410835857673,
+          0.12311991836812682
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 21,
+          "mae_pp": {
+            "B0": 1.5728156856764903,
+            "B1": 1.7153429712461699,
+            "M": 1.8222604937439333,
+            "Sdir": 1.6371695283043537,
+            "Cavg": 1.7227580750024085
+          },
+          "improvement_pct": -0.43228111698569993,
+          "versus_M_pct": 5.460383906863486,
+          "versus_Sdir_pct": -5.227836532402397,
+          "direction_hits": 10,
+          "paired_delta_pp": -0.007415103756238757,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 1.9977839210696606,
+            "B1": 2.2472639130115875,
+            "M": 2.246822323733741,
+            "Sdir": 2.219975835400573,
+            "Cavg": 2.1915570254756886
+          },
+          "improvement_pct": 2.4788760774094087,
+          "versus_M_pct": 2.4597093270024684,
+          "versus_Sdir_pct": 1.2801405074644223,
+          "direction_hits": 9,
+          "paired_delta_pp": 0.05570688753589898,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 1.4396071041453102,
+            "B1": 1.5046075465964381,
+            "M": 1.5507512833210932,
+            "Sdir": 1.3971589532405613,
+            "Cavg": 1.4739551182808275
+          },
+          "improvement_pct": 2.0372374434083684,
+          "versus_M_pct": 4.952190971320613,
+          "versus_Sdir_pct": -5.496594704714575,
+          "direction_hits": 2,
+          "paired_delta_pp": 0.03065242831561084,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "soybeans",
+        "date": "2026-02-27",
+        "target_end": "2026-03-16",
+        "training_n": 81,
+        "latest_train_target": "2026-02-26T00:00:00",
+        "actual": 2.8000936247913666,
+        "B0": 0.0,
+        "B1": -0.16043943857101348,
+        "M": 0.11279196299626659,
+        "Sdir": 0.1734138921416677,
+        "Cavg": 0.14310292756896714
+      }
+    },
+    {
+      "id": "coffee",
+      "name": "커피",
+      "samples": 66,
+      "first": "2024-01-10",
+      "last": "2026-02-27",
+      "summary": {
+        "n": 49,
+        "mae_pp": {
+          "B0": 3.625760601876343,
+          "B1": 4.036578004348677,
+          "M": 4.374058980845661,
+          "Sdir": 4.380069340301999,
+          "Cavg": 4.295780816208269
+        },
+        "improvement_pct": -6.421350252128111,
+        "versus_M_pct": 1.7896001169663833,
+        "versus_Sdir_pct": 1.9243650624014674,
+        "direction_hits": 22,
+        "paired_delta_pp": -0.2592028118595908,
+        "descriptive_interval_pp": [
+          -0.5406384808747008,
+          -0.018754541754590747
+        ]
+      },
+      "years": {
+        "2024": {
+          "n": 23,
+          "mae_pp": {
+            "B0": 2.7769083356801705,
+            "B1": 3.5360799418434583,
+            "M": 3.8491677097237726,
+            "Sdir": 3.6567192951590752,
+            "Cavg": 3.6944978550585366
+          },
+          "improvement_pct": -4.480043319735882,
+          "versus_M_pct": 4.018267488696559,
+          "versus_Sdir_pct": -1.033127151692348,
+          "direction_hits": 9,
+          "paired_delta_pp": -0.15841791321507842,
+          "descriptive_interval_pp": null
+        },
+        "2025": {
+          "n": 22,
+          "mae_pp": {
+            "B0": 4.430987287545688,
+            "B1": 4.3960167915585195,
+            "M": 4.7465233954349095,
+            "Sdir": 5.088547657184015,
+            "Cavg": 4.797597617941005
+          },
+          "improvement_pct": -9.135106743760012,
+          "versus_M_pct": -1.0760343571721842,
+          "versus_Sdir_pct": 5.7177422487582845,
+          "direction_hits": 11,
+          "paired_delta_pp": -0.4015808263824845,
+          "descriptive_interval_pp": null
+        },
+        "2026": {
+          "n": 4,
+          "mae_pp": {
+            "B0": 4.077914361322948,
+            "B1": 4.937528534099558,
+            "M": 5.3436295095556385,
+            "Sdir": 4.642701357022722,
+            "Cavg": 4.99316543328918
+          },
+          "improvement_pct": -1.1268167627869419,
+          "versus_M_pct": 6.558539951913733,
+          "versus_Sdir_pct": -7.548710315737472,
+          "direction_hits": 2,
+          "paired_delta_pp": -0.05563689918962142,
+          "descriptive_interval_pp": null
+        }
+      },
+      "numerical_screen_pass": false,
+      "provenance_verified": false,
+      "validity": "EXPLORATORY_NOT_VALIDATED",
+      "latest_replay": {
+        "indicator": "coffee",
+        "date": "2026-02-27",
+        "target_end": "2026-03-16",
+        "training_n": 65,
+        "latest_train_target": "2026-02-26T00:00:00",
+        "actual": 2.8746840078646807,
+        "B0": 0.0,
+        "B1": -2.646388186903118,
+        "M": -3.848887039223875,
+        "Sdir": -2.6317980921974,
+        "Cavg": -3.2403425657106375
+      }
+    }
+  ]
+}

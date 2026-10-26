@@ -1,0 +1,12 @@
+{
+  "selection": "Ten liquid commodity benchmarks with numeric covariates and event summaries; selected before inspecting their predictive results, not a verified ranking of dataset abundance",
+  "target": "100*(mean(next 12 observations)/last historical value-1)",
+  "evaluation": "2024-01-01 <= origin < 2026-04-01; >=16 completed earlier training targets",
+  "models": "Existing frozen B1, M and Sdir definitions; Cavg=0.5*M+0.5*Sdir; train each commodity separately",
+  "dictionary": "Existing eight macro topics transferred unchanged; commodity-specific extraction accuracy unmeasured",
+  "regularization": "train-only standardization, mean-loss ridge lambda=1",
+  "primary": "Cavg MAE versus B1; also compare M, Sdir and zero change",
+  "uncertainty": "5000 moving-block bootstrap replicates length3, descriptive 95% intervals; no multiple-testing correction; no validity probability",
+  "gates": ">=5% overall improvement, positive descriptive interval lower bound, improvement in both 2024 and 2025 are screening only; provenance and independent prospective validation still required",
+  "current_forecast": false
+}
