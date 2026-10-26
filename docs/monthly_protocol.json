@@ -1,0 +1,9 @@
+{
+  "type": "Monthly regrouping of the frozen decade method, not a new monthly-horizon model",
+  "months": "2025-10 through 2026-10 inclusive (13 months)",
+  "assignment": "Group by forecast origin month. A 12-observation target may end in the following month.",
+  "models": "Unchanged D0/D1/DM decade models, same 2012-anchored every-12-FX-observation schedule, same training labels available after final target timestamp +48h",
+  "boundary": "Restore 2025-12-19 origin excluded only by the prior completed-year reporting boundary. Confirm all other recomputed predictions match saved decade predictions. No tuning.",
+  "partial_month": "2026-10 is incomplete; include only fully observed, matured target windows and list pending origins separately. Do not invent remaining October/November values.",
+  "interpretation": "One or two forecasts per month generally cannot establish stable monthly accuracy. MAE is not monthly market return. No significance tests at monthly granularity; no news or current forecast claims."
+}

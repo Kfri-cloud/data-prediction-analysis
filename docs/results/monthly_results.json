@@ -1,0 +1,259 @@
+{
+  "status": "DESCRIPTIVE_MONTHLY_GROUPING",
+  "snapshot_asof_utc": "2026-10-26T12:17:53.687943+00:00",
+  "months": {
+    "2025-10": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 0.4607244602036209,
+        "D1": 0.37628353867568987,
+        "DM": 0.5241811780579249
+      },
+      "index_improvement_pct": -39.304839085640836,
+      "direction_hits": {
+        "D1": 2,
+        "DM": 1
+      },
+      "first_origin": "2025-10-13",
+      "last_target_end": "2025-11-14",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2025-11": {
+      "n": 1,
+      "mae_pp": {
+        "D0": 0.25577700256456115,
+        "D1": 0.401938228837464,
+        "DM": 0.8585834289975489
+      },
+      "index_improvement_pct": -113.61079076276255,
+      "direction_hits": {
+        "D1": 0,
+        "DM": 0
+      },
+      "first_origin": "2025-11-17",
+      "last_target_end": "2025-12-02",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2025-12": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 0.7771969672710433,
+        "D1": 0.7499036591715926,
+        "DM": 0.9293241655056723
+      },
+      "index_improvement_pct": -23.925807554037387,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 1
+      },
+      "first_origin": "2025-12-03",
+      "last_target_end": "2026-01-07",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-01": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 1.3437085142245675,
+        "D1": 1.33323567520384,
+        "DM": 1.5000383720553343
+      },
+      "index_improvement_pct": -12.511118623194038,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 0
+      },
+      "first_origin": "2026-01-08",
+      "last_target_end": "2026-02-10",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-02": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 1.8769092246825991,
+        "D1": 1.8015199852926536,
+        "DM": 1.9077423236900888
+      },
+      "index_improvement_pct": -5.896262004563863,
+      "direction_hits": {
+        "D1": 2,
+        "DM": 1
+      },
+      "first_origin": "2026-02-11",
+      "last_target_end": "2026-03-16",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-03": {
+      "n": 1,
+      "mae_pp": {
+        "D0": 1.952746955650575,
+        "D1": 1.7905893002894417,
+        "DM": 2.143971274800705
+      },
+      "index_improvement_pct": -19.73551246252507,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 0
+      },
+      "first_origin": "2026-03-17",
+      "last_target_end": "2026-03-31",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-04": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 0.6909923113653904,
+        "D1": 0.684005598210145,
+        "DM": 0.5524122299137249
+      },
+      "index_improvement_pct": 19.23863907558123,
+      "direction_hits": {
+        "D1": 2,
+        "DM": 1
+      },
+      "first_origin": "2026-04-01",
+      "last_target_end": "2026-05-04",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-05": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 0.8828846824523673,
+        "D1": 0.7796902781203938,
+        "DM": 0.6322905853159126
+      },
+      "index_improvement_pct": 18.9049032597686,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 2
+      },
+      "first_origin": "2026-05-05",
+      "last_target_end": "2026-06-07",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-06": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 0.40839838356676594,
+        "D1": 0.38532504786758714,
+        "DM": 0.6165212076043033
+      },
+      "index_improvement_pct": -60.00029352261684,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 1
+      },
+      "first_origin": "2026-06-08",
+      "last_target_end": "2026-07-09",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-07": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 2.4164103402375736,
+        "D1": 2.550171013785747,
+        "DM": 2.3115084530429133
+      },
+      "index_improvement_pct": 9.358688474328526,
+      "direction_hits": {
+        "D1": 0,
+        "DM": 1
+      },
+      "first_origin": "2026-07-12",
+      "last_target_end": "2026-08-12",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-08": {
+      "n": 2,
+      "mae_pp": {
+        "D0": 1.4946656180464146,
+        "D1": 1.5563327436204912,
+        "DM": 1.4257027385822203
+      },
+      "index_improvement_pct": 8.393449638178712,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 1
+      },
+      "first_origin": "2026-08-13",
+      "last_target_end": "2026-09-15",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-09": {
+      "n": 1,
+      "mae_pp": {
+        "D0": 1.229132087835949,
+        "D1": 1.432882367085295,
+        "DM": 1.5542233750655354
+      },
+      "index_improvement_pct": -8.46831608564399,
+      "direction_hits": {
+        "D1": 0,
+        "DM": 0
+      },
+      "first_origin": "2026-09-16",
+      "last_target_end": "2026-10-01",
+      "pending_origins": [],
+      "calendar_month_complete": true
+    },
+    "2026-10": {
+      "n": 1,
+      "mae_pp": {
+        "D0": 1.320160510055579,
+        "D1": 1.2270317308117409,
+        "DM": 1.1095037151840428
+      },
+      "index_improvement_pct": 9.578237683384735,
+      "direction_hits": {
+        "D1": 1,
+        "DM": 1
+      },
+      "first_origin": "2026-10-04",
+      "last_target_end": "2026-10-19",
+      "pending_origins": [
+        "2026-10-20"
+      ],
+      "calendar_month_complete": false
+    }
+  },
+  "all": {
+    "n": 22,
+    "mae_pp": {
+      "D0": 1.1573453436457883,
+      "D1": 1.1493353048600101,
+      "DM": 1.202987468253819
+    },
+    "index_improvement_pct": -4.668103656690842,
+    "direction_hits": {
+      "D1": 13,
+      "DM": 10
+    },
+    "first_origin": "2025-10-13",
+    "last_target_end": "2026-10-19"
+  },
+  "existing_predictions_matched": 21,
+  "restored_year_boundary_origins": [
+    "2025-12-19"
+  ],
+  "horizon": "12 available daily FX observations, NOT one calendar month",
+  "grouped_by": "forecast origin month",
+  "news_included": false,
+  "new_holdout": false,
+  "source_provenance_verified": false,
+  "input_sha256": {
+    "results/decade_predictions.csv": "ae3ec46c5fc55788d83af6d0cd889baee3568e46330375bd3eb423b8ed954ba7",
+    "results/decade_lock.json": "d47a817273c56f70cfe6fd02ef45c8128ba36a00054c26a938f242a1d64e7bfb",
+    "monthly_protocol.json": "37025151436b7b1f33e70a157819e9a32d6288f0dbb4a5483e2c74528cde5acd",
+    "run_monthly.py": "cfc0fea972a3c7d406bfd3e2150d18e9d00aaf369991f9f76dd32400bf6f4296"
+  }
+}

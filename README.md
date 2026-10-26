@@ -6,6 +6,9 @@
 
 ## 현재 결과
 
+[2025-10~2026-10 월별 비교](https://kfri-cloud.github.io/data-prediction-analysis/monthly_report.html): 기존 12관측치 예측을 시작 월별로 묶은 13개월·22회 집계입니다. 전체 오차는 지수 추가 시 4.67% 증가했습니다. 달마다 1~2회뿐이며 2026년 10월은 진행 중입니다. 한 달 예측으로 학습 목표를 바꾼 모델이나 뉴스 효과 검증이 아닙니다.
+
+
 [10개년 보고서](https://kfri-cloud.github.io/data-prediction-analysis/decade_report.html): 2016~2025년 216회 예측에서 지수 추가 시 오차 2.71% 증가. 2021~2025년만 보면 0.43% 감소하나 확실한 개선은 미확인. 이 확장은 숫자·지수 비교이며 10년 전체 뉴스 실험은 자료 부족으로 미실행입니다. 기존 TimesX와 출처·목표 시점·기준 입력이 다릅니다.
 
 
@@ -60,6 +63,8 @@ python build_report.py
 - [서울 추정매출 자료](https://data.seoul.go.kr/dataList/OA-22176/S/1/datasetView.do?tab=A)
 
 10개년 실험은 `python fetch_decade.py`, `python run_decade.py`, `python build_decade_report.py` 순서입니다. 원본 응답이 바뀌면 고정 해시 검사를 통과하지 못하므로 기존 실험을 덮어쓰지 마세요.
+
+월별 집계는 `python run_monthly.py`, `python build_monthly_report.py`로 재현합니다. 원래 고정된 10개년 입력 스냅샷이 필요합니다.
 
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
 

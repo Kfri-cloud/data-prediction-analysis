@@ -177,6 +177,10 @@ def main():
         from build_decade_report import section as decade_section
         report = report.replace('</main>', decade_section() + '</main>')
         report = report.replace('</ol><p>모든 실험', '<li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li></ol><p>모든 실험', 1)
+    if (ROOT / "results/monthly_results.json").exists():
+        from build_monthly_report import section as monthly_section
+        report = report.replace('</main>', monthly_section() + '</main>')
+        report = report.replace('</ol><p>모든 실험', '<li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li></ol><p>모든 실험', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))

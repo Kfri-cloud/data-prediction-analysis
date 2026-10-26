@@ -11,3 +11,7 @@ run_market.py -text
 market_protocol.json -text
 run_decade.py -text
 decade_protocol.json -text
+run_monthly.py -text
+monthly_protocol.json -text
+results/decade_predictions.csv -text
+results/decade_lock.json -text
