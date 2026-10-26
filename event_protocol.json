@@ -1,0 +1,14 @@
+{
+  "status": "POST_HOC_EXPLORATORY_NO_NEW_HOLDOUT",
+  "prior_results_seen": ["numeric", "word_hash", "topic_keywords"],
+  "primary_comparison": "Sfull versus K1 keyword baseline, paired MAE",
+  "secondary": "Sfull versus B1 numeric baseline; direction-only Sdir and stale structured feature control Sstale",
+  "data_target_splits": "Unchanged 66 TimesX KRW samples, 47 previously evaluated origins and mean next-12-business-day percentage-change target. Calendar blocks are descriptive, not new holdouts.",
+  "model": "Unchanged ridge lambda=1; train-only scaling; labels end strictly before forecast origin; no hyperparameter tuning",
+  "extractor": "Deterministic English clause rules. Topic dictionary from keyword experiment. Only single-topic clauses receive direction/surprise. Negation, forward-looking modality or conflicting cues cause abstention. Actor is explicit jurisdiction in the same clause; absent or multiple jurisdictions remain unknown. This is a heuristic relation candidate, not semantic verification.",
+  "features": "Eight signed topic direction rates; eight signed above/below-expectation rates; US/KR/other jurisdiction mention rates; explicit US and KR monetary-policy direction rates; abstention rate. All normalized by clause count. Sdir adds the eight direction rates to K1; Sfull adds all 22 structured features to K1. Sstale adds preceding-origin structured features to current K1.",
+  "surprise": "Only qualitative above/below expectations, estimates or forecasts. No invented numeric actual-minus-consensus values. Higher does not mean economically better; direction is not a currency-impact sign.",
+  "uncertainty": "5000 paired block-bootstrap draws, length 3, seed 20261026; descriptive only after repeated model exploration",
+  "claim_gate": "No confirmed current applicability, causal effect, calibrated warning probability, full-context model accuracy or Seoul SME transfer claim regardless of scores",
+  "stop_rule": "Run the frozen variants once and report every block and control. Do not tune rules after seeing forecast scores. More modeling on these same outcomes does not create independent validation."
+}

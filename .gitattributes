@@ -4,3 +4,6 @@ run_keywords.py -text
 keyword_protocol.json -text
 keyword_dictionary.json -text
 results/pilot_predictions.csv -text
+run_events.py -text
+event_protocol.json -text
+results/keyword_predictions.csv -text

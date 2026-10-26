@@ -10,6 +10,10 @@ TimesX 원·달러 환율의 47개 시점 탐색 실험에서 기존 단어 해�
 
 [키워드 비교 보고서](https://kfri-cloud.github.io/data-prediction-analysis/keyword_report.html)
 
+후속 사건 특징 실험에서는 방향만 추가한 모델의 전체 오차가 숫자 기준선보다 **0.53% 감소**했으나 2025년에는 악화됐습니다. 방향·주체·예상 차이를 모두 추가하면 **3.34% 증가**했습니다. 키워드 대비 주비교도 실패했습니다. 반복 탐색이며 정식 검증 통과가 아닙니다.
+
+[방향·주체·예상 차이 보고서](https://kfri-cloud.github.io/data-prediction-analysis/event_report.html)
+
 기사별 공개시각·원문 스냅샷과 수치 최초 발표 버전을 검증하지 못했습니다. 따라서 **정식 타당성은 미입증**이며, 서울 소상공인 매출·폐업 예측을 검증한 결과가 아닙니다. 실시간 예측 서비스나 3D 경고 기능도 아직 없습니다.
 
 ## 구성
@@ -29,11 +33,13 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py test_keywords.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py
 python run_pilot.py
 python run_keywords.py
+python run_events.py
 python build_pilot_report.py
 python build_keyword_report.py
+python build_event_report.py
 python build_report.py
 ```
 

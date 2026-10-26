@@ -1,0 +1,34 @@
+from pathlib import Path
+import json
+
+ROOT=Path(__file__).resolve().parent
+
+def section():
+    r=json.loads((ROOT/'results/event_results.json').read_text())
+    rows=''
+    for k,label in [('B1','숫자 기준선'),('K1','키워드'),('Sdir','키워드 + 변화 방향'),('Sfull','키워드 + 방향·주체·예상 차이'),('Sstale','키워드 + 이전 시점 사건 특징')]:
+        a=r['all'];rows+=f'<tr><td>{label}</td><td>{a["mae_pp"][k]:.4f}</td><td>{-a["improvement_vs_numeric_pct"][k]:+.2f}%</td></tr>'
+    blocks=''
+    for b,label in [('development','2024'),('confirmation','2025'),('latest_holdout','2026년 1~3월')]:
+        a=r['blocks'][b];blocks+=f'<tr><td>{label}</td><td>{a["n"]}</td><td>{-a["improvement_vs_numeric_pct"]["Sdir"]:+.2f}%</td><td>{-a["improvement_vs_numeric_pct"]["Sfull"]:+.2f}%</td></tr>'
+    return f'''<section id="events"><h2>방향·주체·예상 대비 차이 추가 실험</h2>
+<div class="notice"><strong>전체 사건 특징 모델은 숫자 기준선보다 오차가 3.34% 증가했다.</strong><br>방향만 추가한 비교군은 0.53% 감소했지만 2025년에 성능이 악화됐다. 안정적인 개선이나 현재 적용 타당성을 입증하지 못했다.</div>
+<p>같은 47개 예측 시점에서 숫자·키워드를 유지한 채 변화 방향, 명시된 국가·기관 단서, 예상 상회/하회를 추출했다. 추출 규칙과 비교군은 이번 결과 확인 전에 고정했다. 다만 이전 실험 결과를 이미 본 뒤의 추가 탐색이므로 새로운 보류 검증이 아니다.</p>
+<div class="table"><table><tr><th>모델</th><th>MAE (pp)</th><th>숫자 기준선 대비 오차 변화</th></tr>{rows}</table></div>
+<p class="meta">MAE와 오차 증감은 작을수록 좋다. 이번 주비교는 전체 사건 특징 모델과 키워드 모델이었다. 전체 모델은 키워드 모델보다도 오차가 3.01% 증가했다. 가장 좋아 보이는 비교군만 선택해 실험 성공으로 판정하지 않는다.</p>
+<div class="table"><table><tr><th>기간</th><th>시점 수</th><th>방향만 추가</th><th>방향·주체·예상 차이 추가</th></tr>{blocks}</table></div>
+<p>주비교의 MAE 차이(키워드−전체 사건)는 −0.02402pp, 설명용 95% 시간 블록 부트스트랩 구간은 −0.08194~+0.03427pp로 0을 포함한다. 2026년은 4개뿐이다. 반복 탐색과 적은 표본 때문에 확정적인 통계적 결론이나 현재 성공확률로 해석하지 않는다.</p>
+<h3>무엇을 추출했는가</h3>
+<p>예시 문장 ‘The Bank of Korea cut interest rates’는 금리정책·한국·하락 후보로, ‘Inflation was lower than expected’는 물가·예상 하회 후보로 구분한다. 두 번째 문장만으로 전월 대비 물가가 하락했다고 판단하지 않는다. 부정문·전망 표현·충돌하는 방향·여러 주제가 섞인 문장은 방향 판단을 유보한다. 국가가 없거나 여러 국가가 함께 나오면 주체는 미확인이다.</p>
+<p>이 규칙의 ‘주체’는 같은 문장에 명시된 국가·기관 단서다. 실제 행동 주체를 문법적으로 검증한 결과는 아니다. ‘예상 차이’도 예상 상회/하회라는 정성적 단서이며 실제값과 시장 예상치의 수치 차이를 계산하지 않았다. 상승/하락은 뉴스 속 지표 방향이지 환율에 미치는 영향의 부호가 아니다.</p>
+<p>전체 66개 입력에서 분할한 2,370개 문장 후보 중 방향 후보 420개, 예상 차이 후보 31개를 얻었다. 1,924개는 방향·예상 차이 모두 유보했다. 두 후보 수는 서로 겹칠 수 있다. 인접 문장의 주체를 이어받지 않아 정보를 놓칠 수 있고, 숫자·약어 주변의 문장 분리 및 주제와 동작의 연결도 완벽하지 않다. 의미 추출의 전체 정확도는 수동 라벨로 측정하지 않았다.</p>
+<h3>검증 범위와 다음 과제</h3>
+<p>추출 규칙 테스트 11개와 기존 21개 테스트가 통과했다. 모든 47개 시점에서 이전 키워드 기준선의 예측이 재계산과 일치했다. 테스트는 구현 동작을 확인하며 실제 기사 이해 정확도나 예측 타당성을 보증하지 않는다. 기사별 공개시각·원문 스냅샷 부재와 서울 소상공인 대상의 검증 미실행은 그대로다.</p>
+<p>현재 데이터에서 더 많은 방법을 골라내는 것보다, 추출 결과를 사람이 라벨링해 오류를 측정하고 공개시점이 검증된 새로운 기간을 확보하는 것이 다음 검증 과제다. 이번 작업에서는 새로운 실시간 경고나 자동 수집을 시작하지 않았다.</p>
+<p><a href="event_protocol.json">실험 설계</a> · <a href="results/event_results.json">전체 결과</a> · <a href="results/event_predictions.csv">시점별 예측</a> · <a href="results/event_extractions.csv">추출 후보 감사표</a> · <a href="results/event_lock.json">고정 해시</a></p></section>'''
+
+def main():
+    style='body{font:16px/1.8 system-ui,sans-serif;background:#f4f7fb;color:#172b45;margin:auto;max-width:1080px;padding:30px}table{border-collapse:collapse;width:100%;background:white}th,td{padding:12px;border-bottom:1px solid #ddd;text-align:left}.notice{padding:20px;background:#fff4d6;border-left:5px solid #b7791f}.meta{color:#61718a}.table{overflow:auto}a{color:#1d54b9}'
+    (ROOT/'event_report.html').write_text('<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>데이터예측분석 | 사건 특징 비교</title><style>'+style+'</style><body>'+section()+'</body></html>',encoding='utf8')
+
+if __name__=='__main__':main()

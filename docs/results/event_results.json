@@ -1,0 +1,142 @@
+{
+  "status": "POST_HOC_EXPLORATORY_NOT_VALIDATED",
+  "all": {
+    "n": 47,
+    "mae_pp": {
+      "B1": 0.7951513545550396,
+      "K1": 0.7976780420581749,
+      "Sdir": 0.7909350245536644,
+      "Sfull": 0.8216977596249543,
+      "Sstale": 0.805254718397347
+    },
+    "improvement_vs_numeric_pct": {
+      "B1": 0.0,
+      "K1": -0.3177618309597489,
+      "Sdir": 0.5302550234269108,
+      "Sfull": -3.33853484847169,
+      "Sstale": -1.2706214715513036
+    },
+    "primary_improvement_vs_keywords_pct": -3.0112045587720435,
+    "primary_delta_pp": -0.02401971756677963,
+    "primary_descriptive_block_ci_pp": [
+      -0.08193574962318034,
+      0.03426605983495462
+    ],
+    "direction_accuracy": {
+      "B1": 0.5957446808510638,
+      "K1": 0.6595744680851063,
+      "Sdir": 0.6595744680851063,
+      "Sfull": 0.5957446808510638,
+      "Sstale": 0.6170212765957447
+    }
+  },
+  "blocks": {
+    "development": {
+      "n": 22,
+      "mae_pp": {
+        "B1": 0.7332555124419677,
+        "K1": 0.7033064676066288,
+        "Sdir": 0.6859622790101819,
+        "Sfull": 0.6993084148335732,
+        "Sstale": 0.7450653929561754
+      },
+      "improvement_vs_numeric_pct": {
+        "B1": 0.0,
+        "K1": 4.084394092803926,
+        "Sdir": 6.449761730980339,
+        "Sfull": 4.629640968581361,
+        "Sstale": -1.6106091688117092
+      },
+      "primary_improvement_vs_keywords_pct": 0.5684652363088786,
+      "primary_delta_pp": 0.003998052773055747,
+      "primary_descriptive_block_ci_pp": [
+        -0.08434453935259534,
+        0.10936676486953557
+      ],
+      "direction_accuracy": {
+        "B1": 0.6363636363636364,
+        "K1": 0.7272727272727273,
+        "Sdir": 0.6363636363636364,
+        "Sfull": 0.6363636363636364,
+        "Sstale": 0.5909090909090909
+      }
+    },
+    "confirmation": {
+      "n": 21,
+      "mae_pp": {
+        "B1": 0.8344814309289253,
+        "K1": 0.8593247968469206,
+        "Sdir": 0.8826321851882002,
+        "Sfull": 0.9310258603259557,
+        "Sstale": 0.8392686691036116
+      },
+      "improvement_vs_numeric_pct": {
+        "B1": 0.0,
+        "K1": -2.977102305361096,
+        "Sdir": -5.770140889255563,
+        "Sfull": -11.56939217803317,
+        "Sstale": -0.5736782146676709
+      },
+      "primary_improvement_vs_keywords_pct": -8.343883912360532,
+      "primary_delta_pp": -0.07170106347903518,
+      "primary_descriptive_block_ci_pp": [
+        -0.14031794354473232,
+        -0.005769450683374191
+      ],
+      "direction_accuracy": {
+        "B1": 0.5238095238095238,
+        "K1": 0.5238095238095238,
+        "Sdir": 0.6190476190476191,
+        "Sfull": 0.47619047619047616,
+        "Sstale": 0.5714285714285714
+      }
+    },
+    "latest_holdout": {
+      "n": 4,
+      "mae_pp": {
+        "B1": 0.9290955852140351,
+        "K1": 0.9930762389007609,
+        "Sdir": 0.886875031711505,
+        "Sfull": 0.9208666272972936,
+        "Sstale": 0.9577227671159
+      },
+      "improvement_vs_numeric_pct": {
+        "B1": 0.0,
+        "K1": -6.886337068536022,
+        "Sdir": 4.5442637091859455,
+        "Sfull": 0.8856955137555409,
+        "Sstale": -3.0811880238640934
+      },
+      "primary_improvement_vs_keywords_pct": 7.271305945593495,
+      "primary_delta_pp": 0.07220961160346745,
+      "primary_descriptive_block_ci_pp": [
+        0.03486390233276743,
+        0.1214013749812497
+      ],
+      "direction_accuracy": {
+        "B1": 0.75,
+        "K1": 1.0,
+        "Sdir": 1.0,
+        "Sfull": 1.0,
+        "Sstale": 1.0
+      }
+    }
+  },
+  "extraction_audit": {
+    "clauses": 2370,
+    "direction_candidates": 420,
+    "surprise_candidates": 31,
+    "explicit_single_actor": 766,
+    "abstentions": 1924,
+    "semantic_accuracy_manually_measured": false
+  },
+  "features": 22,
+  "new_untouched_holdout": false,
+  "source_provenance_verified": false,
+  "limitations": [
+    "Heuristic candidates, not verified relations",
+    "Qualitative surprise only",
+    "Repeated exploration of identical outcomes",
+    "No current probability or Seoul SME claim"
+  ]
+}

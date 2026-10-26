@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-26T12:01:40.064209+00:00",
+  "prior_results_seen": true,
+  "sha256": {
+    "event_protocol.json": "dab7860b519d4e7790a24c2ad164c57f74a791c99db5ae4dbf8eb08cbed6efa2",
+    "run_events.py": "93b6e1ba1c9145ff661467aa5ad8b73ad8200f7e1ba1715e5578af6bb9e60038",
+    "keyword_dictionary.json": "a526e9e60183e6de2fbd3945140a59e29d401be6431730e951bdc1fbcb4e07eb",
+    "run_keywords.py": "32a5a35ba5c5d551c8d64dc97c6e586ec23d99b21ebc4ed9e3f36cbbb0c30799",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "data/timesx_krw.json": "e9988b2ecb65102b7b6e44c6a5a228c818447390ad387434a0e7b23c45d5194e",
+    "results/keyword_predictions.csv": "8f719abd58736d9bb18acd00a35fa8c60701c2a9fa4f8bb73be3e14ba458e2ed"
+  }
+}

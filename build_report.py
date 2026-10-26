@@ -159,6 +159,16 @@ def main():
         from build_keyword_report import section as keyword_section
         report = report.replace('<h2>1.', '<p><strong><a href="keyword_report.html">추가 비교: 키워드 중심 모델 결과 보기</a></strong></p><h2>1.', 1)
         report = report.replace('</main>', keyword_section() + '</main>')
+    if (ROOT / "results/event_results.json").exists():
+        from build_event_report import section as event_section
+        report = report.replace('</main>', event_section() + '</main>')
+        navigation = '''<nav class="notice blue" aria-label="전체 연구 기록"><strong>전체 연구 기록</strong><ol>
+<li><a href="#literature">문헌 검토·자료 감사·검증 설계</a></li>
+<li><a href="pilot_report.html">숫자 대 단어 해시 시간순 실험</a></li>
+<li><a href="keyword_report.html">키워드 중심 비교</a></li>
+<li><a href="event_report.html">최신: 방향·주체·예상 대비 차이 비교</a></li>
+</ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav>'''
+        report = report.replace('<h2>1.', navigation + '<h2 id="literature">1.', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))
