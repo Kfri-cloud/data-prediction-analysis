@@ -31,3 +31,7 @@ run_weighted.py -text
 weighted_protocol.json -text
 results/indicator_predictions.csv -text
 results/indicator_lock.json -text
+run_diverse.py -text
+fetch_diverse.py -text
+diverse_protocol.json -text
+results/diverse_sources.json -text

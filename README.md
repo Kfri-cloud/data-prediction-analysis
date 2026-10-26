@@ -85,3 +85,5 @@ python build_report.py
 [50:50 비교 보고서](https://kfri-cloud.github.io/data-prediction-analysis/indicator_report.html): 10개 상품을 별도 학습했습니다. 석탄과 대두만 B1 대비 평균 오차가 줄었고 실전 타당성은 모두 미입증입니다. `python fetch_indicators.py`, `python run_indicators.py`, `python build_indicator_report.py`로 실행합니다. 기존 지수 원본 스냅샷과 고정 의존 코드가 필요하며, 뉴스 공개시각은 검증되지 않았습니다.
 
 [내부 가중치 후 50:50](https://kfri-cloud.github.io/data-prediction-analysis/weighted_report.html): 나스닥 및 결과형 뉴스 비중을 과거 OOF 오차로 선택하는 추가 탐색. `python run_weighted.py`, `python build_weighted_report.py`. 최초 공개시각과 새 미래 기간의 검증은 미완료입니다.
+
+[5개 분야 × 3개 대표 지표](https://kfri-cloud.github.io/data-prediction-analysis/diverse_report.html): 에너지·농산물 가격과 기술·여가/여행·소비 검색 관심도를 따로 평가했습니다. 심리 표현 우선 가중치는 균등 우선도보다 개선되지 않았습니다. 주간 검색의 비중복 평가 표본은 각 4회뿐이며 인과/실전 검증이 아닙니다. `python fetch_diverse.py`, `python run_diverse.py`, `python build_diverse_report.py`. 원자료와 기존 지수 스냅샷이 필요합니다.

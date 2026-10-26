@@ -1,0 +1,122 @@
+[
+  {
+    "id": "brent",
+    "field": "에너지",
+    "name": "브렌트유",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/brent_usd_bbl_96_12_12_10events.json",
+    "sha256": "c4aa1710d2968c52d0ef85ec0e864e60d58b7ed07b473477f1ff52f851847594"
+  },
+  {
+    "id": "coal",
+    "field": "에너지",
+    "name": "석탄",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/coal_usd_t_96_12_12_10events.json",
+    "sha256": "9beccffbe90f9f36b7cdbefd58699dc1cd6abcc866df87aec1f563712cb7733c"
+  },
+  {
+    "id": "ethanol",
+    "field": "에너지",
+    "name": "에탄올",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/EnergyAndFuels/ethanol_usd_gal_96_12_12_10events.json",
+    "sha256": "2b1c04604265c5034d0c6cfe92705ae664fd850dc2e1d0d387c711a004d5f4ea"
+  },
+  {
+    "id": "wheat",
+    "field": "농산물",
+    "name": "밀",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/CropsAndStaples/wheat_usd_bu_96_12_12_10events.json",
+    "sha256": "c8bbfe28e64bc2ba59190b2af22c4e4e9a4df2935256569b1de0a1ea29041852"
+  },
+  {
+    "id": "corn",
+    "field": "농산물",
+    "name": "옥수수",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/LivestockAndFoodProducts/corn_usd_bu_96_12_12_10events.json",
+    "sha256": "afa38396ec16e9ca21d292724352330019474cd92337fddd42cc405233777d5d"
+  },
+  {
+    "id": "soybeans",
+    "field": "농산물",
+    "name": "대두",
+    "kind": "price",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/CommodityPrice/LivestockAndFoodProducts/soybeans_usd_bu_96_12_12_10events.json",
+    "sha256": "721bf55d50e39cd4d0950c69eaa887e8626a8bbfb0be6c6e1f5e1913b3b6c7df"
+  },
+  {
+    "id": "ai",
+    "field": "기술",
+    "name": "AI",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/electronic_technology/artificial_intelligence_96_12_4_10events.json",
+    "sha256": "61c5bb43c1c8b6869b654eada2978c6791b75203511cf2f525ec83d137abd801"
+  },
+  {
+    "id": "robotics",
+    "field": "기술",
+    "name": "로봇",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/electronic_technology/robotics_96_12_4_10events.json",
+    "sha256": "bd55a5cba13c04198e60b57fa16eaee07af2c623b95138da8167c6085fbfbcbe"
+  },
+  {
+    "id": "cybersecurity",
+    "field": "기술",
+    "name": "사이버보안",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/society/cybersecurity_96_12_4_10events.json",
+    "sha256": "d02a761ae2de4e0b093451c18f8fdf0a564a5224ce9f0f193aa5ecdc4d6315d7"
+  },
+  {
+    "id": "air_travel",
+    "field": "여가·여행",
+    "name": "항공여행",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/traffic/air_travel_96_12_4_10events.json",
+    "sha256": "670535bac6c0f0f8d89f67f58f45f4817e7f7b1322d8355aa5b3abe4223eda1f"
+  },
+  {
+    "id": "music",
+    "field": "여가·여행",
+    "name": "음악축제",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/arts/music_festivals_96_12_4_10events.json",
+    "sha256": "a1c4b0c91c3d93c49242a0c260634b88d0d0a7e9d34bd1a5863e093b60c3954e"
+  },
+  {
+    "id": "esports",
+    "field": "여가·여행",
+    "name": "e스포츠",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/arts/esports_96_12_4_10events.json",
+    "sha256": "f33756d52c9c75def07c7aa915fa070fd096e5f892ff0eb140953be4c218c859"
+  },
+  {
+    "id": "black_friday",
+    "field": "소비",
+    "name": "블랙프라이데이",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/shopping/black_friday_deals_96_12_4_10events.json",
+    "sha256": "dc04c4fd310bd9f90ecd825fb350f1f86f727840b75d532dddaa6ef331d78b48"
+  },
+  {
+    "id": "school",
+    "field": "소비",
+    "name": "개학 준비",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/shopping/back_to_school_96_12_4_10events.json",
+    "sha256": "aeea97dc1516ec5d7441efcca49d3677d2f1d06ef4401b9e346ced82f2c1f7cf"
+  },
+  {
+    "id": "air_conditioner",
+    "field": "소비",
+    "name": "에어컨",
+    "kind": "search",
+    "url": "https://raw.githubusercontent.com/haoxin1998/TimesX-project/26bc70cfa669407c71ae1ad6ce2194be9cfe9a0b/Datasets/SearchTrend/shopping/air_conditioner_96_12_4_10events.json",
+    "sha256": "255b26c4929c4bf520d37ecdf9e069b7c83d166c0f57607d5af9290323fc527d"
+  }
+]

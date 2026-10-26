@@ -1,0 +1,11 @@
+{
+  "scope": "Five structurally different fields, three representatives each; six prices and nine weekly search-interest indices. Selection is not based on opposite realized returns.",
+  "target": "Prices: next12 mean/last-1 in percent. Search: next12 mean minus last in index points; not revenue, adoption or search counts. Do not pool MAE across units.",
+  "models": "Fixed lambda1 train-only standardized ridge. B1 own-history, calendar and provided covariate summaries. Index side Nasdaq/other-indices blend selected from 0,.25,.5,.75,1 using completed earlier OOF errors. News four experts B1+psyche/outcome/surprise/unknown features. Outer blend always 50:50.",
+  "news_weight": "Per-origin sqrt(min(clause_count,10)) times category priority; normalize. Psyche-priority and surprise priority alpha=2 or3, outcome and unknown=1. Alpha chosen using earlier OOF MAE only; fallback2. Equal-priority control all1, reverse control outcome/surprise alpha and psyche/unknown1. Missing category weight0; no text falls back to B1.",
+  "evaluation": "2024-01-01<=origin<2026-04-01, outer train>=16 completed samples, inner OOF train>=8, choose weights only with >=8 completed OOF samples. No interpolation or tuning using current/future target.",
+  "primary": "Psyche-priority versus equal-priority with identical index side, category experts and origins. Secondary versus reverse-priority, original fixed50 and B1. Greedy nonoverlapping subset sensitivity for weekly overlapping targets.",
+  "uncertainty": "Moving block length3 bootstrap5000 descriptive intervals, no multiple testing correction. Previously examined prices and new search outcomes are exploratory; no causal or point-in-time validation.",
+  "forecast": "Historical replay only, latest sample is not current October2026 prediction. No calibrated probabilities. Current forecast blocked by missing fresh point-in-time news.",
+  "search_warning": "Weekly Google Trends normalized interest; extension after2025-07-06 is overlap-calibrated and can exceed100; region not verified; do not label Korean domestic demand."
+}
