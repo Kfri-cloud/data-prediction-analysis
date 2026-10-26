@@ -89,3 +89,5 @@ python build_report.py
 [5개 분야 × 3개 대표 지표](https://kfri-cloud.github.io/data-prediction-analysis/diverse_report.html): 에너지·농산물 가격과 기술·여가/여행·소비 검색 관심도를 따로 평가했습니다. 심리 표현 우선 가중치는 균등 우선도보다 개선되지 않았습니다. 주간 검색의 비중복 평가 표본은 각 4회뿐이며 인과/실전 검증이 아닙니다. `python fetch_diverse.py`, `python run_diverse.py`, `python build_diverse_report.py`. 원자료와 기존 지수 스냅샷이 필요합니다.
 
 [유사 사례 예측](https://kfri-cloud.github.io/data-prediction-analysis/analogue_report.html): 결과를 가린 과거 조건 거리로 최대 5개 사례를 고르고 단순 기준의 오차 중앙값을 보정합니다. 시간순 학습·사례 기간 중복 배제, 15개 지표 383회 탐색이며 실전 검증은 아닙니다. `python run_analogue.py`, `python build_analogue_report.py`.
+
+[사회문제 방법별 비교](https://kfri-cloud.github.io/data-prediction-analysis/social_transfer_report.html): 국가별로 현재 값 유지·추세·회귀·유사 사례를 재검증합니다. 과거 예측 오차로 시점마다 방법을 선택하며, 한국 6개·미국 7개 실행 및 각 3개 조건부 2026년 연간 추정을 제공합니다. 실제 공개일·수정 이력 미검증이며 뉴스 50:50은 미실행입니다. `python run_social_transfer.py`, `python build_social_transfer_report.py`.

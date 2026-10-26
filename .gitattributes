@@ -39,3 +39,7 @@ run_analogue.py -text
 analogue_protocol.json -text
 results/diverse_predictions.csv -text
 results/diverse_lock.json -text
+run_social_transfer.py -text
+social_transfer_protocol.json -text
+results/social_lock.json -text
+results/social_baseline_predictions.csv -text

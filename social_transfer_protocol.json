@@ -1,0 +1,9 @@
+{
+  "scope": "Existing Korea and USA social catalog, separately trained. Annual data cannot test within-year seasonality. No missing targets replaced by proxies.",
+  "candidates": ["N0 current value", "Trend last3year mean annual change", "N1 frozen numeric ridge", "Analog current value plus median nextyear change of nearest5 earlier completed cases"],
+  "similarity": "Existing social feature [level,1year change,3year change], train-only standardized RMS distance; outcome excluded from selection; minimum10 completed training cases, fixed5 neighbors",
+  "selection": "At each origin choose smallest MAE on last8 available earlier OOF predictions; at least5 such predictions required, otherwise N0. OOF targets must end <=origin. Tie order N0,Trend,N1,Analog. No final-period scores used to choose forecast.",
+  "evaluation": "Same years2016..2025 and >=5 evaluation years as frozen social experiment; identical shared candidate origins. Paired descriptive moving-block bootstrap length2, no multiple-testing correction.",
+  "projection": "Only latest observation2025 with sufficient backtest permits conditional2026 full-year numerical projection. Not real-time forecast, not2027 forecast. News/context model not executed.",
+  "limitations": "Current-vintage annual data; publication/release lag unknown; statistical-year chronological replay only. Previously explored outcomes, no untouched holdout. Neither causality nor social-problem resolution proven."
+}

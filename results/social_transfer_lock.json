@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "run_social_transfer.py": "64b0983c9d0f0640aeec291bf3ff7d4776e473d4009c511e316ead40dcf855c5",
+    "social_transfer_protocol.json": "cfdddfd0e9e86a428efdd0b53d6fa9627b95510ef0a91b8cd1023c63b43ba5da",
+    "results/social_lock.json": "03f6f365855e5cd224748b56966f8f987a65d95151bb419edcc140ee1b0f49b9",
+    "results/social_baseline_predictions.csv": "5e5cc16a9174ebc305f6f65746a84401383e8ebfabd200ade78f10c58869260f"
+  },
+  "frozen_at": "2026-10-26T13:21:57.929247+00:00"
+}

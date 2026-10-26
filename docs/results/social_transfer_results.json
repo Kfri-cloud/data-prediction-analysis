@@ -1,0 +1,859 @@
+{
+  "status": "EXPLORATORY_CURRENT_VINTAGE_REPLAY",
+  "results": [
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "business_closure",
+      "name": "소상공인 폐업",
+      "target": "정의가 고정된 소상공인 폐업률",
+      "unit": "%",
+      "issue": "전체 사업자·주요 6대 업종은 소상공인 전체 모집단과 동일하지 않음. 동질적인 장기 소상공인 폐업률 미확보. 미국 사업체 폐업과도 정의 다름.",
+      "source": "https://mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1069562&cbIdx=288",
+      "projection_2026": null,
+      "status": "NOT_EXECUTED_NO_HARMONIZED_SERIES"
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "youth_jobs",
+      "name": "청년실업",
+      "target": "15~24세 청년 경제활동인구 중 실업 비율, ILO 모형 추정",
+      "unit": "%",
+      "issue": "한국에서 흔히 쓰는 15~29세 청년 지표와 다름",
+      "source": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS",
+      "projection_2026": {
+        "value": 6.695,
+        "chosen": "N0",
+        "candidates": {
+          "N0": 6.695,
+          "Trend": 6.714,
+          "N1": 7.151592060427358,
+          "Analog": 6.956
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2024,
+            "target_year": 2025,
+            "distance": 0.3941664805979269,
+            "change": 0.2610000000000001
+          },
+          {
+            "origin_year": 1997,
+            "target_year": 1998,
+            "distance": 0.42599518580223017,
+            "change": 8.25
+          },
+          {
+            "origin_year": 1995,
+            "target_year": 1996,
+            "distance": 0.47218631133618966,
+            "change": -0.15700000000000003
+          },
+          {
+            "origin_year": 2012,
+            "target_year": 2013,
+            "distance": 0.4780099791199642,
+            "change": 1.2049999999999992
+          },
+          {
+            "origin_year": 2011,
+            "target_year": 2012,
+            "distance": 0.48158331553205985,
+            "change": -0.5599999999999996
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 6.695,
+      "observations": 35,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 0.7585999999999998,
+          "Trend": 0.8601333333333333,
+          "N1": 0.7725873352575003,
+          "Analog": 0.8199,
+          "Selected": 0.8644897467337455
+        },
+        "selected_improvement_pct": -13.958574576027626,
+        "descriptive_interval": [
+          -0.48388830627268764,
+          0.23629471986889977
+        ],
+        "selection_counts": {
+          "N0": 3,
+          "Trend": 2,
+          "N1": 4,
+          "Analog": 1
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "living_cost",
+      "name": "생활물가 부담",
+      "target": "연간 소비자물가 상승률",
+      "unit": "%",
+      "issue": "가구별 체감물가·소득 대비 부담률은 아님",
+      "source": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+      "projection_2026": {
+        "value": 2.595343413433801,
+        "chosen": "N1",
+        "candidates": {
+          "N0": 2.12309421458659,
+          "Trend": 1.1342877359059833,
+          "N1": 2.595343413433801,
+          "Analog": 2.41532775077671
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2014,
+            "target_year": 2015,
+            "distance": 0.3008924533375491,
+            "change": -0.568442691557461
+          },
+          {
+            "origin_year": 2006,
+            "target_year": 2007,
+            "distance": 0.4991005459712153,
+            "change": 0.29223353619012027
+          },
+          {
+            "origin_year": 2013,
+            "target_year": 2014,
+            "distance": 0.5235210023958913,
+            "change": -0.026573081460909975
+          },
+          {
+            "origin_year": 2000,
+            "target_year": 2001,
+            "distance": 0.5819167186037376,
+            "change": 1.8074100781763502
+          },
+          {
+            "origin_year": 2007,
+            "target_year": 2008,
+            "distance": 0.5887972527130764,
+            "change": 2.13932273395476
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 2.12309421458659,
+      "observations": 36,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 1.0472265322725531,
+          "Trend": 1.440986324382892,
+          "N1": 0.9065575498504105,
+          "Analog": 1.2110853218709294,
+          "Selected": 1.0180184190081087
+        },
+        "selected_improvement_pct": 2.7890921748383146,
+        "descriptive_interval": [
+          0.0,
+          0.12326409245613701
+        ],
+        "selection_counts": {
+          "N0": 8,
+          "Trend": 0,
+          "N1": 2,
+          "Analog": 0
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "fertility",
+      "name": "저출생",
+      "target": "합계출산율",
+      "unit": "여성 1명당 출생아 수",
+      "issue": "개인 출산행동이나 특정 정책의 효과를 예측하지 않음",
+      "source": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+      "projection_2026": null,
+      "latest_year": 2024,
+      "latest_value": 0.748,
+      "observations": 35,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 9,
+        "mae": {
+          "N0": 0.06055555555555557,
+          "Trend": 0.04040740740740745,
+          "N1": 0.04869169983815077,
+          "Analog": 0.060000000000000026,
+          "Selected": 0.05255555555555559
+        },
+        "selected_improvement_pct": 13.211009174311894,
+        "descriptive_interval": [
+          -0.005259259259259297,
+          0.034407407407407414
+        ],
+        "selection_counts": {
+          "N0": 2,
+          "Trend": 6,
+          "N1": 0,
+          "Analog": 1
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2024
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "aging",
+      "name": "고령화와 부양 부담",
+      "target": "생산가능인구 대비 고령인구 비율",
+      "unit": "생산가능인구 100명당 고령인구",
+      "issue": "노인빈곤율 또는 실제 돌봄 지출이 아님",
+      "source": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
+      "projection_2026": {
+        "value": 30.825705768253865,
+        "chosen": "Trend",
+        "candidates": {
+          "N0": 29.2670913343357,
+          "Trend": 30.825705768253865,
+          "N1": 30.8262609158053,
+          "Analog": 30.6115416770479
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2024,
+            "target_year": 2025,
+            "distance": 0.5590032813055343,
+            "change": 1.7956506352157007
+          },
+          {
+            "origin_year": 2023,
+            "target_year": 2024,
+            "distance": 0.9303105451591414,
+            "change": 1.5357423238266001
+          },
+          {
+            "origin_year": 2022,
+            "target_year": 2023,
+            "distance": 1.0857982202771757,
+            "change": 1.3444503427122
+          },
+          {
+            "origin_year": 2021,
+            "target_year": 2022,
+            "distance": 1.2473331015441151,
+            "change": 1.304200145275498
+          },
+          {
+            "origin_year": 2020,
+            "target_year": 2021,
+            "distance": 1.6386766912798898,
+            "change": 1.3310812185697003
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 29.2670913343357,
+      "observations": 36,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 1.15891109259805,
+          "Trend": 0.2129206484375704,
+          "N1": 0.22904608060781406,
+          "Analog": 0.30099042695003997,
+          "Selected": 0.21663245544816867
+        },
+        "selected_improvement_pct": 81.30724118253787,
+        "descriptive_interval": [
+          0.6975749252649731,
+          1.1807576752764173
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 2,
+          "N1": 8,
+          "Analog": 0
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "suicide",
+      "name": "자살 사망 예방",
+      "target": "인구 10만 명당 자살 사망률",
+      "unit": "명/10만 명",
+      "issue": "집계 통계의 탐색이며 개인 위험 판정에 사용하지 않음; 모형 추정·자료 지연 확인 필요",
+      "source": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5",
+      "projection_2026": null,
+      "latest_year": 2021,
+      "latest_value": 27.53,
+      "observations": 22,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 6,
+        "mae": {
+          "N0": 1.1833333333333342,
+          "Trend": 1.0427777777777785,
+          "N1": 1.3042179650441454,
+          "Analog": 1.6416666666666682,
+          "Selected": 1.2200000000000006
+        },
+        "selected_improvement_pct": -3.0985915492957483,
+        "descriptive_interval": [
+          -0.18722222222222248,
+          0.00555555555555524
+        ],
+        "selection_counts": {
+          "N0": 3,
+          "Trend": 3,
+          "N1": 0,
+          "Analog": 0
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2021
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "road_deaths",
+      "name": "교통사고 사망",
+      "target": "인구 10만 명당 도로교통 사망률",
+      "unit": "명/10만 명",
+      "issue": "WHO 추정치일 수 있어 국내 경찰 집계와 동일하지 않음",
+      "source": "https://data.worldbank.org/indicator/SH.STA.TRAF.P5",
+      "projection_2026": null,
+      "latest_year": 2019,
+      "latest_value": 8.6,
+      "observations": 20,
+      "status": "NOT_EXECUTED_INSUFFICIENT_EVALUATION",
+      "eligible_years": 4
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "air_pollution",
+      "name": "초미세먼지 노출",
+      "target": "인구가중 연평균 PM2.5 노출",
+      "unit": "µg/m³",
+      "issue": "특정 관측소 농도·일별 경보 지표가 아님",
+      "source": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
+      "projection_2026": null,
+      "latest_year": 2023,
+      "latest_value": 21.8940234142942,
+      "observations": 34,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 8,
+        "mae": {
+          "N0": 1.0591654995342874,
+          "Trend": 1.260756174184479,
+          "N1": 1.0679685546895699,
+          "Analog": 1.1415087050919497,
+          "Selected": 1.1750600681707417
+        },
+        "selected_improvement_pct": -10.942064171030207,
+        "descriptive_interval": [
+          -0.2579310455455168,
+          0.11778099853671709
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 0,
+          "N1": 7,
+          "Analog": 1
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2023
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "youth_neet",
+      "name": "청년 교육·고용 이탈",
+      "target": "15~24세 청년 중 교육·고용·훈련에 참여하지 않는 비율",
+      "unit": "%",
+      "issue": "국가별 관측 연도·조사 정의·결측 차이 확인 필요",
+      "source": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS",
+      "projection_2026": null,
+      "latest_year": 2002,
+      "latest_value": 10.762,
+      "observations": 3,
+      "status": "NOT_EXECUTED_INSUFFICIENT_EVALUATION",
+      "eligible_years": 0
+    },
+    {
+      "region": "KOR",
+      "region_name": "한국",
+      "problem": "housing_burden",
+      "name": "주거비 과부담",
+      "target": "소득 대비 주거비 40% 초과 가구 비율, 소득·점유형태 정의 고정 필요",
+      "unit": "%",
+      "issue": "한국·미국의 소득 정의와 점유형태를 맞춘 연속 시계열 미확보; 주택가격지수로 대체하지 않음",
+      "source": "https://www.oecd.org/en/data/datasets/oecd-affordable-housing-database.html",
+      "projection_2026": null,
+      "status": "NOT_EXECUTED_NO_HARMONIZED_SERIES"
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "business_closure",
+      "name": "소상공인 폐업",
+      "target": "정의가 고정된 소상공인 폐업률",
+      "unit": "%",
+      "issue": "전체 사업자·주요 6대 업종은 소상공인 전체 모집단과 동일하지 않음. 동질적인 장기 소상공인 폐업률 미확보. 미국 사업체 폐업과도 정의 다름.",
+      "source": "https://mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1069562&cbIdx=288",
+      "projection_2026": null,
+      "status": "NOT_EXECUTED_NO_HARMONIZED_SERIES"
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "youth_jobs",
+      "name": "청년실업",
+      "target": "15~24세 청년 경제활동인구 중 실업 비율, ILO 모형 추정",
+      "unit": "%",
+      "issue": "한국에서 흔히 쓰는 15~29세 청년 지표와 다름",
+      "source": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS",
+      "projection_2026": {
+        "value": 9.34,
+        "chosen": "N0",
+        "candidates": {
+          "N0": 9.34,
+          "Trend": 9.751666666666667,
+          "N1": 9.543832759928556,
+          "Analog": 9.76
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2001,
+            "target_year": 2002,
+            "distance": 0.3865573543225729,
+            "change": 1.4429999999999996
+          },
+          {
+            "origin_year": 2024,
+            "target_year": 2025,
+            "distance": 0.3897269019258753,
+            "change": 0.41999999999999993
+          },
+          {
+            "origin_year": 2007,
+            "target_year": 2008,
+            "distance": 0.507241345612576,
+            "change": 2.2880000000000003
+          },
+          {
+            "origin_year": 2004,
+            "target_year": 2005,
+            "distance": 0.5819220942985636,
+            "change": -0.5510000000000002
+          },
+          {
+            "origin_year": 2005,
+            "target_year": 2006,
+            "distance": 0.5848309327919944,
+            "change": -0.8100000000000005
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 9.34,
+      "observations": 35,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 1.81,
+          "Trend": 2.2635999999999994,
+          "N1": 1.8812088001058285,
+          "Analog": 1.7129,
+          "Selected": 1.7129
+        },
+        "selected_improvement_pct": 5.3646408839779,
+        "descriptive_interval": [
+          -0.20820500000000058,
+          0.4248999999999997
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 0,
+          "N1": 0,
+          "Analog": 10
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "living_cost",
+      "name": "생활물가 부담",
+      "target": "연간 소비자물가 상승률",
+      "unit": "%",
+      "issue": "가구별 체감물가·소득 대비 부담률은 아님",
+      "source": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+      "projection_2026": null,
+      "latest_year": 2024,
+      "latest_value": 2.94952520485207,
+      "observations": 35,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 9,
+        "mae": {
+          "N0": 1.7061605668757378,
+          "Trend": 2.1593179504925075,
+          "N1": 1.4415573643366553,
+          "Analog": 1.5034342911837766,
+          "Selected": 1.5339502757438948
+        },
+        "selected_improvement_pct": 10.093439883397881,
+        "descriptive_interval": [
+          -0.28613699641514434,
+          0.42644281217809205
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 0,
+          "N1": 8,
+          "Analog": 1
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2024
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "fertility",
+      "name": "저출생",
+      "target": "합계출산율",
+      "unit": "여성 1명당 출생아 수",
+      "issue": "개인 출산행동이나 특정 정책의 효과를 예측하지 않음",
+      "source": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+      "projection_2026": null,
+      "latest_year": 2024,
+      "latest_value": 1.6265,
+      "observations": 35,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 9,
+        "mae": {
+          "N0": 0.03133333333333331,
+          "Trend": 0.024203703703703727,
+          "N1": 0.026534180667111527,
+          "Analog": 0.027722222222222228,
+          "Selected": 0.03017185307351617
+        },
+        "selected_improvement_pct": 3.706851893033425,
+        "descriptive_interval": [
+          -0.011491203223868639,
+          0.017999348928688166
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 2,
+          "N1": 2,
+          "Analog": 5
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2024
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "aging",
+      "name": "고령화와 부양 부담",
+      "target": "생산가능인구 대비 고령인구 비율",
+      "unit": "생산가능인구 100명당 고령인구",
+      "issue": "노인빈곤율 또는 실제 돌봄 지출이 아님",
+      "source": "https://data.worldbank.org/indicator/SP.POP.DPND.OL",
+      "projection_2026": {
+        "value": 29.304876363199817,
+        "chosen": "N1",
+        "candidates": {
+          "N0": 28.5012566906904,
+          "Trend": 29.351371085070802,
+          "N1": 29.304876363199817,
+          "Analog": 29.311940638377802
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2024,
+            "target_year": 2025,
+            "distance": 0.18806807694713515,
+            "change": 0.8106839476874015
+          },
+          {
+            "origin_year": 2023,
+            "target_year": 2024,
+            "distance": 0.3856229644491291,
+            "change": 0.8614684812479005
+          },
+          {
+            "origin_year": 2022,
+            "target_year": 2023,
+            "distance": 0.5886770857643656,
+            "change": 0.8781907542058995
+          },
+          {
+            "origin_year": 2021,
+            "target_year": 2022,
+            "distance": 0.7808982735577821,
+            "change": 0.7540004850818001
+          },
+          {
+            "origin_year": 2020,
+            "target_year": 2021,
+            "distance": 0.9137248549703543,
+            "change": 0.672833747095698
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 28.5012566906904,
+      "observations": 36,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 0.6981500790621201,
+          "Trend": 0.06972932476969937,
+          "N1": 0.07114379117902736,
+          "Analog": 0.09839586334364014,
+          "Selected": 0.07008732773991219
+        },
+        "selected_improvement_pct": 89.960994083956,
+        "descriptive_interval": [
+          0.5510702895541882,
+          0.7053364282483671
+        ],
+        "selection_counts": {
+          "N0": 0,
+          "Trend": 9,
+          "N1": 1,
+          "Analog": 0
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "suicide",
+      "name": "자살 사망 예방",
+      "target": "인구 10만 명당 자살 사망률",
+      "unit": "명/10만 명",
+      "issue": "집계 통계의 탐색이며 개인 위험 판정에 사용하지 않음; 모형 추정·자료 지연 확인 필요",
+      "source": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5",
+      "projection_2026": null,
+      "latest_year": 2021,
+      "latest_value": 15.63,
+      "observations": 22,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 6,
+        "mae": {
+          "N0": 0.36166666666666636,
+          "Trend": 0.35499999999999926,
+          "N1": 0.3284391785770107,
+          "Analog": 0.2999999999999992,
+          "Selected": 0.40833333333333294
+        },
+        "selected_improvement_pct": -12.903225806451601,
+        "descriptive_interval": [
+          -0.17833333333333337,
+          0.0
+        ],
+        "selection_counts": {
+          "N0": 3,
+          "Trend": 0,
+          "N1": 0,
+          "Analog": 3
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2021
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "road_deaths",
+      "name": "교통사고 사망",
+      "target": "인구 10만 명당 도로교통 사망률",
+      "unit": "명/10만 명",
+      "issue": "WHO 추정치일 수 있어 국내 경찰 집계와 동일하지 않음",
+      "source": "https://data.worldbank.org/indicator/SH.STA.TRAF.P5",
+      "projection_2026": null,
+      "latest_year": 2019,
+      "latest_value": 12.7,
+      "observations": 20,
+      "status": "NOT_EXECUTED_INSUFFICIENT_EVALUATION",
+      "eligible_years": 4
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "air_pollution",
+      "name": "초미세먼지 노출",
+      "target": "인구가중 연평균 PM2.5 노출",
+      "unit": "µg/m³",
+      "issue": "특정 관측소 농도·일별 경보 지표가 아님",
+      "source": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3",
+      "projection_2026": null,
+      "latest_year": 2023,
+      "latest_value": 6.96804491055748,
+      "observations": 34,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 8,
+        "mae": {
+          "N0": 0.46942360901897373,
+          "Trend": 0.5322467442999367,
+          "N1": 0.5177568291399929,
+          "Analog": 0.5115685879517023,
+          "Selected": 0.514614694867821
+        },
+        "selected_improvement_pct": -9.626930767987997,
+        "descriptive_interval": [
+          -0.13379951093030729,
+          0.0017367967554091646
+        ],
+        "selection_counts": {
+          "N0": 4,
+          "Trend": 3,
+          "N1": 1,
+          "Analog": 0
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2023
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "youth_neet",
+      "name": "청년 교육·고용 이탈",
+      "target": "15~24세 청년 중 교육·고용·훈련에 참여하지 않는 비율",
+      "unit": "%",
+      "issue": "국가별 관측 연도·조사 정의·결측 차이 확인 필요",
+      "source": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS",
+      "projection_2026": {
+        "value": 11.59,
+        "chosen": "N0",
+        "candidates": {
+          "N0": 11.59,
+          "Trend": 11.705333333333334,
+          "N1": 11.672070187888504,
+          "Analog": 12.087
+        },
+        "selection_n": 8,
+        "latest_selection_target": 2025,
+        "neighbors": [
+          {
+            "origin_year": 2024,
+            "target_year": 2025,
+            "distance": 0.4188207435675565,
+            "change": -0.006999999999999673
+          },
+          {
+            "origin_year": 2007,
+            "target_year": 2008,
+            "distance": 0.55217786365759,
+            "change": 0.7400000000000002
+          },
+          {
+            "origin_year": 2022,
+            "target_year": 2023,
+            "distance": 0.6025074466693465,
+            "change": -0.05299999999999905
+          },
+          {
+            "origin_year": 2000,
+            "target_year": 2001,
+            "distance": 0.6161487492649672,
+            "change": 0.5459999999999994
+          },
+          {
+            "origin_year": 2001,
+            "target_year": 2002,
+            "distance": 0.7164857528883382,
+            "change": 0.4969999999999999
+          }
+        ],
+        "label": "CONDITIONAL_2026_ANNUAL_PROJECTION_NOT_REALTIME"
+      },
+      "latest_year": 2025,
+      "latest_value": 11.59,
+      "observations": 32,
+      "status": "RETROSPECTIVE_NUMERIC_ONLY",
+      "summary": {
+        "n": 10,
+        "mae": {
+          "N0": 0.8629999999999995,
+          "Trend": 1.098266666666666,
+          "N1": 0.9462146198377409,
+          "Analog": 0.9147000000000001,
+          "Selected": 1.0518687457303242
+        },
+        "selected_improvement_pct": -21.885138555078186,
+        "descriptive_interval": [
+          -0.4875666666666666,
+          0.008332868959749426
+        ],
+        "selection_counts": {
+          "N0": 1,
+          "Trend": 3,
+          "N1": 1,
+          "Analog": 5
+        }
+      },
+      "first_target": 2016,
+      "last_target": 2025
+    },
+    {
+      "region": "USA",
+      "region_name": "미국",
+      "problem": "housing_burden",
+      "name": "주거비 과부담",
+      "target": "소득 대비 주거비 40% 초과 가구 비율, 소득·점유형태 정의 고정 필요",
+      "unit": "%",
+      "issue": "한국·미국의 소득 정의와 점유형태를 맞춘 연속 시계열 미확보; 주택가격지수로 대체하지 않음",
+      "source": "https://www.oecd.org/en/data/datasets/oecd-affordable-housing-database.html",
+      "projection_2026": null,
+      "status": "NOT_EXECUTED_NO_HARMONIZED_SERIES"
+    }
+  ]
+}
