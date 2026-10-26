@@ -1,0 +1,17 @@
+{
+  "frozen_at_utc": "2026-10-26T12:09:27.217796+00:00",
+  "prior_results_seen": true,
+  "sha256": {
+    "market_protocol.json": "ccada0e3526c23121796ab9c31387750bc6389a224a6a5994b6b0dad3476f9be",
+    "run_market.py": "57b5e52599b0a6898b0248a9dcef0396231545ae5f449f2012fc7dd96f98e4fc",
+    "run_keywords.py": "32a5a35ba5c5d551c8d64dc97c6e586ec23d99b21ebc4ed9e3f36cbbb0c30799",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "keyword_dictionary.json": "a526e9e60183e6de2fbd3945140a59e29d401be6431730e951bdc1fbcb4e07eb",
+    "data/timesx_krw.json": "e9988b2ecb65102b7b6e44c6a5a228c818447390ad387434a0e7b23c45d5194e",
+    "results/keyword_predictions.csv": "8f719abd58736d9bb18acd00a35fa8c60701c2a9fa4f8bb73be3e14ba458e2ed",
+    "data/market/sp500.json": "c1a5e7daec188f62009e689bdaf90a96e589c4aeb5f5309dd153c57409bbb114",
+    "data/market/nasdaq100.json": "ef056c2ed0598b3764f6f99e08d6b783a37bb5cc7aa84f089995799ab6f922dd",
+    "data/market/kospi.json": "42fc51eda70c6b04cbd02f70296db9a2e379e8cf69f02553599e68790a7294ab",
+    "data/market/kosdaq.json": "dab0b38a69f894994b4e401857a96c7fb1e8f3cf7ca9db4ced82a64016c9091b"
+  }
+}

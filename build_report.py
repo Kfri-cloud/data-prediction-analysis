@@ -169,6 +169,10 @@ def main():
 <li><a href="event_report.html">최신: 방향·주체·예상 대비 차이 비교</a></li>
 </ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav>'''
         report = report.replace('<h2>1.', navigation + '<h2 id="literature">1.', 1)
+    if (ROOT / "results/market_results.json").exists():
+        from build_market_report import section as market_section
+        report = report.replace('</main>', market_section() + '</main>')
+        report = report.replace('</ol><p>모든 실험', '<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li></ol><p>모든 실험', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))

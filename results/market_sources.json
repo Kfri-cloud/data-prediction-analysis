@@ -1,0 +1,42 @@
+[
+  {
+    "name": "sp500",
+    "symbol": "^GSPC",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1640995200&period2=1793059200&interval=1d",
+    "sha256": "c1a5e7daec188f62009e689bdaf90a96e589c4aeb5f5309dd153c57409bbb114",
+    "rows": 1207,
+    "exchange_timezone": "America/New_York",
+    "retrieved_at_utc": "2026-10-26T12:07:54.167165+00:00",
+    "historical_vintage_verified": false
+  },
+  {
+    "name": "nasdaq100",
+    "symbol": "^NDX",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=1640995200&period2=1793059200&interval=1d",
+    "sha256": "ef056c2ed0598b3764f6f99e08d6b783a37bb5cc7aa84f089995799ab6f922dd",
+    "rows": 1207,
+    "exchange_timezone": "America/New_York",
+    "retrieved_at_utc": "2026-10-26T12:07:54.541319+00:00",
+    "historical_vintage_verified": false
+  },
+  {
+    "name": "kospi",
+    "symbol": "^KS11",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1640995200&period2=1793059200&interval=1d",
+    "sha256": "42fc51eda70c6b04cbd02f70296db9a2e379e8cf69f02553599e68790a7294ab",
+    "rows": 1173,
+    "exchange_timezone": "Asia/Seoul",
+    "retrieved_at_utc": "2026-10-26T12:07:55.018183+00:00",
+    "historical_vintage_verified": false
+  },
+  {
+    "name": "kosdaq",
+    "symbol": "^KQ11",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKQ11?period1=1640995200&period2=1793059200&interval=1d",
+    "sha256": "dab0b38a69f894994b4e401857a96c7fb1e8f3cf7ca9db4ced82a64016c9091b",
+    "rows": 1173,
+    "exchange_timezone": "Asia/Seoul",
+    "retrieved_at_utc": "2026-10-26T12:07:55.448691+00:00",
+    "historical_vintage_verified": false
+  }
+]

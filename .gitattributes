@@ -7,3 +7,5 @@ results/pilot_predictions.csv -text
 run_events.py -text
 event_protocol.json -text
 results/keyword_predictions.csv -text
+run_market.py -text
+market_protocol.json -text

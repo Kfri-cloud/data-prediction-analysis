@@ -14,6 +14,10 @@ TimesX 원·달러 환율의 47개 시점 탐색 실험에서 기존 단어 해�
 
 [방향·주체·예상 차이 보고서](https://kfri-cloud.github.io/data-prediction-analysis/event_report.html)
 
+네 지수(S&P 500·나스닥 100·코스피·코스닥) 추가 시 전체 MAE는 **0.29% 감소**, 그 지수 모델에 뉴스까지 추가하면 **1.51% 증가**했습니다. 2025년에는 지수 추가도 악화돼 반복 개선은 미확인입니다. 현재 지수 스냅샷도 제공하지만 실시간 환율 예측이나 투자자별 수급 분석은 아닙니다.
+
+[네 지수와 뉴스 비교](https://kfri-cloud.github.io/data-prediction-analysis/market_report.html)
+
 기사별 공개시각·원문 스냅샷과 수치 최초 발표 버전을 검증하지 못했습니다. 따라서 **정식 타당성은 미입증**이며, 서울 소상공인 매출·폐업 예측을 검증한 결과가 아닙니다. 실시간 예측 서비스나 3D 경고 기능도 아직 없습니다.
 
 ## 구성
@@ -33,7 +37,7 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py
 python run_pilot.py
 python run_keywords.py
 python run_events.py
@@ -53,3 +57,5 @@ python build_report.py
 - [서울 추정매출 자료](https://data.seoul.go.kr/dataList/OA-22176/S/1/datasetView.do?tab=A)
 
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
+
+지수 실험은 별도 `python fetch_market.py`, `python run_market.py`, `python build_market_report.py`를 사용합니다. 공급자 응답이 나중에 달라지면 고정 해시가 일치하지 않아 실행을 거절합니다. 원본 시세 스냅샷은 로컬에만 보존했으므로 새 다운로드로 동일 결과가 재현된다고 보장하지 않습니다. 고정 실험을 재튜닝하거나 해시 검사를 우회해서는 안 됩니다.

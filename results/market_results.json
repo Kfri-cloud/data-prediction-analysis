@@ -1,0 +1,166 @@
+{
+  "status": "POST_HOC_EXPLORATORY_NOT_VALIDATED",
+  "all": {
+    "n": 47,
+    "mae_pp": {
+      "B1": 0.7951513545550396,
+      "M": 0.79281520064182,
+      "K1": 0.7976780420581749,
+      "MK": 0.8047832178290133
+    },
+    "index_improvement_pct": 0.29379990360790015,
+    "news_given_indices_improvement_pct": -1.5095595010671667,
+    "primary_delta_pp": -0.011968017187193609,
+    "primary_descriptive_ci_pp": [
+      -0.05451493706573054,
+      0.03747129572738082
+    ],
+    "index_descriptive_ci_pp": [
+      -0.13703293213627155,
+      0.10925999117957333
+    ],
+    "direction_accuracy": {
+      "B1": 0.5957446808510638,
+      "M": 0.6170212765957447,
+      "K1": 0.6595744680851063,
+      "MK": 0.6382978723404256
+    }
+  },
+  "blocks": {
+    "development": {
+      "n": 22,
+      "mae_pp": {
+        "B1": 0.7332555124419677,
+        "M": 0.703137961063325,
+        "K1": 0.7033064676066288,
+        "MK": 0.6983623004077818
+      },
+      "index_improvement_pct": 4.107374696487712,
+      "news_given_indices_improvement_pct": 0.6791925511063606,
+      "primary_delta_pp": 0.0047756606555432604,
+      "primary_descriptive_ci_pp": [
+        -0.06888338207107628,
+        0.10133055252667356
+      ],
+      "index_descriptive_ci_pp": [
+        -0.1670083157313418,
+        0.2028957779437582
+      ],
+      "direction_accuracy": {
+        "B1": 0.6363636363636364,
+        "M": 0.6363636363636364,
+        "K1": 0.7272727272727273,
+        "MK": 0.6818181818181818
+      }
+    },
+    "confirmation": {
+      "n": 21,
+      "mae_pp": {
+        "B1": 0.8344814309289253,
+        "M": 0.875407620038455,
+        "K1": 0.8593247968469206,
+        "MK": 0.8994525446212359
+      },
+      "index_improvement_pct": -4.904385836838997,
+      "news_given_indices_improvement_pct": -2.746711821142785,
+      "primary_delta_pp": -0.0240449245827812,
+      "primary_descriptive_ci_pp": [
+        -0.043301876323869344,
+        0.016357950629158194
+      ],
+      "index_descriptive_ci_pp": [
+        -0.23934366246139582,
+        0.13899455566858496
+      ],
+      "direction_accuracy": {
+        "B1": 0.5238095238095238,
+        "M": 0.5714285714285714,
+        "K1": 0.5238095238095238,
+        "MK": 0.5714285714285714
+      }
+    },
+    "latest_holdout": {
+      "n": 4,
+      "mae_pp": {
+        "B1": 0.9290955852140351,
+        "M": 0.852429816491207,
+        "K1": 0.9930762389007609,
+        "MK": 0.8930842979866185
+      },
+      "index_improvement_pct": 8.251655689997355,
+      "news_given_indices_improvement_pct": -4.769246770690695,
+      "primary_delta_pp": -0.04065448149541154,
+      "primary_descriptive_ci_pp": [
+        -0.08066189652400632,
+        -0.018276037300104825
+      ],
+      "index_descriptive_ci_pp": [
+        0.04971476569779534,
+        0.17493014927941533
+      ],
+      "direction_accuracy": {
+        "B1": 0.75,
+        "M": 0.75,
+        "K1": 1.0,
+        "MK": 0.75
+      }
+    }
+  },
+  "current_snapshot_asof_utc": "2026-10-26T12:09:27.437659+00:00",
+  "current_snapshot": [
+    {
+      "index": "sp500",
+      "latest_observed_timestamp_utc": "2026-10-23T13:30:00+00:00",
+      "eligible_latest_timestamp_utc": "2026-10-23T13:30:00+00:00",
+      "lagged_returns_1_5_20_and_volatility_pct": [
+        -0.5186972294159098,
+        -0.4668718065362176,
+        -1.5462177264639831,
+        0.6076499501912691
+      ],
+      "status": "eligible_under_48h_convention"
+    },
+    {
+      "index": "nasdaq100",
+      "latest_observed_timestamp_utc": "2026-10-23T13:30:00+00:00",
+      "eligible_latest_timestamp_utc": "2026-10-23T13:30:00+00:00",
+      "lagged_returns_1_5_20_and_volatility_pct": [
+        -0.004006245696575039,
+        -0.7880808023219443,
+        -5.392689838146181,
+        1.1430203622391866
+      ],
+      "status": "eligible_under_48h_convention"
+    },
+    {
+      "index": "kospi",
+      "latest_observed_timestamp_utc": "2026-10-26T00:00:00+00:00",
+      "eligible_latest_timestamp_utc": "2026-10-23T00:00:00+00:00",
+      "lagged_returns_1_5_20_and_volatility_pct": [
+        0.29870748328733043,
+        -2.0774341097465343,
+        -20.797354424469493,
+        2.683044509076275
+      ],
+      "status": "eligible_under_48h_convention"
+    },
+    {
+      "index": "kosdaq",
+      "latest_observed_timestamp_utc": "2026-10-26T00:00:00+00:00",
+      "eligible_latest_timestamp_utc": "2026-10-23T00:00:00+00:00",
+      "lagged_returns_1_5_20_and_volatility_pct": [
+        -1.6241295041286796,
+        -5.421629289501595,
+        -10.113960217927332,
+        2.920431500061941
+      ],
+      "status": "eligible_under_48h_convention"
+    }
+  ],
+  "alignment_rows": 264,
+  "minimum_lag_hours": 48.5,
+  "source_provenance_verified": false,
+  "new_untouched_holdout": false,
+  "investor_flow_used": false,
+  "current_fx_prediction_issued": false
+}

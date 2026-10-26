@@ -1,0 +1,13 @@
+{
+  "status": "POST_HOC_EXPLORATORY_NO_NEW_HOLDOUT",
+  "question": "Do four stock-index histories improve KRW forecasts, and does fixed keyword news add value beyond those indices?",
+  "arms": {"B1":"existing numeric/calendar/covariates", "M":"B1 plus four index histories", "K1":"B1 plus fixed topic keyword rates and event count", "MK":"M plus the same keyword rates and event count"},
+  "primary": "Paired MAE of M minus MK: incremental news value conditional on indices",
+  "secondary": "B1 minus M: incremental index value; all arms and calendar blocks reported",
+  "inputs": "Yahoo ^GSPC, ^NDX, ^KS11, ^KQ11 daily unadjusted close. Per index: 1/5/20 trading-observation returns and standard deviation of 20 daily returns, all in percent, 16 features. No volume or investor-flow claims.",
+  "timing": "Conservative assumed origin = supplied target date at 00:00 Korea fixed UTC+09. Only index bars timestamped at least 48 hours before this cutoff are included; this is a conservative eligibility convention, NOT verified historical publication time. Reject history with fewer than 21 usable bars or latest bar more than 14 days stale. Never forward-fill future observations.",
+  "training": "Same 66 source samples, same 47 evaluation origins, fixed ridge lambda=1, fold-local scaling, target windows completed strictly before origin. Exact original numeric/news release provenance remains unresolved.",
+  "current_snapshot": "Show latest retrieved index observation dates and conservative currently eligible history only; no current FX forecast without aligned current FX and news inputs",
+  "statistics": "Same paired block bootstrap 5000 draws, length 3, seed 20261026. Descriptive only; outcomes have already been explored with multiple models.",
+  "limits": ["Index moves cannot identify retail versus institutional participation", "No investor-class flow data was collected", "Historical revisions and point-in-time vintages unverified", "Market price incorporation of news is a hypothesis, not a causal conclusion from forecast scores", "No new holdout, current success probability, investment recommendation or Seoul SME validation"]
+}
