@@ -3,7 +3,7 @@
 <title>데이터예측분석 | 뉴스 기반 예측 검증</title><style>
 :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172b45;font:16px/1.85 system-ui,"Malgun Gothic",sans-serif}
 main{max-width:1080px;margin:auto;padding:48px 28px 80px}h1{font-size:34px;line-height:1.4}h2{font-size:24px;margin-top:44px}p{max-width:950px}a{color:#1d54b9}table{border-collapse:collapse;width:100%;font-size:14px;background:white}th,td{padding:13px;text-align:left;border-bottom:1px solid #dbe3ef;vertical-align:top}th{background:#e9eff8}.table{overflow:auto}.notice{padding:22px 26px;border-left:5px solid #b7791f;background:#fff8e6;border-radius:8px}.blue{border-color:#3267ce;background:#eaf1ff}.meta{color:#61718a;font-size:14px}code{font-size:13px;overflow-wrap:anywhere}li{margin:7px 0}.flow{padding:18px;background:white;border:1px solid #dbe3ef;border-radius:8px}@media(max-width:600px){main{padding:24px 16px}h1{font-size:27px}}
-</style></head><body><nav style="padding:16px"><a href="index.html">전체 기록</a> · <a href="pilot_report.html">기본 실험</a> · <a href="keyword_report.html">키워드</a> · <a href="event_report.html">사건 특징</a> · <a href="market_report.html">네 지수 비교</a> · <a href="decade_report.html">10개년</a> · <a href="monthly_report.html">월별 비교</a> · <a href="combination_report.html">후보 조합</a></nav><main>
+</style></head><body><nav style="padding:16px"><a href="index.html">전체 기록</a> · <a href="pilot_report.html">기본 실험</a> · <a href="keyword_report.html">키워드</a> · <a href="event_report.html">사건 특징</a> · <a href="market_report.html">네 지수 비교</a> · <a href="decade_report.html">10개년</a> · <a href="monthly_report.html">월별 비교</a> · <a href="combination_report.html">후보 조합</a> · <a href="social_report.html">사회문제</a></nav><main>
 <p class="meta">2026-10-26 · 문헌 조사 + 공개 데이터 감사 + 사전 검증 설계</p>
 <h1>데이터예측분석</h1><p>뉴스가 미래 예측에 도움이 되는지, 시간순 비교실험으로 검증합니다.</p>
 <div class="notice"><strong>판정: 조건부 가능성은 확인. 서울 소상공인 현재 예측의 타당성은 아직 미확인.</strong><br>
@@ -14,7 +14,7 @@ main{max-width:1080px;margin:auto;padding:48px 28px 80px}h1{font-size:34px;line-
 <li><a href="pilot_report.html">숫자 대 단어 해시 시간순 실험</a></li>
 <li><a href="keyword_report.html">키워드 중심 비교</a></li>
 <li><a href="event_report.html">최신: 방향·주체·예상 대비 차이 비교</a></li>
-<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li><li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li><li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li><li><a href="combination_report.html">최신: 후보 조합·50:50 혼합 비교</a></li></ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav><h2 id="literature">1. 무엇을 입증해야 하는가</h2>
+<li><a href="market_report.html">최신: S&P 500·나스닥 100·코스피·코스닥 결합 비교</a></li><li><a href="decade_report.html">최신: 2016~2025년 10개년 비교</a></li><li><a href="monthly_report.html">최신: 2025-10~2026-10 월별 비교</a></li><li><a href="combination_report.html">최신: 후보 조합·50:50 혼합 비교</a></li><li><a href="social_report.html">최신: 사회문제 10선 — 한국·미국 별도 테스트</a></li></ol><p>모든 실험은 탐색 단계다. 현재 예측·서울 소상공인 적용의 타당성은 미입증이며, 전체 맥락 언어모델은 아직 평가하지 않았다.</p></nav><h2 id="literature">1. 무엇을 입증해야 하는가</h2>
 <p>검증할 가설은 “같은 시점에 이용 가능한 숫자 정보가 같을 때, 뉴스를 추가한 예측이 이후 실제 결과를 더 잘 예측한다”이다. 뉴스가 변화를 일으켰다는 인과관계와 현재에도 반드시 통한다는 주장은 별개다.</p>
 <div class="flow">더 오래된 기간으로 학습 → 이후 과거 구간 예측 → 여러 시작점에서 반복 → 마지막 보류 구간 확인 → 현재 예측을 미리 저장 → 새 결과와 비교</div>
 <p>앞 단계가 반복 통과하면 현재 적용을 지지하는 경험적 근거가 생긴다. 그 근거는 데이터 수집 방식·뉴스의 의미·경제 환경·대상 업종이 충분히 유사하다는 조건을 가진다. 과거 성능만으로 “현재 타당할 확률 90%”를 산출할 수는 없다.</p>
@@ -166,4 +166,18 @@ python build_report.py</pre><p>작업 폴더: <code>news-evidence-lab</code><br>
 <p>이 순위는 같은 자료를 반복 탐색한 연구 우선순위이며 실제 운영 추천이 아니다. 원래 제안한 5% 실용 개선 기준에도 혼합 모델은 못 미쳤다. 현재부터 입력과 예측을 고정 저장한 새 기간 검증 또는 아직 쓰지 않은 자료가 필요하다. 이번에는 실시간 예측·자동 경고를 발행하지 않았다.</p>
 <h3>검증 범위</h3>
 <p>날짜·정답·기본 예측·학습 수가 맞는지 확인해 47개를 연결했고, 두 구성 모델을 다시 학습해 기존 예측과 일치함을 확인했다. 학습 구간, 규칙 기반 방향 추출, 지수 48시간 지연 규칙, 회귀 설정은 변경하지 않았다. 기존 데이터의 원문·공개시각·수치 버전 미확인 문제는 그대로다. 2026년 구간도 이미 본 자료라 새로운 보류 구간이 아니다.</p>
-<p><a href="combination_protocol.json">사전 고정한 조합 설계</a> · <a href="results/combination_results.json">모든 후보·기간의 지표</a> · <a href="results/combination_predictions.csv">시점별 예측</a> · <a href="results/combination_lock.json">고정 해시</a></p></section></main></body></html>
+<p><a href="combination_protocol.json">사전 고정한 조합 설계</a> · <a href="results/combination_results.json">모든 후보·기간의 지표</a> · <a href="results/combination_predictions.csv">시점별 예측</a> · <a href="results/combination_lock.json">고정 해시</a></p></section><section id="social"><h2>사회문제 10선: 한국과 미국 별도 실험</h2>
+<div class="notice"><strong>요청한 뉴스·지표 50:50 방법은 두 지역 모두 미실행이다.</strong><br>각 문제에 맞는 과거 뉴스·공개시각·관련 지표가 확보되지 않았다. 아래 숫자 기준선 테스트를 최종방법의 테스트로 표시하지 않는다.</div>
+<p>한국 10개 문제를 중심으로 선정하고, 미국의 같은 문제 10개를 별도 비교 묶음으로 구성했다. 국가를 섞어 학습하거나 성능을 합산하지 않았다. 미국 결과는 한국의 타당성을 입증하지 않는다. 해외 전체를 대표하는 표본도 아니다.</p>
+<p><strong><a href="social_korea_report.html">한국 10개: 숫자 기준선 6개 실행 · 최종방법 0개</a></strong></p>
+<p><strong><a href="social_usa_report.html">미국 10개: 숫자 기준선 7개 실행 · 최종방법 0개</a></strong></p>
+<ol><li>소상공인 폐업 — 정의가 고정된 소상공인 폐업률</li><li>청년실업 — 15~24세 청년 경제활동인구 중 실업 비율, ILO 모형 추정</li><li>생활물가 부담 — 연간 소비자물가 상승률</li><li>저출생 — 합계출산율</li><li>고령화와 부양 부담 — 생산가능인구 대비 고령인구 비율</li><li>자살 사망 예방 — 인구 10만 명당 자살 사망률</li><li>교통사고 사망 — 인구 10만 명당 도로교통 사망률</li><li>초미세먼지 노출 — 인구가중 연평균 PM2.5 노출</li><li>청년 교육·고용 이탈 — 15~24세 청년 중 교육·고용·훈련에 참여하지 않는 비율</li><li>주거비 과부담 — 소득 대비 주거비 40% 초과 가구 비율, 소득·점유형태 정의 고정 필요</li></ol>
+<h3>폐업률을 다른 숫자로 바꾸지 않았다</h3>
+<p><a href="https://mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1069562&cbIdx=288">중소벤처기업부 공개 자료</a>에는 전체 사업자 및 소상공인 주요 6대 업종의 폐업 지표가 있지만, 이것을 동일한 소상공인 모집단의 장기 폐업률로 간주하지 않았다. 미국의 사업체 퇴출·폐업 자료도 한국 사업자등록 폐업과 정의가 다를 수 있어 별도 검증 전 숫자를 넣지 않았다.</p>
+<h3>실행한 것은 무엇인가</h3>
+<p>공개된 세계은행 연간 통계에서 과거 4년의 수준·변화를 이용하는 고정 릿지 회귀와 ‘직전 값 유지’ 기준선을 비교했다. 해당 나라·문제의 과거 값만 사용하고, 결측 연도를 보간하지 않았다. 훈련 표본 10개 이상, 평가 연도 5개 이상을 요구했다. 평가 대상은 자료가 있는 2016~2025년이다. 단위가 다른 지표의 MAE를 평균내거나 순위로 섞지 않았다.</p>
+<p>이것은 현재 내려받은 통계를 연도순으로 배치한 진단용 실험이다. 당시 발표일·수정 버전을 확인한 진짜 실시간 재현이 아니며, 평활화되거나 모형으로 추정된 통계는 단순 모델로도 잘 맞을 수 있다. 예를 들어 고령부양비의 큰 개선율을 뉴스 예측이 성공했다는 근거로 해석할 수 없다.</p>
+<p>최신 관측이 2025년이고 숫자 테스트 조건을 충족한 항목에만 2026년 조건부 숫자 외삽을 제시했다. 2024년 이전에 끝나는 통계로 2026년 값을 여러 해 외삽하지 않았다. 예측 확률·신뢰구간·위험 경고를 발행하지 않았으며, 개인 위험이나 정책 효과를 예측한 결과도 아니다.</p>
+<h3>최종방법으로 넘어가기 위한 조건</h3>
+<p>각 문제의 대상과 분모를 고정하고, 당시 확보할 수 있었던 수치 버전과 원문 뉴스, 문제별 방향 추출 규칙, 적합한 관련 지표를 마련해야 한다. 이후 숫자·관련 지표 모델과 뉴스·방향 모델을 따로 검증하고 50:50으로 결합해야 한다. 환율 모델의 계수나 네 주가지수를 모든 사회문제에 그대로 넣는 것은 이번에 하지 않았다.</p>
+<p><a href="social_catalog.json">10선과 정확한 지표 정의</a> · <a href="social_protocol.json">실행·미실행 기준</a> · <a href="results/social_results.json">두 지역 결과</a> · <a href="results/social_sources.json">출처·수집시각</a> · <a href="results/social_lock.json">고정 해시</a></p></section></main></body></html>

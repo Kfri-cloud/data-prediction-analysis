@@ -19,3 +19,7 @@ run_combinations.py -text
 combination_protocol.json -text
 results/event_predictions.csv -text
 results/market_predictions.csv -text
+run_social.py -text
+social_protocol.json -text
+social_catalog.json -text
+results/social_sources.json -text

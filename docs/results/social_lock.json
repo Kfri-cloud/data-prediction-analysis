@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-10-26T12:40:06.070353+00:00",
+  "sha256": {
+    "social_protocol.json": "53d633586c0522a500a512f6a69b988b0354e0f2f06224d725a9a1a3c12dfae0",
+    "social_catalog.json": "92358fc5d267648548852c7dc8fc92a383be91a432d40bdac95eb0d02eac6a79",
+    "run_social.py": "8901ff2c095301020316d00decd0dbe935f5d1d7a07630bf940b17284ce49605",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "results/social_sources.json": "05dbf4b141b0812a7d03001f92496ec44b7fb74abb5964d2e85431833541ea6e",
+    "data/social/KOR/youth_jobs.json": "7cd47eca79f6124dfbd54eda529891f1a05e7fe9a332c5382b88a5be1df30bb4",
+    "data/social/KOR/living_cost.json": "3cefc29f5705e7edc7312047ba4e9e5fbd0e6d45bbae42f49a3bc3385bf89ad7",
+    "data/social/KOR/fertility.json": "72e1b326e4011ee91a42fd9d2c319cdae3b5f6f9b44d04db1d10cfc230da9391",
+    "data/social/KOR/aging.json": "689fec6948e9a83c86a580b81a9ed03b21c43ce2b0ec113655efe31006ad08ad",
+    "data/social/KOR/suicide.json": "bb0b4ba7f34d4e10e98762b77e06866f76a4fa149a15c52619fadfba9d3e8e11",
+    "data/social/KOR/road_deaths.json": "e1b54d0f1544d135f1b5ce674704e6f93af963f29aa5edc955e9f4dcfda8dc38",
+    "data/social/KOR/air_pollution.json": "7b08a022b0394731f8182e6a5602826004828869b90ab433bdd6c989dee9f626",
+    "data/social/KOR/youth_neet.json": "cb055fc189b5080d168d32391d4468df51b772b2dce9f9810c302536b0faf4fe",
+    "data/social/USA/youth_jobs.json": "94a98af6445a9d1415cc426597fd4264bfad4454550ba9ae1ac794905ffb9900",
+    "data/social/USA/living_cost.json": "689082d4901c51ec2fc96f1f16288cbe05c09903921444a06e80314ffa09b23b",
+    "data/social/USA/fertility.json": "7b1dca0355e28a4ea7d346f6fc0de21e57cc5d957458fc07c90e096273766bf9",
+    "data/social/USA/aging.json": "3037d5b19d7737ef6641b86b1e181519ed739fa70435c523493c8ef831944260",
+    "data/social/USA/suicide.json": "4538fc86ad653ca35ef5c867d46ef653ef0b114ba58fe3bea139dea884d6e48f",
+    "data/social/USA/road_deaths.json": "06b36d96e6e7219af7fbad37b52d1d6376c3efce32aa9da0d181b998d83c8ef5",
+    "data/social/USA/air_pollution.json": "e5f9eb25480bf3493c80ab3879ff0960db7fefd4a22e35f73889dc1fd652e41e",
+    "data/social/USA/youth_neet.json": "c49bee3f65eecadf32e55a15aeb71604455ba6aabeba609bfcf6b3008a12e5b3"
+  }
+}

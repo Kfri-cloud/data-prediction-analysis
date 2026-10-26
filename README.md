@@ -6,6 +6,9 @@
 
 ## 현재 결과
 
+[사회문제 10선](https://kfri-cloud.github.io/data-prediction-analysis/social_report.html)은 [한국](https://kfri-cloud.github.io/data-prediction-analysis/social_korea_report.html)과 [미국](https://kfri-cloud.github.io/data-prediction-analysis/social_usa_report.html)을 별도로 분석했습니다. **최종 50:50 방법은 두 지역 모두 미실행**입니다. 뉴스·공개시각·관련 지표가 부족합니다. 숫자 기준선은 한국 6개, 미국 7개 실행했고, 2025년까지 자료가 있는 각 3개에만 2026년 조건부 숫자 외삽을 제시했습니다. 최종방법의 예측으로 해석하면 안 됩니다.
+
+
 [후보 조합 보고서](https://kfri-cloud.github.io/data-prediction-analysis/combination_report.html): 같은 47개 시점에서 키워드·방향 모델과 네 지수 모델의 고정 50:50 평균이 숫자 기준선보다 MAE 2.94% 감소했습니다. 2025년에는 악화했고 구간 추정도 0을 포함하므로 검증 완료가 아닙니다. 과거 결과로 고른 조합의 추가 탐색이며 다음 독립 검증의 후보입니다.
 
 
@@ -46,7 +49,7 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py test_decade.py test_combinations.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py test_events.py test_market.py test_decade.py test_combinations.py test_social.py
 python run_pilot.py
 python run_keywords.py
 python run_events.py
@@ -70,6 +73,8 @@ python build_report.py
 월별 집계는 `python run_monthly.py`, `python build_monthly_report.py`로 재현합니다. 원래 고정된 10개년 입력 스냅샷이 필요합니다.
 
 후보 조합은 `python run_combinations.py`, `python build_combination_report.py`로 재현합니다. 기존 사건·지수 실험의 고정 스냅샷이 필요합니다.
+
+사회문제는 `python fetch_social.py`, `python run_social.py`, `python build_social_report.py` 순서입니다. 국가별로 별도 학습하며 원자료 버전이 바뀌면 고정 해시 확인으로 실행을 중단합니다.
 
 논문 본문과 원본 데이터 파일은 포함하지 않았습니다. 출처별 이용조건은 원문에서 확인해야 합니다.
 

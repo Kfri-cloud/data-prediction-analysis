@@ -185,6 +185,10 @@ def main():
         from build_combination_report import section as combination_section
         report = report.replace('</main>', combination_section() + '</main>')
         report = report.replace('</ol><p>모든 실험', '<li><a href="combination_report.html">최신: 후보 조합·50:50 혼합 비교</a></li></ol><p>모든 실험', 1)
+    if (ROOT / "results/social_results.json").exists():
+        from build_social_report import overview as social_section
+        report = report.replace('</main>', social_section() + '</main>')
+        report = report.replace('</ol><p>모든 실험', '<li><a href="social_report.html">최신: 사회문제 10선 — 한국·미국 별도 테스트</a></li></ol><p>모든 실험', 1)
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))
