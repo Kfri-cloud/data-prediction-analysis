@@ -1,0 +1,10 @@
+{
+  "monetary_policy": ["interest rate", "interest rates", "federal funds", "monetary policy", "rate hike", "rate hikes", "rate cut", "rate cuts", "fomc", "federal reserve", "bank of korea", "central bank"],
+  "inflation": ["inflation", "cpi", "consumer price", "consumer prices", "pce", "price pressures", "disinflation"],
+  "employment": ["employment", "unemployment", "payroll", "payrolls", "jobs", "labor market", "labour market", "wage", "wages"],
+  "growth_demand": ["gdp", "economic growth", "recession", "retail sales", "consumer spending", "consumer confidence", "pmi", "manufacturing"],
+  "trade": ["tariff", "tariffs", "exports", "imports", "trade deficit", "trade surplus", "trade balance", "trade war"],
+  "risk": ["geopolitical", "war", "conflict", "sanctions", "uncertainty", "crisis", "default", "bankruptcy", "risk aversion"],
+  "energy": ["oil", "crude", "opec", "energy", "gas", "fuel"],
+  "currency": ["dollar", "won", "currency", "exchange rate", "exchange rates", "depreciation", "appreciation", "intervention"]
+}

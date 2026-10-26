@@ -6,7 +6,9 @@
 
 ## 현재 결과
 
-TimesX 원·달러 환율의 47개 시점 탐색 실험에서 사건 설명 추가 모델의 평균 절대오차는 기본 모델보다 **5.07% 증가**했습니다. 2024년의 미세한 개선은 2025년에 유지되지 않았습니다.
+TimesX 원·달러 환율의 47개 시점 탐색 실험에서 기존 단어 해시 모델의 평균 절대오차는 기본 모델보다 **5.07% 증가**했습니다. 후속 키워드 8개 주제 모델은 **0.32% 증가**하여 해시 방식보다는 나았지만 숫자 기준선을 개선하지 못했습니다. 전체 맥락 언어모델은 시험하지 않았습니다. 키워드 비교는 이미 본 데이터를 다시 쓴 추가 탐색이며 새 보류 구간이 아닙니다.
+
+[키워드 비교 보고서](https://kfri-cloud.github.io/data-prediction-analysis/keyword_report.html)
 
 기사별 공개시각·원문 스냅샷과 수치 최초 발표 버전을 검증하지 못했습니다. 따라서 **정식 타당성은 미입증**이며, 서울 소상공인 매출·폐업 예측을 검증한 결과가 아닙니다. 실시간 예측 서비스나 3D 경고 기능도 아직 없습니다.
 
@@ -27,9 +29,11 @@ Python 환경에서 아래 명령을 사용합니다. 원본 연구 데이터는
 python -m pip install -r requirements.txt
 python fetch_sources.py
 python fetch_pilot_source.py
-python -m unittest -v test_audit.py test_pilot.py
+python -m unittest -v test_audit.py test_pilot.py test_keywords.py
 python run_pilot.py
+python run_keywords.py
 python build_pilot_report.py
+python build_keyword_report.py
 python build_report.py
 ```
 

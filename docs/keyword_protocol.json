@@ -1,0 +1,13 @@
+{
+  "status": "POST_HOC_EXPLORATORY_EXTENSION_NO_NEW_HOLDOUT",
+  "question": "Do fixed topic keywords in exported event summaries improve the same numeric baseline?",
+  "prior_results_seen": true,
+  "dataset_and_target": "Same 66 TimesX KRW samples, 47 expanding-origin evaluations and 12-business-day mean-return target as pilot_protocol.json",
+  "primary_arm": "K1 = B1 numeric/calendar/covariates + event count + eight topic mention rates per 1000 English words",
+  "controls": ["B1 numeric baseline", "B2 previous 32-dimensional word hash", "B3 numeric plus event count", "KS numeric plus preceding-origin keyword rates and event count"],
+  "training": "Same fixed ridge lambda=1, training-only scaling, no tuning; training target ends strictly before origin",
+  "features": "Manually fixed English topic dictionaries matching the English benchmark, not learned from target outcomes. Case-insensitive token boundaries; longest multiword synonyms consumed once within each topic; rates normalized by word count.",
+  "primary_metric": "Paired MAE difference B1 minus K1, all 47 origins and every calendar block",
+  "uncertainty": "Same 5000-draw block bootstrap length 3, seed 20261026; descriptive only; multiple strategies have now been inspected on these outcomes",
+  "limitations": ["No new untouched test period", "Original publication timestamps and source snapshots missing", "Keyword frequency does not encode negation, direction, expectations, actor or causal effect", "No full-context language model has been evaluated", "No current probability or Seoul SME validity claim"]
+}

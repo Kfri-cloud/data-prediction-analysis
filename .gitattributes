@@ -1,2 +1,6 @@
 run_pilot.py -text
 pilot_protocol.json -text
+run_keywords.py -text
+keyword_protocol.json -text
+keyword_dictionary.json -text
+results/pilot_predictions.csv -text

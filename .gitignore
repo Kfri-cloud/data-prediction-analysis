@@ -5,3 +5,4 @@ __pycache__/
 .env.*
 /report.html
 /pilot_report.html
+/keyword_report.html

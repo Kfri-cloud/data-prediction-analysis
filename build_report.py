@@ -155,6 +155,10 @@ def main():
     if (ROOT / "results/pilot_results.json").exists():
         from build_pilot_report import section
         report = report.replace('</main>', section() + '</main>')
+    if (ROOT / "results/keyword_results.json").exists():
+        from build_keyword_report import section as keyword_section
+        report = report.replace('<h2>1.', '<p><strong><a href="keyword_report.html">추가 비교: 키워드 중심 모델 결과 보기</a></strong></p><h2>1.', 1)
+        report = report.replace('</main>', keyword_section() + '</main>')
     (ROOT / "report.html").write_text(report, encoding="utf-8")
     print(json.dumps(evidence, ensure_ascii=True, indent=2))
     print("Report: " + str(ROOT / "report.html"))
