@@ -1,0 +1,9 @@
+{
+  "primary": "Five nearest earlier non-overlapping completed cases, median residual relative to naive forecast; same 15 targets and evaluation origins as diverse experiment",
+  "distance": "Training-only standardized mean squared distance, equal block weights: own history/state, calendar, supplied covariates, lagged four indices. News variant adds keyword/direction block. Constant training features excluded. Outcome values never enter distance or selection.",
+  "selection": "Sort by distance then index; greedily exclude overlapping target windows between selected neighbors. Up to5, minimum3, otherwise use naive. No tuned hyperparameters. k3 sensitivity fixed before results.",
+  "predictions": "Primary = current naive + median(neighbor actual minus neighbor naive). Raw analogue median target change as secondary. Historical-residual median across ALL eligible cases is a control for value of similarity selection.",
+  "targets": "Price next12 mean/last-1 percent; weekly search next12mean-last index points. Price naive zero change; search naive last-year same12week mean minus last.",
+  "uncertainty": "Neighbor residual interquartile range describes case spread, not calibrated interval; same-sign fraction is not probability. Paired MAE block bootstrap length3 5000 replicates, descriptive and unadjusted for multiple testing. Non-overlap evaluation sensitivity.",
+  "limitations": "Repeated exploration; retrospective covariates/news timestamps and vintages unverified; no causality, no current forecast, nearest need not be genuinely similar. All data features, blocks and k fixed without consulting new results."
+}

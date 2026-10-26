@@ -87,3 +87,5 @@ python build_report.py
 [내부 가중치 후 50:50](https://kfri-cloud.github.io/data-prediction-analysis/weighted_report.html): 나스닥 및 결과형 뉴스 비중을 과거 OOF 오차로 선택하는 추가 탐색. `python run_weighted.py`, `python build_weighted_report.py`. 최초 공개시각과 새 미래 기간의 검증은 미완료입니다.
 
 [5개 분야 × 3개 대표 지표](https://kfri-cloud.github.io/data-prediction-analysis/diverse_report.html): 에너지·농산물 가격과 기술·여가/여행·소비 검색 관심도를 따로 평가했습니다. 심리 표현 우선 가중치는 균등 우선도보다 개선되지 않았습니다. 주간 검색의 비중복 평가 표본은 각 4회뿐이며 인과/실전 검증이 아닙니다. `python fetch_diverse.py`, `python run_diverse.py`, `python build_diverse_report.py`. 원자료와 기존 지수 스냅샷이 필요합니다.
+
+[유사 사례 예측](https://kfri-cloud.github.io/data-prediction-analysis/analogue_report.html): 결과를 가린 과거 조건 거리로 최대 5개 사례를 고르고 단순 기준의 오차 중앙값을 보정합니다. 시간순 학습·사례 기간 중복 배제, 15개 지표 383회 탐색이며 실전 검증은 아닙니다. `python run_analogue.py`, `python build_analogue_report.py`.

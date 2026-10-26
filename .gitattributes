@@ -35,3 +35,7 @@ run_diverse.py -text
 fetch_diverse.py -text
 diverse_protocol.json -text
 results/diverse_sources.json -text
+run_analogue.py -text
+analogue_protocol.json -text
+results/diverse_predictions.csv -text
+results/diverse_lock.json -text

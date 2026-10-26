@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "run_analogue.py": "bda07c1df46c912623e03f005e984401b109c17a90c8d8d5a7c8832f2375ed68",
+    "analogue_protocol.json": "3ccae147a9236ec6ba687087b4b4de87c23ac91181c16966915b9b465b823e28",
+    "results/diverse_predictions.csv": "7593c0026841761805fdc8e570c77ff0922d1c49a5d21983a48b1e42820f2013",
+    "results/diverse_lock.json": "397463ed7f18f68bcd7d3346a128da9a5142581fae14bf986c3fce3af4320c95"
+  },
+  "frozen_at": "2026-10-26T13:14:27.672742+00:00"
+}
