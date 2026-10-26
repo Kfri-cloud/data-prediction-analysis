@@ -93,3 +93,5 @@ python build_report.py
 [사회문제 방법별 비교](https://kfri-cloud.github.io/data-prediction-analysis/social_transfer_report.html): 국가별로 현재 값 유지·추세·회귀·유사 사례를 재검증합니다. 과거 예측 오차로 시점마다 방법을 선택하며, 한국 6개·미국 7개 실행 및 각 3개 조건부 2026년 연간 추정을 제공합니다. 실제 공개일·수정 이력 미검증이며 뉴스 50:50은 미실행입니다. `python run_social_transfer.py`, `python build_social_transfer_report.py`.
 
 [핵심 후보 선별 기록](https://kfri-cloud.github.io/data-prediction-analysis/evidence_summary.html): 개선율 10%, 비중복 평가 8회, 기술적 차이 구간 하한 양수의 사후 선별입니다. 실전 타당성 인증이 아닙니다. `python build_evidence_summary.py`.
+
+[분야별 기준 검증 지도](https://kfri-cloud.github.io/data-prediction-analysis/field_guide.html): 기존 35개 국가·지표 조합과 미국 월별 5개를 네 범주로 구분했습니다. 월별 597회 추가 검증에서 비농업 고용만 사전 고정된 주모델 선별 기준을 통과했습니다. 수정 버전 자료의 탐색이며 실전 검증은 아닙니다. 재현: `python fetch_monthly_domains.py`, `python run_monthly_domains.py`, `python build_field_guide.py`. v1은 결측에서 중단된 감사용 보관본이며 v2가 불완전 구간을 제외합니다.

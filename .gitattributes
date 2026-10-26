@@ -43,3 +43,8 @@ run_social_transfer.py -text
 social_transfer_protocol.json -text
 results/social_lock.json -text
 results/social_baseline_predictions.csv -text
+run_monthly_domains.py -text
+run_monthly_domains_v1.py -text
+fetch_monthly_domains.py -text
+monthly_domains_protocol.json -text
+results/monthly_domains_sources.json -text

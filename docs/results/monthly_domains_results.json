@@ -1,0 +1,466 @@
+{
+  "status": "CURRENT_VINTAGE_EXPLORATORY_NOT_REALTIME",
+  "results": [
+    {
+      "id": "PAYEMS",
+      "field": "고용",
+      "name": "비농업 고용자 수",
+      "unit": "천 명",
+      "source": "https://fred.stlouisfed.org/series/PAYEMS",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 500.40833333333336,
+          "Seasonal": 3904.741666666667,
+          "Drift": 487.41805555555635,
+          "Ridge": 881.1677997209597,
+          "Analog": 421.6666666666667,
+          "Selected": 437.5760748996162
+        },
+        "improvement": {
+          "Last": 12.55619745881873,
+          "Seasonal": 88.7937253663913
+        },
+        "intervals": {
+          "Last": [
+            12.649027777777695,
+            104.76109987946525
+          ],
+          "Seasonal": [
+            2519.5289346117625,
+            4738.4521337550195
+          ]
+        },
+        "selection_counts": {
+          "Last": 7,
+          "Seasonal": 0,
+          "Drift": 61,
+          "Ridge": 2,
+          "Analog": 50
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 726.25,
+            "Seasonal": 3729.2833333333333,
+            "Drift": 769.0611111111112,
+            "Ridge": 1491.1087158295807,
+            "Analog": 673.55,
+            "Selected": 673.2972222222219
+          },
+          "improvement": {
+            "Last": 7.29126027921213,
+            "Seasonal": 81.9456672491438
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 1,
+            "Seasonal": 0,
+            "Drift": 44,
+            "Ridge": 0,
+            "Analog": 15
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 274.56666666666666,
+            "Seasonal": 4080.2,
+            "Drift": 205.77500000000146,
+            "Ridge": 271.22688361233884,
+            "Analog": 169.78333333333333,
+            "Selected": 201.85492757701044
+          },
+          "improvement": {
+            "Last": 26.482362179066243,
+            "Seasonal": 95.05281781341576
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 6,
+            "Seasonal": 0,
+            "Drift": 17,
+            "Ridge": 2,
+            "Analog": 35
+          }
+        }
+      },
+      "screen_pass": true,
+      "best_posthoc": "Analog"
+    },
+    {
+      "id": "UNRATE",
+      "field": "노동시장",
+      "name": "실업률",
+      "unit": "%",
+      "source": "https://fred.stlouisfed.org/series/UNRATE",
+      "missing_months": [
+        "2025-10-01"
+      ],
+      "excluded_target_months": [
+        "2025-10-01",
+        "2025-11-01",
+        "2025-12-01"
+      ],
+      "summary": {
+        "n": 117,
+        "mae": {
+          "Last": 0.264957264957265,
+          "Seasonal": 1.2880341880341881,
+          "Drift": 0.3138176638176639,
+          "Ridge": 0.39271861696574745,
+          "Analog": 0.2888888888888889,
+          "Selected": 0.27529428805961736
+        },
+        "improvement": {
+          "Last": -3.9013925902426694,
+          "Seasonal": 78.6267871911246
+        },
+        "intervals": {
+          "Last": [
+            -0.02126159351121958,
+            -0.001994301994301991
+          ],
+          "Seasonal": [
+            0.48159711905856956,
+            1.7060803710671038
+          ]
+        },
+        "selection_counts": {
+          "Last": 88,
+          "Seasonal": 0,
+          "Drift": 14,
+          "Ridge": 3,
+          "Analog": 12
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 0.3983333333333334,
+            "Seasonal": 1.228333333333333,
+            "Drift": 0.4747222222222223,
+            "Ridge": 0.6232632048522789,
+            "Analog": 0.4283333333333334,
+            "Selected": 0.41000000000000003
+          },
+          "improvement": {
+            "Last": -2.9288702928870203,
+            "Seasonal": 66.62143826322931
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 43,
+            "Seasonal": 0,
+            "Drift": 11,
+            "Ridge": 0,
+            "Analog": 6
+          }
+        },
+        "2021-2025": {
+          "n": 57,
+          "mae": {
+            "Last": 0.12456140350877198,
+            "Seasonal": 1.3508771929824561,
+            "Drift": 0.1444444444444445,
+            "Ridge": 0.15004010340097737,
+            "Analog": 0.14210526315789476,
+            "Selected": 0.13349880180658294
+          },
+          "improvement": {
+            "Last": -7.1750944081017565,
+            "Seasonal": 90.11762116496723
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 45,
+            "Seasonal": 0,
+            "Drift": 3,
+            "Ridge": 3,
+            "Analog": 6
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Last"
+    },
+    {
+      "id": "RSAFS",
+      "field": "소비",
+      "name": "소매·음식서비스 판매액",
+      "unit": "백만 달러",
+      "source": "https://fred.stlouisfed.org/series/RSAFS",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 6614.925,
+          "Seasonal": 28780.9,
+          "Drift": 6712.439583333331,
+          "Ridge": 6614.615795091604,
+          "Analog": 6799.216666666666,
+          "Selected": 6646.193721367459
+        },
+        "improvement": {
+          "Last": -0.4726995599717121,
+          "Seasonal": 76.90762373182403
+        },
+        "intervals": {
+          "Last": [
+            -254.7067434320636,
+            135.8825916164768
+          ],
+          "Seasonal": [
+            12935.065960984226,
+            34154.57319891417
+          ]
+        },
+        "selection_counts": {
+          "Last": 37,
+          "Seasonal": 0,
+          "Drift": 10,
+          "Ridge": 63,
+          "Analog": 10
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 6596.883333333333,
+            "Seasonal": 19611.683333333334,
+            "Drift": 6733.8902777777785,
+            "Ridge": 6944.17416446824,
+            "Analog": 6790.6,
+            "Selected": 6596.386573453532
+          },
+          "improvement": {
+            "Last": 0.007530220783069641,
+            "Seasonal": 66.3650158870255
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 8,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 42,
+            "Analog": 10
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 6632.966666666666,
+            "Seasonal": 37950.11666666667,
+            "Drift": 6690.988888888884,
+            "Ridge": 6285.057425714967,
+            "Analog": 6807.833333333333,
+            "Selected": 6696.000869281386
+          },
+          "improvement": {
+            "Last": -0.9503168911053406,
+            "Seasonal": 82.35578317691237
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 29,
+            "Seasonal": 0,
+            "Drift": 10,
+            "Ridge": 21,
+            "Analog": 0
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Ridge"
+    },
+    {
+      "id": "INDPRO",
+      "field": "생산",
+      "name": "산업생산지수",
+      "unit": "2017=100",
+      "source": "https://fred.stlouisfed.org/series/INDPRO",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 0.6912216666666653,
+          "Seasonal": 2.5141633333333333,
+          "Drift": 0.7528521527777767,
+          "Ridge": 0.7279033020918491,
+          "Analog": 0.7128658333333313,
+          "Selected": 0.6949804362788937
+        },
+        "improvement": {
+          "Last": -0.5437864282169746,
+          "Seasonal": 72.35738716476017
+        },
+        "intervals": {
+          "Last": [
+            -0.03767170355261097,
+            0.03227079064071814
+          ],
+          "Seasonal": [
+            1.0564401385472686,
+            2.6607819661853034
+          ]
+        },
+        "selection_counts": {
+          "Last": 25,
+          "Seasonal": 0,
+          "Drift": 24,
+          "Ridge": 23,
+          "Analog": 48
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 0.8480116666666653,
+            "Seasonal": 3.096273333333333,
+            "Drift": 0.9421608333333334,
+            "Ridge": 0.9105869061097995,
+            "Analog": 0.8712133333333311,
+            "Selected": 0.8412739966753703
+          },
+          "improvement": {
+            "Last": 0.794525624603637,
+            "Seasonal": 72.82946606752945
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 2,
+            "Seasonal": 0,
+            "Drift": 24,
+            "Ridge": 14,
+            "Analog": 20
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 0.5344316666666652,
+            "Seasonal": 1.9320533333333332,
+            "Drift": 0.56354347222222,
+            "Ridge": 0.5452196980738985,
+            "Analog": 0.5545183333333316,
+            "Selected": 0.5486868758824173
+          },
+          "improvement": {
+            "Last": -2.667358636261974,
+            "Seasonal": 71.60084214985004
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 23,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 9,
+            "Analog": 28
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Last"
+    },
+    {
+      "id": "HOUST",
+      "field": "주택공급",
+      "name": "민간 주택착공",
+      "unit": "천 호·계절조정 연율",
+      "source": "https://fred.stlouisfed.org/series/HOUST",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 87.56666666666666,
+          "Seasonal": 134.675,
+          "Drift": 91.36527777777776,
+          "Ridge": 77.85715013248209,
+          "Analog": 86.58333333333333,
+          "Selected": 79.356000407309
+        },
+        "improvement": {
+          "Last": 9.376474601474305,
+          "Seasonal": 41.07592321714573
+        },
+        "intervals": {
+          "Last": [
+            3.84031518459535,
+            12.813506685941617
+          ],
+          "Seasonal": [
+            26.66465841745117,
+            90.12756318227471
+          ]
+        },
+        "selection_counts": {
+          "Last": 1,
+          "Seasonal": 0,
+          "Drift": 0,
+          "Ridge": 115,
+          "Analog": 4
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 85.1,
+            "Seasonal": 113.88333333333334,
+            "Drift": 88.84722222222223,
+            "Ridge": 77.5449752722575,
+            "Analog": 84.28333333333333,
+            "Selected": 80.54267582191133
+          },
+          "improvement": {
+            "Last": 5.355257553570702,
+            "Seasonal": 29.276151773530223
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 1,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 55,
+            "Analog": 4
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 90.03333333333333,
+            "Seasonal": 155.46666666666667,
+            "Drift": 93.88333333333331,
+            "Ridge": 78.16932499270666,
+            "Analog": 88.88333333333334,
+            "Selected": 78.16932499270666
+          },
+          "improvement": {
+            "Last": 13.177350989218805,
+            "Seasonal": 49.719559395771874
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 0,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 60,
+            "Analog": 0
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Ridge"
+    }
+  ]
+}

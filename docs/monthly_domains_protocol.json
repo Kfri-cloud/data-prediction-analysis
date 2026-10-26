@@ -1,0 +1,8 @@
+{
+ "scope":"Five US monthly official-source series via FRED, 2000-01..2025-12 current snapshot; separate from Korea. All seasonally adjusted, HOUST annualized. No imputation.",
+ "target":"Next monthly observation level. Every candidate shares same origins. Evaluation2016-01..2025-12,120 one-step non-overlapping target months; observations may remain serially correlated.",
+ "candidates":"Last value, lastyear same month, last value plus mean12month change, ridge(nextchange) on own level/change1/change3/change12/std12 plus month sincos, nearest5 median nextchanges using same scaled features. Expanding training min60 completed transitions.",
+ "primary":"At origin select model with lowest MAE on last24 completed expanding-window OOF predictions, at least12 else persistence. Tie order persistence,seasonal,drift,ridge,analogue. No final evaluation score used for forecast selection.",
+ "screen":"Primary must reduce MAE at least10% against BOTH persistence and seasonal, descriptive95% moving-block6 bootstrap lower bounds positive against both, positive improvement against both in2016-20 and2021-25, >=24 non-overlapping targets. Fixed candidate winners are secondary post-hoc evidence only.",
+ "limitations":"Revised current vintage; not historical release-date replay. No news, causality, live forecasts, calibrated probability or transfer to Korean local conditions. Screening is experimental, no multiple-testing correction."
+}

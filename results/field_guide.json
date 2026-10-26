@@ -1,0 +1,887 @@
+{
+  "status": "EXPLORATORY_CLASSIFICATION_NOT_PRODUCTION_APPROVAL",
+  "counts": {
+    "근거 강화 후보": 4,
+    "추가 검증": 11,
+    "단순 기준 유지": 18,
+    "자료 부족": 7
+  },
+  "entries": [
+    {
+      "name": "한국 소상공인 폐업",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "한국 청년실업",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "숫자 회귀",
+      "improvement_pct": -1.8438353885447567,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "한국 생활물가 부담",
+      "category": "추가 검증",
+      "method": "숫자 회귀",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "숫자 회귀",
+      "improvement_pct": 13.432526591632598,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "한국 저출생",
+      "category": "근거 강화 후보",
+      "method": "최근 3년 평균 변화 연장",
+      "reason": "기존 사후 선별 기준 통과. 독립 미래 검증 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "최근 3년 평균 변화 연장",
+      "improvement_pct": 33.27217125382258,
+      "n": 9,
+      "nonoverlap_n": 9
+    },
+    {
+      "name": "한국 고령화와 부양 부담",
+      "category": "근거 강화 후보",
+      "method": "최근 3년 평균 변화 연장",
+      "reason": "기존 사후 선별 기준 통과. 독립 미래 검증 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "최근 3년 평균 변화 연장",
+      "improvement_pct": 81.62752520038062,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "한국 자살 사망 예방",
+      "category": "추가 검증",
+      "method": "최근 3년 평균 변화 연장",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "최근 3년 평균 변화 연장",
+      "improvement_pct": 11.877934272300482,
+      "n": 6,
+      "nonoverlap_n": 6
+    },
+    {
+      "name": "한국 교통사고 사망",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "한국 초미세먼지 노출",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "숫자 회귀",
+      "improvement_pct": -0.8311312216224165,
+      "n": 8,
+      "nonoverlap_n": 8
+    },
+    {
+      "name": "한국 청년 교육·고용 이탈",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "한국 주거비 과부담",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "미국 소상공인 폐업",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "미국 청년실업",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "유사 사례 5개",
+      "improvement_pct": 5.3646408839779,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "미국 생활물가 부담",
+      "category": "추가 검증",
+      "method": "숫자 회귀",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "숫자 회귀",
+      "improvement_pct": 15.508692890705756,
+      "n": 9,
+      "nonoverlap_n": 9
+    },
+    {
+      "name": "미국 저출생",
+      "category": "추가 검증",
+      "method": "최근 3년 평균 변화 연장",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "최근 3년 평균 변화 연장",
+      "improvement_pct": 22.754137115839114,
+      "n": 9,
+      "nonoverlap_n": 9
+    },
+    {
+      "name": "미국 고령화와 부양 부담",
+      "category": "근거 강화 후보",
+      "method": "최근 3년 평균 변화 연장",
+      "reason": "기존 사후 선별 기준 통과. 독립 미래 검증 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "최근 3년 평균 변화 연장",
+      "improvement_pct": 90.01227288216135,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "미국 자살 사망 예방",
+      "category": "추가 검증",
+      "method": "유사 사례 5개",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "유사 사례 5개",
+      "improvement_pct": 17.05069124423978,
+      "n": 6,
+      "nonoverlap_n": 6
+    },
+    {
+      "name": "미국 교통사고 사망",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "미국 초미세먼지 노출",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "유사 사례 5개",
+      "improvement_pct": -8.978027121559862,
+      "n": 8,
+      "nonoverlap_n": 8
+    },
+    {
+      "name": "미국 청년 교육·고용 이탈",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "social_transfer_report.html",
+      "best_posthoc": "유사 사례 5개",
+      "improvement_pct": -5.990730011587542,
+      "n": 10,
+      "nonoverlap_n": 10
+    },
+    {
+      "name": "미국 주거비 과부담",
+      "category": "자료 부족",
+      "method": "미실행",
+      "reason": "미실행: 자료 또는 평가 부족",
+      "source": "social_report.html"
+    },
+    {
+      "name": "에너지 브렌트유",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": -1.8316576463143885,
+      "n": 48,
+      "nonoverlap_n": 48
+    },
+    {
+      "name": "에너지 석탄",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": -2.8888882947532,
+      "n": 48,
+      "nonoverlap_n": 48
+    },
+    {
+      "name": "에너지 에탄올",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": 0.5079213827049678,
+      "n": 46,
+      "nonoverlap_n": 46
+    },
+    {
+      "name": "농산물 밀",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": -0.14607880120878214,
+      "n": 47,
+      "nonoverlap_n": 47
+    },
+    {
+      "name": "농산물 옥수수",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": 1.3899135668744012,
+      "n": 48,
+      "nonoverlap_n": 48
+    },
+    {
+      "name": "농산물 대두",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": -0.008442656606666432,
+      "n": 47,
+      "nonoverlap_n": 47
+    },
+    {
+      "name": "기술 AI 검색",
+      "category": "추가 검증",
+      "method": "유사 사례 결과 중앙값",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "analogue_report.html",
+      "best_posthoc": "유사 사례 결과 중앙값",
+      "improvement_pct": 48.15549796275472,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "기술 로봇 검색",
+      "category": "추가 검증",
+      "method": "지수·뉴스 50:50",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "analogue_report.html",
+      "best_posthoc": "지수·뉴스 50:50",
+      "improvement_pct": 68.645502229714,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "기술 사이버보안 검색",
+      "category": "추가 검증",
+      "method": "유사 사례 결과 중앙값",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "analogue_report.html",
+      "best_posthoc": "유사 사례 결과 중앙값",
+      "improvement_pct": 69.54699283877805,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "여가·여행 항공여행 검색",
+      "category": "추가 검증",
+      "method": "유사 사례 결과 중앙값",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "analogue_report.html",
+      "best_posthoc": "유사 사례 결과 중앙값",
+      "improvement_pct": 49.36579403985976,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "여가·여행 음악축제 검색",
+      "category": "추가 검증",
+      "method": "뉴스 쪽 조정",
+      "reason": "개선폭은 있으나 표본 또는 기술적 구간 기준 미충족",
+      "source": "analogue_report.html",
+      "best_posthoc": "뉴스 쪽 조정",
+      "improvement_pct": 22.29009350754396,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "여가·여행 e스포츠 검색",
+      "category": "단순 기준 유지",
+      "method": "전년 같은 기간",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "과거 전체 오차 보정",
+      "improvement_pct": -5.912773777990021,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "소비 블랙프라이데이 검색",
+      "category": "단순 기준 유지",
+      "method": "전년 같은 기간",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "뉴스 포함 유사 사례",
+      "improvement_pct": -1.6605458852611221,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "소비 개학 준비 검색",
+      "category": "단순 기준 유지",
+      "method": "전년 같은 기간",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "유사 사례 오차 보정",
+      "improvement_pct": 0.2624670576119703,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "소비 에어컨 검색",
+      "category": "단순 기준 유지",
+      "method": "전년 같은 기간",
+      "reason": "추가 방법이 더 나쁘거나 개선이 작음. 단순 기준이 항상 최선이라는 증명은 아님",
+      "source": "analogue_report.html",
+      "best_posthoc": "유사 사례 3개",
+      "improvement_pct": -1.461037664534226,
+      "n": 11,
+      "nonoverlap_n": 4
+    },
+    {
+      "name": "미국 월별 비농업 고용자 수",
+      "category": "근거 강화 후보",
+      "method": "이전 24회 성적으로 방법 선택",
+      "reason": "새 월별 기준 통과",
+      "source": "field_guide.html",
+      "improvement_pct": 12.55619745881873,
+      "n": 120,
+      "nonoverlap_n": 120,
+      "best_posthoc": "유사 사례 5개"
+    },
+    {
+      "name": "미국 월별 실업률",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "주모델이 현재 값 유지보다 악화",
+      "source": "field_guide.html",
+      "improvement_pct": -3.9013925902426694,
+      "n": 117,
+      "nonoverlap_n": 117,
+      "best_posthoc": "현재 값 유지"
+    },
+    {
+      "name": "미국 월별 소매·음식서비스 판매액",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "주모델이 현재 값 유지보다 악화",
+      "source": "field_guide.html",
+      "improvement_pct": -0.4726995599717121,
+      "n": 120,
+      "nonoverlap_n": 120,
+      "best_posthoc": "숫자 회귀"
+    },
+    {
+      "name": "미국 월별 산업생산지수",
+      "category": "단순 기준 유지",
+      "method": "현재 값 유지",
+      "reason": "주모델이 현재 값 유지보다 악화",
+      "source": "field_guide.html",
+      "improvement_pct": -0.5437864282169746,
+      "n": 120,
+      "nonoverlap_n": 120,
+      "best_posthoc": "현재 값 유지"
+    },
+    {
+      "name": "미국 월별 민간 주택착공",
+      "category": "추가 검증",
+      "method": "이전 24회 성적으로 방법 선택",
+      "reason": "기준 전체 미충족; 양의 구간이어도 10% 미달이면 보류",
+      "source": "field_guide.html",
+      "improvement_pct": 9.376474601474305,
+      "n": 120,
+      "nonoverlap_n": 120,
+      "best_posthoc": "숫자 회귀"
+    }
+  ],
+  "monthly": [
+    {
+      "id": "PAYEMS",
+      "field": "고용",
+      "name": "비농업 고용자 수",
+      "unit": "천 명",
+      "source": "https://fred.stlouisfed.org/series/PAYEMS",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 500.40833333333336,
+          "Seasonal": 3904.741666666667,
+          "Drift": 487.41805555555635,
+          "Ridge": 881.1677997209597,
+          "Analog": 421.6666666666667,
+          "Selected": 437.5760748996162
+        },
+        "improvement": {
+          "Last": 12.55619745881873,
+          "Seasonal": 88.7937253663913
+        },
+        "intervals": {
+          "Last": [
+            12.649027777777695,
+            104.76109987946525
+          ],
+          "Seasonal": [
+            2519.5289346117625,
+            4738.4521337550195
+          ]
+        },
+        "selection_counts": {
+          "Last": 7,
+          "Seasonal": 0,
+          "Drift": 61,
+          "Ridge": 2,
+          "Analog": 50
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 726.25,
+            "Seasonal": 3729.2833333333333,
+            "Drift": 769.0611111111112,
+            "Ridge": 1491.1087158295807,
+            "Analog": 673.55,
+            "Selected": 673.2972222222219
+          },
+          "improvement": {
+            "Last": 7.29126027921213,
+            "Seasonal": 81.9456672491438
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 1,
+            "Seasonal": 0,
+            "Drift": 44,
+            "Ridge": 0,
+            "Analog": 15
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 274.56666666666666,
+            "Seasonal": 4080.2,
+            "Drift": 205.77500000000146,
+            "Ridge": 271.22688361233884,
+            "Analog": 169.78333333333333,
+            "Selected": 201.85492757701044
+          },
+          "improvement": {
+            "Last": 26.482362179066243,
+            "Seasonal": 95.05281781341576
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 6,
+            "Seasonal": 0,
+            "Drift": 17,
+            "Ridge": 2,
+            "Analog": 35
+          }
+        }
+      },
+      "screen_pass": true,
+      "best_posthoc": "Analog"
+    },
+    {
+      "id": "UNRATE",
+      "field": "노동시장",
+      "name": "실업률",
+      "unit": "%",
+      "source": "https://fred.stlouisfed.org/series/UNRATE",
+      "missing_months": [
+        "2025-10-01"
+      ],
+      "excluded_target_months": [
+        "2025-10-01",
+        "2025-11-01",
+        "2025-12-01"
+      ],
+      "summary": {
+        "n": 117,
+        "mae": {
+          "Last": 0.264957264957265,
+          "Seasonal": 1.2880341880341881,
+          "Drift": 0.3138176638176639,
+          "Ridge": 0.39271861696574745,
+          "Analog": 0.2888888888888889,
+          "Selected": 0.27529428805961736
+        },
+        "improvement": {
+          "Last": -3.9013925902426694,
+          "Seasonal": 78.6267871911246
+        },
+        "intervals": {
+          "Last": [
+            -0.02126159351121958,
+            -0.001994301994301991
+          ],
+          "Seasonal": [
+            0.48159711905856956,
+            1.7060803710671038
+          ]
+        },
+        "selection_counts": {
+          "Last": 88,
+          "Seasonal": 0,
+          "Drift": 14,
+          "Ridge": 3,
+          "Analog": 12
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 0.3983333333333334,
+            "Seasonal": 1.228333333333333,
+            "Drift": 0.4747222222222223,
+            "Ridge": 0.6232632048522789,
+            "Analog": 0.4283333333333334,
+            "Selected": 0.41000000000000003
+          },
+          "improvement": {
+            "Last": -2.9288702928870203,
+            "Seasonal": 66.62143826322931
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 43,
+            "Seasonal": 0,
+            "Drift": 11,
+            "Ridge": 0,
+            "Analog": 6
+          }
+        },
+        "2021-2025": {
+          "n": 57,
+          "mae": {
+            "Last": 0.12456140350877198,
+            "Seasonal": 1.3508771929824561,
+            "Drift": 0.1444444444444445,
+            "Ridge": 0.15004010340097737,
+            "Analog": 0.14210526315789476,
+            "Selected": 0.13349880180658294
+          },
+          "improvement": {
+            "Last": -7.1750944081017565,
+            "Seasonal": 90.11762116496723
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 45,
+            "Seasonal": 0,
+            "Drift": 3,
+            "Ridge": 3,
+            "Analog": 6
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Last"
+    },
+    {
+      "id": "RSAFS",
+      "field": "소비",
+      "name": "소매·음식서비스 판매액",
+      "unit": "백만 달러",
+      "source": "https://fred.stlouisfed.org/series/RSAFS",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 6614.925,
+          "Seasonal": 28780.9,
+          "Drift": 6712.439583333331,
+          "Ridge": 6614.615795091604,
+          "Analog": 6799.216666666666,
+          "Selected": 6646.193721367459
+        },
+        "improvement": {
+          "Last": -0.4726995599717121,
+          "Seasonal": 76.90762373182403
+        },
+        "intervals": {
+          "Last": [
+            -254.7067434320636,
+            135.8825916164768
+          ],
+          "Seasonal": [
+            12935.065960984226,
+            34154.57319891417
+          ]
+        },
+        "selection_counts": {
+          "Last": 37,
+          "Seasonal": 0,
+          "Drift": 10,
+          "Ridge": 63,
+          "Analog": 10
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 6596.883333333333,
+            "Seasonal": 19611.683333333334,
+            "Drift": 6733.8902777777785,
+            "Ridge": 6944.17416446824,
+            "Analog": 6790.6,
+            "Selected": 6596.386573453532
+          },
+          "improvement": {
+            "Last": 0.007530220783069641,
+            "Seasonal": 66.3650158870255
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 8,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 42,
+            "Analog": 10
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 6632.966666666666,
+            "Seasonal": 37950.11666666667,
+            "Drift": 6690.988888888884,
+            "Ridge": 6285.057425714967,
+            "Analog": 6807.833333333333,
+            "Selected": 6696.000869281386
+          },
+          "improvement": {
+            "Last": -0.9503168911053406,
+            "Seasonal": 82.35578317691237
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 29,
+            "Seasonal": 0,
+            "Drift": 10,
+            "Ridge": 21,
+            "Analog": 0
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Ridge"
+    },
+    {
+      "id": "INDPRO",
+      "field": "생산",
+      "name": "산업생산지수",
+      "unit": "2017=100",
+      "source": "https://fred.stlouisfed.org/series/INDPRO",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 0.6912216666666653,
+          "Seasonal": 2.5141633333333333,
+          "Drift": 0.7528521527777767,
+          "Ridge": 0.7279033020918491,
+          "Analog": 0.7128658333333313,
+          "Selected": 0.6949804362788937
+        },
+        "improvement": {
+          "Last": -0.5437864282169746,
+          "Seasonal": 72.35738716476017
+        },
+        "intervals": {
+          "Last": [
+            -0.03767170355261097,
+            0.03227079064071814
+          ],
+          "Seasonal": [
+            1.0564401385472686,
+            2.6607819661853034
+          ]
+        },
+        "selection_counts": {
+          "Last": 25,
+          "Seasonal": 0,
+          "Drift": 24,
+          "Ridge": 23,
+          "Analog": 48
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 0.8480116666666653,
+            "Seasonal": 3.096273333333333,
+            "Drift": 0.9421608333333334,
+            "Ridge": 0.9105869061097995,
+            "Analog": 0.8712133333333311,
+            "Selected": 0.8412739966753703
+          },
+          "improvement": {
+            "Last": 0.794525624603637,
+            "Seasonal": 72.82946606752945
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 2,
+            "Seasonal": 0,
+            "Drift": 24,
+            "Ridge": 14,
+            "Analog": 20
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 0.5344316666666652,
+            "Seasonal": 1.9320533333333332,
+            "Drift": 0.56354347222222,
+            "Ridge": 0.5452196980738985,
+            "Analog": 0.5545183333333316,
+            "Selected": 0.5486868758824173
+          },
+          "improvement": {
+            "Last": -2.667358636261974,
+            "Seasonal": 71.60084214985004
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 23,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 9,
+            "Analog": 28
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Last"
+    },
+    {
+      "id": "HOUST",
+      "field": "주택공급",
+      "name": "민간 주택착공",
+      "unit": "천 호·계절조정 연율",
+      "source": "https://fred.stlouisfed.org/series/HOUST",
+      "missing_months": [],
+      "excluded_target_months": [],
+      "summary": {
+        "n": 120,
+        "mae": {
+          "Last": 87.56666666666666,
+          "Seasonal": 134.675,
+          "Drift": 91.36527777777776,
+          "Ridge": 77.85715013248209,
+          "Analog": 86.58333333333333,
+          "Selected": 79.356000407309
+        },
+        "improvement": {
+          "Last": 9.376474601474305,
+          "Seasonal": 41.07592321714573
+        },
+        "intervals": {
+          "Last": [
+            3.84031518459535,
+            12.813506685941617
+          ],
+          "Seasonal": [
+            26.66465841745117,
+            90.12756318227471
+          ]
+        },
+        "selection_counts": {
+          "Last": 1,
+          "Seasonal": 0,
+          "Drift": 0,
+          "Ridge": 115,
+          "Analog": 4
+        }
+      },
+      "halves": {
+        "2016-2020": {
+          "n": 60,
+          "mae": {
+            "Last": 85.1,
+            "Seasonal": 113.88333333333334,
+            "Drift": 88.84722222222223,
+            "Ridge": 77.5449752722575,
+            "Analog": 84.28333333333333,
+            "Selected": 80.54267582191133
+          },
+          "improvement": {
+            "Last": 5.355257553570702,
+            "Seasonal": 29.276151773530223
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 1,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 55,
+            "Analog": 4
+          }
+        },
+        "2021-2025": {
+          "n": 60,
+          "mae": {
+            "Last": 90.03333333333333,
+            "Seasonal": 155.46666666666667,
+            "Drift": 93.88333333333331,
+            "Ridge": 78.16932499270666,
+            "Analog": 88.88333333333334,
+            "Selected": 78.16932499270666
+          },
+          "improvement": {
+            "Last": 13.177350989218805,
+            "Seasonal": 49.719559395771874
+          },
+          "intervals": {},
+          "selection_counts": {
+            "Last": 0,
+            "Seasonal": 0,
+            "Drift": 0,
+            "Ridge": 60,
+            "Analog": 0
+          }
+        }
+      },
+      "screen_pass": false,
+      "best_posthoc": "Ridge"
+    }
+  ],
+  "alignment_audit": "383 targets and baseline predictions matched exactly"
+}

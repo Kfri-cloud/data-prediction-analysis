@@ -1,0 +1,50 @@
+{
+  "retrieved_at": "2026-10-26T13:35:30.181957+00:00",
+  "sources": [
+    {
+      "id": "PAYEMS",
+      "field": "고용",
+      "name": "비농업 고용자 수",
+      "unit": "천 명",
+      "source": "https://fred.stlouisfed.org/series/PAYEMS",
+      "download": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PAYEMS&cosd=2000-01-01&coed=2025-12-31",
+      "sha256": "8b4edadda4936cfb357b984c2cb9c755efcefae80270e710a157fd844b8d4a7c"
+    },
+    {
+      "id": "UNRATE",
+      "field": "노동시장",
+      "name": "실업률",
+      "unit": "%",
+      "source": "https://fred.stlouisfed.org/series/UNRATE",
+      "download": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE&cosd=2000-01-01&coed=2025-12-31",
+      "sha256": "2fd24d79fc21731879568759e7aca5fbca47f21c9a78c73921042f9cdaf1360f"
+    },
+    {
+      "id": "RSAFS",
+      "field": "소비",
+      "name": "소매·음식서비스 판매액",
+      "unit": "백만 달러",
+      "source": "https://fred.stlouisfed.org/series/RSAFS",
+      "download": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RSAFS&cosd=2000-01-01&coed=2025-12-31",
+      "sha256": "4709752de44173426fbcd31bbc83b58c426a27ec9804ec447469f611a12f353d"
+    },
+    {
+      "id": "INDPRO",
+      "field": "생산",
+      "name": "산업생산지수",
+      "unit": "2017=100",
+      "source": "https://fred.stlouisfed.org/series/INDPRO",
+      "download": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO&cosd=2000-01-01&coed=2025-12-31",
+      "sha256": "5fdf30c31c44c26764105d47ba2885aade2197b6a86df88445a4453154ff3174"
+    },
+    {
+      "id": "HOUST",
+      "field": "주택공급",
+      "name": "민간 주택착공",
+      "unit": "천 호·계절조정 연율",
+      "source": "https://fred.stlouisfed.org/series/HOUST",
+      "download": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HOUST&cosd=2000-01-01&coed=2025-12-31",
+      "sha256": "895c86ba7973bf663979776254474002e13a3a40ae7b2f7bb8ed372bebd00c21"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": {
+    "run_monthly_domains.py": "7b64cbc789ddf8c8a63864f6df9e2714c8c6a846a55c6eba1fa0abeb7fb6e3ad",
+    "run_monthly_domains_v1.py": "9eef0526f0e978b0defca1a087fcc58b279a44b593dce8435070e513a962e870",
+    "monthly_domains_protocol.json": "95ede2e3ab5234b88aa74c7781d3cf9f762575b0244ed3c4c9df5f8039f63166",
+    "fetch_monthly_domains.py": "53a70806a618274a7e28b36abbaf03615a6f483a6d0f59345e9a91c3c17d41af",
+    "run_pilot.py": "844c4c50c98202e8abcc9bf2e81d62e9071c30d0c8d004918dc9aa79d6324e9c",
+    "results/monthly_domains_sources.json": "b40f23cd2a674086902fa95aee8de6031fe4505669534d17b00480cbc7e53251",
+    "data/monthly_domains/PAYEMS.csv": "8b4edadda4936cfb357b984c2cb9c755efcefae80270e710a157fd844b8d4a7c",
+    "data/monthly_domains/UNRATE.csv": "2fd24d79fc21731879568759e7aca5fbca47f21c9a78c73921042f9cdaf1360f",
+    "data/monthly_domains/RSAFS.csv": "4709752de44173426fbcd31bbc83b58c426a27ec9804ec447469f611a12f353d",
+    "data/monthly_domains/INDPRO.csv": "5fdf30c31c44c26764105d47ba2885aade2197b6a86df88445a4453154ff3174",
+    "data/monthly_domains/HOUST.csv": "895c86ba7973bf663979776254474002e13a3a40ae7b2f7bb8ed372bebd00c21"
+  },
+  "frozen_at": "2026-10-26T13:37:00.791459+00:00"
+}
